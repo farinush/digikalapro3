@@ -1,11 +1,11 @@
 {
-  "topMenu": [
-    {
+  "topMenu": {
+    
       "id": 1,
       "name": "topMenuImage",
       "link": "https://dkstatics-public.digikala.com/digikala-adservice-banners/c2def9b7a0b5f6d8f316a54d091f8b8a3e73e0bc_1733299291.jpg?x-oss-process=image/quality,q_95/format,webp"
-    }
-  ],
+    
+},
   "centerMenu": {
     "inputs": [
       {
