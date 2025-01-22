@@ -1,0 +1,297 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer component {
+  .submenu__right__sub__submenu__div__nav__menu1,
+  .submenu__right__sub__submenu__div__nav__menu2,
+  .submenu__right__sub__submenu__div__nav__menu3,
+  .submenu__right__sub__submenu__div__nav__menu4,
+  .submenu__right__sub__submenu__div__nav__menu5,
+  .submenu__right__sub__submenu__div__nav__menu6,
+  .submenu__right__sub__submenu__div__nav__menu7,
+  .submenu__right__sub__submenu__div__nav__menu8,
+  .submenu__right__sub__submenu__div__nav__menu9,
+  .submenu__right__sub__submenu__div__nav__menu10,
+  .submenu__right__sub__submenu__div__nav__menu11,
+  .submenu__right__sub__submenu__div__nav__menu12,
+  .submenu__right__sub__submenu__div__nav__menu13,
+  .submenu__right__sub__submenu__div__nav__menu14,
+  .submenu__right__sub__submenu__div__nav__menu15,
+  .submenu__right__sub__submenu__div__nav__menu16 {
+    width: 100%;
+    height: inherit;
+    padding: 10px;
+  }
+
+  .div__submenu__item__right__sub__submenu__div__nav__menu {
+    width: 100%;
+    height: inherit;
+    background-color: #ffffff;
+    display: flex;
+    flex-flow: column wrap;
+    position: relative;
+    .title__div__submenu__item__right__sub__submenu__div__nav__menu {
+      width: inherit !important;
+      background-color: #ffffff !important;
+      direction: rtl !important;
+      line-height: 80px !important;
+      display: flex !important;
+      position: absolute !important;
+      padding-right: 30px !important;
+      .subtitle__title__div__submenu__item__right__sub__submenu__div__nav__menu {
+        font-family: var(--font-family) !important;
+        font-size: 12px !important;
+        position: absolute !important;
+        right: 50px !important;
+        color: #36b4c3 !important;
+        font-weight: 600 !important;
+        word-spacing: 2px !important;
+        display: flex !important;
+        flex-flow: row wrap !important;
+        justify-content: center !important;
+        align-items: center !important;
+        column-gap: 8px !important;
+      }
+    }
+    .classify__div__submenu__item__right__sub__submenu__div__nav__menu {
+      width: inherit !important;
+      height: 86.5vh !important;
+      background-color: #ffffff !important;
+      display: flex !important;
+      flex-flow: row nowrap !important;
+      column-gap: 1px !important;
+      position: absolute !important;
+      top: 80px !important;
+      .div__classify__div__submenu__item__right__sub__submenu__div__nav__menu {
+        width: 25% !important;
+        height: inherit !important;
+        background-color: #ffffff !important;
+        direction: rtl !important;
+        display: flex !important;
+        flex-flow: column wrap !important;
+        justify-content: flex-start !important;
+        padding-top: 15px !important;
+
+        .subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu {
+          height: 40px !important;
+          padding-right: 20px !important;
+          .a__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu {
+            display: block !important;
+            font-family: var(--font-family) !important;
+            font-size: 12px !important;
+            height: inherit !important;
+            text-align: right !important;
+            color: #66666b !important;
+            font-weight: 100 !important;
+            &:hover {
+              color: #d82f4e !important;
+            }
+          }
+        }
+        .huge__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu {
+          height: 40px !important;
+          padding-right: 20px !important;
+          display: flex !important;
+          flex-flow: row nowrap !important;
+          justify-content: flex-start !important;
+          align-items: center !important;
+          column-gap: 5px !important;
+
+          .a__huge__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu {
+            font-family: var(--font-family) !important;
+            font-size: 13px !important;
+            padding-bottom: 20px !important;
+
+            &::before {
+              content: "";
+              border-right: 2px solid #d82f4e !important;
+              padding-left: 8px !important;
+            }
+          }
+          .svg__huge__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu {
+            position: relative;
+            padding-bottom: 20px;
+            svg {
+              position: absolute;
+              bottom: 15px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .div__2__nav__menu1,
+  .div__2__nav__menu2,
+  .div__2__nav__menu3,
+  .div__2__nav__menu4,
+  .div__2__nav__menu5,
+  .div__2__nav__menu6,
+  .div__2__nav__menu7 {
+    width: fit-content !important;
+    height: inherit !important;
+    position: relative !important;
+    .a__div__2__nav__menu1,
+    .a__div__2__nav__menu2,
+    .a__div__2__nav__menu3,
+    .a__div__2__nav__menu4,
+    .a__div__2__nav__menu5,
+    .a__div__2__nav__menu6,
+    .a__div__2__nav__menu7 {
+      width: inherit !important;
+      height: inherit !important;
+      text-decoration: none !important;
+      color: #3b383a !important;
+      padding: 0 10px !important;
+      line-height: 40px !important;
+      font-family: var(--font-family) !important;
+      font-size: 13px !important;
+      display: flex !important;
+      align-items: center !important;
+      column-gap: 5px !important;
+    }
+    &:hover {
+      border-bottom: 2px solid #d82f4e !important;
+      transition: all 100ms ease !important;
+    }
+  }
+  .a-form-sub-subbottomcity {
+    width: 90%;
+    height: 60px;
+    text-decoration: none;
+    .div-a-form-sub-subbottomcity {
+      display: flex;
+      width: 100%;
+      height: inherit;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      padding: 0 25px;
+      align-items: center;
+      font-family: var(--font-family);
+      font-weight: 500;
+      font-size: 13px;
+      color: #2b2b2b;
+    }
+  }
+  .hr-a-form-sub-subbottomcity {
+    width: 80%;
+    border: none;
+    border-bottom: 1px solid lightgray;
+  }
+  .open {
+    display: block;
+    max-height: 100vh; /* یا مقدار مناسب */
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+  }
+  .custom-position {
+    left: calc(50% - 460px / 2) !important;
+    top: calc(50% - 460px / 2) !important;
+  }
+  .story {
+    z-index: 1 !important;
+    position: relative !important;
+    left: 0;
+    bottom: 0;
+  }
+  .subbottomcity {
+    z-index: 999 !important;
+  }
+  .svgdivchild {
+    position: absolute !important;
+    left: calc(50% - 25px / 2) !important;
+    top: calc(50% - 25px / 2) !important;
+  }
+  .BRtrbr {
+    border-radius: 0 15px 15px 0 !important;
+  }
+  .BRtlbl {
+    border-radius: 15px 0 0 15px !important;
+    display: flex !important;
+    flex-flow: column wrap !important;
+  }
+  .child_svg_slide13 {
+    border: 1px solid #39b7c6 !important;
+    border-radius: 50% !important;
+    width: 45px !important;
+    height: 45px !important;
+    position: absolute !important;
+    left: calc(50% - 52px / 2) !important;
+    bottom: calc(50% - 50px) !important;
+    .senoghte {
+      position: absolute !important;
+      left: calc(50% - 28px / 2) !important;
+      top: calc(50% - 22px / 2) !important;
+    }
+  }
+  .amazingactive {
+    background-color: #ef3c51 !important;
+    .image_item1 {
+      width: 92px !important;
+      height: 77px !important;
+    }
+    .image_item2 {
+      width: 145px !important;
+      height: 115px !important;
+    }
+    .item_link {
+      font-family: var(--font-family) !important;
+      text-decoration: none !important;
+      color: whitesmoke !important;
+      font-size: 13px !important;
+    }
+  }
+  .sub__supermarketamazing {
+    background: linear-gradient(
+      90deg,
+      rgba(216, 217, 217, 0.5662640056022409) 13%,
+      rgba(199, 205, 207, 0.7259278711484594) 100%
+    ) !important;
+  }
+  .svg__favaritebrands {
+    left: calc(50% + 95px) !important;
+  }
+  .img__huge {
+    top: calc(50% - 40px) !important;
+    left: calc(50% - 100px / 2) !important;
+  }
+  .hr_favaritebrands::after{
+    content: "" !important;
+    width: 1px !important;
+    height: 122px !important;
+    background-color: lightgray !important;
+    opacity: 0.5 !important;
+}
+.standard-box-6{
+  width: calc(100% - 1154px) !important;
+  height: inherit !important;
+}
+.close-button {
+  width: 100px;
+  height: 30px;
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border: 1px solid lightgray !important;
+}
+
+.close-button:hover {
+  background-color: darkred;
+}
+.subdigichild-brands{
+  grid-template-columns: repeat(8, minmax(209px, 243px)) !important;
+}
+.sub-subsoopermarket-button{
+  left: calc(50% - 460px / 2) !important;
+  top: calc(50% - 460px / 2) !important;
+}
+.sub-subposhtibani {
+  top: calc(50% - 460px / 2) !important;
+  right: 100px !important;
+}
+
+}
