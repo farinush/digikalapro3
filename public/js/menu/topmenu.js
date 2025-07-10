@@ -1,7 +1,7 @@
 const topMenu = async () => {
   let topmenu = "";
   try {
-    let data=await fetch("http://localhost:3004/topMenu")
+    let data=await fetch("https://farinush.github.io/digikalapro3/db.json")
     let res = await data.json();
     topmenu+=`<img src="${res.link}" alt="${res.top_menu}" class="w-[100%] !h-[30px] lg:!h-[60px]" />`
       ;

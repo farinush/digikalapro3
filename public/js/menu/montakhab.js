@@ -1,7 +1,7 @@
 export const fetchMontakhab=async()=>{
     let montakhab=""
     try{
-        let data=await fetch("http://localhost:3004/montakhab")
+        let data=await fetch("https://farinush.github.io/digikalapro3/db.json")
         let res=await data.json()
         montakhab+=`       
          <div class="sub_montakhab w-[100%] lg:w-[71%] lg:border-[1px] lg:border-solid lg:border-[lightgray] rounded-[15px] flex flex-col flex-wrap justify-center items-center my-[40px] mx-auto">

@@ -1,7 +1,7 @@
 export const fetchDigichild=async()=>{
     let digichild=""
     try{
-        let data=await fetch("http://localhost:3004/digichild")
+        let data=await fetch("https://farinush.github.io/digikalapro3/db.json")
         let res=await data.json()
         digichild+=`
         <div class="subdigichild-brands w-[95%] mx-auto h-[165px] grid justify-between items-center">

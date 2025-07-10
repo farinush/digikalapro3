@@ -1,10 +1,8 @@
 export const fetchAmazing = async () => {
     let amazing="";
     try {
-      let data = await fetch("http://localhost:3004/amazing");
+      let data = await fetch("https://farinush.github.io/digikalapro3/db.json");
       let res = await data.json();
-  
-      // هر آیتم در داده‌ها رو پردازش می‌کنیم
      
         amazing += `
          

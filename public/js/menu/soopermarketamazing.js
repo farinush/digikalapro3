@@ -1,7 +1,7 @@
 export const fetchSooperamazing = async () => {
   let sooperamazing = "";
   try {
-    let data = await fetch("http://localhost:3004/sooperamazing");
+    let data = await fetch("https://farinush.github.io/digikalapro3/db.json");
     let res = await data.json();
     sooperamazing += `
           <a class="a__sub__supermarketamazing flex flex-row flex-wrap justify-center py-[20px] items-center w-[100%]" href="#">

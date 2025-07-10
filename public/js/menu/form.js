@@ -1,7 +1,7 @@
 export const fetchFormpage=async()=>{
     let formpage=""
    try{
-    let data=await fetch("http://localhost:3004/formpage")
+    let data=await fetch("https://farinush.github.io/digikalapro3/db.json")
     let res=await  data.json()
     formpage=res.map((item)=>{
         return  `

@@ -1,7 +1,7 @@
 export const fetchKhandaniha=async()=>{
     let khandaniha=""
     try{
-        let data=await fetch("http://localhost:3004/khandaniha")
+        let data=await fetch("https://farinush.github.io/digikalapro3/db.json")
         let res=await data.json()
         khandaniha+=`        
         <div class="child-khandaniha w-[95%] lg:w-[71%] h-[100%] flex flex-col flex-wrap box-border my-[10px] mx-auto mb-[20px]">

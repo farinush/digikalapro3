@@ -1,7 +1,7 @@
 export const fetchBottomlink = async () => {
   let linkkala = "";
   try {
-    let data = await fetch("http://localhost:3004/bottommenucategory");
+    let data = await fetch("https://farinush.github.io/digikalapro3/db.json");
     let res = await data.json();
     linkkala = res.map((item) => {
       return `<div class="child__link__div__nav__menu w-[100%] h-[100%] items-center gap-y-[5px] flex">
@@ -18,7 +18,7 @@ export const fetchBottomlink = async () => {
 export const fetchBottomlink1 = async () => {
   let linkshegeft = "";
   try {
-    let data = await fetch("http://localhost:3004/bottommenucategory");
+    let data = await fetch("https://farinush.github.io/digikalapro3/db.json");
     let res = await data.json();
     linkshegeft = res.map((item) => {
       return `<a class="a__div__2__nav__menu1" href="./shegeftangiz.html">
@@ -35,7 +35,7 @@ export const fetchBottomlink1 = async () => {
 export const fetchBottomlink2 = async () => {
   let linksoopermarket = "";
   try {
-    let data = await fetch("http://localhost:3004/bottommenucategory");
+    let data = await fetch("https://farinush.github.io/digikalapro3/db.json");
     let res = await data.json();
     linksoopermarket = res.map((item) => {
       return `<a class="a__div__2__nav__menu2" href="#">
@@ -52,7 +52,7 @@ export const fetchBottomlink2 = async () => {
 export const fetchBottomlink3 = async () => {
   let linkhedie = "";
   try {
-    let data = await fetch("http://localhost:3004/bottommenucategory");
+    let data = await fetch("https://farinush.github.io/digikalapro3/db.json");
     let res = await data.json();
     linkhedie = res.map((item) => {
       return `<a class="a__div__2__nav__menu3" href="#">
@@ -69,7 +69,7 @@ export const fetchBottomlink3 = async () => {
 export const fetchBottomlink4 = async () => {
   let linkporforosh = "";
   try {
-    let data = await fetch("http://localhost:3004/bottommenucategory");
+    let data = await fetch("https://farinush.github.io/digikalapro3/db.json");
     let res = await data.json();
     linkporforosh = res.map((item) => {
       return `<a class="a__div__2__nav__menu4" href="#">
@@ -86,7 +86,7 @@ export const fetchBottomlink4 = async () => {
 export const fetchBottomlink5 = async () => {
   let linktakhfif = "";
   try {
-    let data = await fetch("http://localhost:3004/bottommenucategory");
+    let data = await fetch("https://farinush.github.io/digikalapro3/db.json");
     let res = await data.json();
     linktakhfif = res.map((item) => {
       return `<a class="a__div__2__nav__menu5" href="#">
@@ -103,7 +103,7 @@ export const fetchBottomlink5 = async () => {
 export const fetchBottomlink6 = async () => {
   let linksoal = "";
   try {
-    let data = await fetch("http://localhost:3004/bottommenucategory");
+    let data = await fetch("https://farinush.github.io/digikalapro3/db.json");
     let res = await data.json();
     linksoal = res.map((item) => {
       return `<a class="a__div__2__nav__menu6" href="#">
@@ -120,7 +120,7 @@ export const fetchBottomlink6 = async () => {
 export const fetchBottomlink7 = async () => {
   let linkforosh = "";
   try {
-    let data = await fetch("http://localhost:3004/bottommenucategory");
+    let data = await fetch("https://farinush.github.io/digikalapro3/db.json");
     let res = await data.json();
     linkforosh = res.map((item) => {
       return `<a class="a__div__2__nav__menu7" href="#">
@@ -138,15 +138,13 @@ export const fetchBottomlink7 = async () => {
 export const fetchRightsub = async () => {
   let rightsub = [];
   try {
-    let data = await fetch("http://localhost:3004/navCategories");
+    let data = await fetch("https://farinush.github.io/digikalapro3/db.json");
     let res = await data.json();
 
     if (!res || !Array.isArray(res)) {
       console.error("Invalid data structure received");
       return;
     }
-
-    // ایجاد HTML مورد نظر برای هر آیتم
     rightsub = res.map((item, index) => {
       return `
         <div class="child__item__right__sub__submenu__div__nav__menu${
@@ -161,8 +159,6 @@ export const fetchRightsub = async () => {
         </div>
       `;
     });
-
-    // اطمینان از اینکه عنصر والد برای هر آیتم در DOM موجود است
     rightsub.forEach((htmlContent, index) => {
       const container = document.querySelector(
         `.item__right__sub__submenu__div__nav__menu${index + 1}`
@@ -184,7 +180,7 @@ export const fetchRightsub = async () => {
 
 export const fetchSubmenuItem = async () => {
   try {
-    let response = await fetch("http://localhost:3004/submenumobileclassify");
+    let response = await fetch("https://farinush.github.io/digikalapro3/db.json");
     if (!response.ok) {
       throw new Error(`خطا در دریافت داده‌ها: ${response.status}`);
     }
@@ -725,7 +721,7 @@ export const fetchSubmenuItem = async () => {
 };
 export const fetchSubmenuItem2 = async () => {
   try {
-    let response = await fetch("http://localhost:3004/submenuketabclassify");
+    let response = await fetch("https://farinush.github.io/digikalapro3/db.json");
     if (!response.ok) {
       throw new Error(`خطا در دریافت داده‌ها: ${response.status}`);
     }
@@ -1161,7 +1157,7 @@ export const fetchSubmenuItem2 = async () => {
 };
 export const fetchSubmenuItem3 = async () => {
   try {
-    let response = await fetch("http://localhost:3004/submenudigitalclassify");
+    let response = await fetch("https://farinush.github.io/digikalapro3/db.json");
     if (!response.ok) {
       throw new Error(`خطا در دریافت داده‌ها: ${response.status}`);
     }
@@ -1761,7 +1757,7 @@ export const fetchSubmenuItem3 = async () => {
 };
 export const fetchSubmenuItem4 = async () => {
   try {
-    let response = await fetch("http://localhost:3004/submenuhomeclassify");
+    let response = await fetch("https://farinush.github.io/digikalapro3/db.json");
     if (!response.ok) {
       throw new Error(`خطا در دریافت داده‌ها: ${response.status}`);
     }
@@ -2136,7 +2132,7 @@ export const fetchSubmenuItem4 = async () => {
 };
 export const fetchSubmenuItem5 = async () => {
   try {
-    let response = await fetch("http://localhost:3004/submenubarghiclassify");
+    let response = await fetch("https://farinush.github.io/digikalapro3/db.json");
     if (!response.ok) {
       throw new Error(`خطا در دریافت داده‌ها: ${response.status}`);
     }
@@ -2451,7 +2447,7 @@ export const fetchSubmenuItem5 = async () => {
 };
 export const fetchSubmenuItem6 = async () => {
   try {
-    let response = await fetch("http://localhost:3004/submenustyleclassify");
+    let response = await fetch("https://farinush.github.io/digikalapro3/db.json");
     if (!response.ok) {
       throw new Error(`خطا در دریافت داده‌ها: ${response.status}`);
     }
@@ -2842,7 +2838,7 @@ export const fetchSubmenuItem6 = async () => {
 };
 export const fetchSubmenuItem7 = async () => {
   try {
-    let response = await fetch("http://localhost:3004/submenuclockclassify");
+    let response = await fetch("https://farinush.github.io/digikalapro3/db.json");
     if (!response.ok) {
       throw new Error(`خطا در دریافت داده‌ها: ${response.status}`);
     }
@@ -3233,7 +3229,7 @@ export const fetchSubmenuItem7 = async () => {
 };
 export const fetchSubmenuItem8 = async () => {
   try {
-    let response = await fetch("http://localhost:3004/submenumakeupclassify");
+    let response = await fetch("https://farinush.github.io/digikalapro3/db.json");
     if (!response.ok) {
       throw new Error(`خطا در دریافت داده‌ها: ${response.status}`);
     }
@@ -3624,7 +3620,7 @@ export const fetchSubmenuItem8 = async () => {
 };
 export const fetchSubmenuItem9 = async () => {
   try {
-    let response = await fetch("http://localhost:3004/submenumedicineclassify");
+    let response = await fetch("https://farinush.github.io/digikalapro3/db.json");
     if (!response.ok) {
       throw new Error(`خطا در دریافت داده‌ها: ${response.status}`);
     }
@@ -4012,7 +4008,7 @@ export const fetchSubmenuItem9 = async () => {
 };
 export const fetchSubmenuItem10 = async () => {
   try {
-    let response = await fetch("http://localhost:3004/submenusportclassify");
+    let response = await fetch("https://farinush.github.io/digikalapro3/db.json");
     if (!response.ok) {
       throw new Error(`خطا در دریافت داده‌ها: ${response.status}`);
     }
@@ -4401,7 +4397,7 @@ export const fetchSubmenuItem10 = async () => {
 };
 export const fetchSubmenuItem11 = async () => {
   try {
-    let response = await fetch("http://localhost:3004/submenucarclassify");
+    let response = await fetch("https://farinush.github.io/digikalapro3/db.json");
     if (!response.ok) {
       throw new Error(`خطا در دریافت داده‌ها: ${response.status}`);
     }
@@ -4790,7 +4786,7 @@ export const fetchSubmenuItem11 = async () => {
 };
 export const fetchSubmenuItem12 = async () => {
   try {
-    let response = await fetch("http://localhost:3004/submenuabzarclassify");
+    let response = await fetch("https://farinush.github.io/digikalapro3/db.json");
     if (!response.ok) {
       throw new Error(`خطا در دریافت داده‌ها: ${response.status}`);
     }
@@ -5181,7 +5177,7 @@ export const fetchSubmenuItem12 = async () => {
 };
 export const fetchSubmenuItem13 = async () => {
   try {
-    let response = await fetch("http://localhost:3004/submenugiftclassify");
+    let response = await fetch("https://farinush.github.io/digikalapro3/db.json");
     if (!response.ok) {
       throw new Error(`خطا در دریافت داده‌ها: ${response.status}`);
     }
@@ -5573,7 +5569,7 @@ export const fetchSubmenuItem13 = async () => {
 export const fetchSubmenuItem14 = async () => {
   try {
     let response = await fetch(
-      "http://localhost:3004/submenusoopermarketclassify"
+      "https://farinush.github.io/digikalapro3/db.json"
     );
     if (!response.ok) {
       throw new Error(`خطا در دریافت داده‌ها: ${response.status}`);
@@ -5958,7 +5954,7 @@ export const fetchSubmenuItem14 = async () => {
 };
 export const fetchSubmenuItem15 = async () => {
   try {
-    let response = await fetch("http://localhost:3004/submenukidclassify");
+    let response = await fetch("https://farinush.github.io/digikalapro3/db.json");
     if (!response.ok) {
       throw new Error(`خطا در دریافت داده‌ها: ${response.status}`);
     }
@@ -6338,7 +6334,7 @@ export const fetchSubmenuItem15 = async () => {
 };
 export const fetchSubmenuItem16 = async () => {
   try {
-    let response = await fetch("http://localhost:3004/submenubomiclassify");
+    let response = await fetch("https://farinush.github.io/digikalapro3/db.json");
     if (!response.ok) {
       throw new Error(`خطا در دریافت داده‌ها: ${response.status}`);
     }
@@ -6889,19 +6885,15 @@ locationMenu();
 export const fetchShahr = async () => {
   let entekhabshahr = "";
   try {
-    let data = await fetch("http://localhost:3004/locationsearch");
+    let data = await fetch("https://farinush.github.io/digikalapro3/db.json");
     let res = await data.json();
-    
-    // بررسی اینکه آیا res یک شیء است و دسترسی به آن
     if (res && res.svg && res.title) {
-      // ایجاد محتوای HTML برای این شیء خاص
       entekhabshahr = `
         <div class="child_labelforshow w-[100%] h-[100%] flex flex-row flex-nowrap justify-start items-center">
           <img src="${res.svg}" alt="">
           ${res.title}
         </div>
       `;
-
       document.querySelector(".labelforshow").innerHTML = entekhabshahr;
     } else {
       console.error("Data is not in the expected format", res);
@@ -6913,15 +6905,10 @@ export const fetchShahr = async () => {
 export const fetchSubbottomcity = async () => {
   let subbottomcity = "";
   try {
-    let data = await fetch("http://localhost:3004/cityalldata");
+    let data = await fetch("https://farinush.github.io/digikalapro3/db.json");
     let res = await data.json();
-    
-    // بررسی اینکه داده‌ها به درستی دریافت شده‌اند
     if (res && res.titlename) {
-      // استخراج مقادیر مورد نیاز از شیء
       const cityNames = Object.keys(res).filter(key => key.startsWith('name')).map(key => res[key]);
-
-      // ساخت HTML برای هر یک از مقادیر
       subbottomcity = `
         <div class="text-sub-subbottomcity flex h-[10%] w-[inherit] flex-col flex-wrap gap-x-[5px] font-[yekan] mt-[25px] ps-[20px] text-[13px] text-[#2b2b2b] font-600">
           ${res.titlename}

@@ -4,7 +4,7 @@ export const fetchFourpics = async () => {
     let changeInterval;
   
     try {
-      let data = await fetch("http://localhost:3004/fourpics");
+      let data = await fetch("https://farinush.github.io/digikalapro3/db.json");
       let res = await data.json();
       fourpic += `
         <div class="subfourpics lg:w-[80%] w-[95%] my-[5px] mx-auto flex-row flex flex-wrap justify-center items-center gap-x-[15px] gap-y-[5px] ">

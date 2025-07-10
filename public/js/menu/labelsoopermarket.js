@@ -1,7 +1,7 @@
 export const fetchButtonsoop = async () => {
   let buttonlabel = "";
   try {
-    let data = await fetch("http://localhost:3004/buttonsoopermarket");
+    let data = await fetch("https://farinush.github.io/digikalapro3/db.json");
     let res = await data.json();
     buttonlabel += `
         <div class="labeldivsoopermarket flex justify-center items-center">
@@ -16,7 +16,7 @@ export const fetchButtonsoop = async () => {
 export const fetchSubbottonsoop = async () => {
   let subbotton = "";
   try {
-    let data = await fetch("http://localhost:3004/buttonsoopermarket");
+    let data = await fetch("https://farinush.github.io/digikalapro3/db.json");
     let res = await data.json();
     subbotton += `
         <div class="text-sub-subsoopermarket-button flex flex-col flex-wrap gap-x-[5px] font-[yekan] p-[20px]">

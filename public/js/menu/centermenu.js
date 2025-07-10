@@ -22,7 +22,7 @@ export function formShow() {
 }
 const fetchformShow = async () => {
   try {
-    const response = await fetch("http://localhost:3004/centerMenu");
+    const response = await fetch("https://farinush.github.io/digikalapro3/db.json");
     if (!response.ok) {
       throw new Error(`HTTP Error! Status: ${response.status}`);
     }
@@ -141,7 +141,7 @@ export default fetchformShow;
 
 export const fetchLogin= async()=>{
   try{
-let data=await fetch("http://localhost:3004/logincenter")
+let data=await fetch("https://farinush.github.io/digikalapro3/db.json")
 let res=await data.json()
 if (!res || !Array.isArray(res)) {
   console.error("Invalid data structure received");
@@ -160,11 +160,10 @@ document.querySelector(".login_center_menu").innerHTML=logincenter.join("")
     console.log(error.message)
   }
 }
-// اضافه کردن رویداد storage برای همگام‌سازی بین صفحات
 window.addEventListener('storage', function(event) {
   if (event.key === 'cart') {
     console.log('سبد خرید تغییر کرد');
-    updateCartPage(); // بروزرسانی سبد خرید در صفحه centermenu.js
+    updateCartPage(); 
   }
 });
 

@@ -1,7 +1,7 @@
 export const fetchHardfirst = async () => {
     let hardfirst = "";
     try {
-      let data = await fetch("http://localhost:3004/hard");
+      let data = await fetch("https://farinush.github.io/digikalapro3/db.json");
       let res = await data.json();
       hardfirst += `
            <img src="${res.svgfire}" alt="" class="w-[24px] h-[24px]"/>
@@ -19,7 +19,7 @@ export const fetchHardfirst = async () => {
   export const fetchHardsecond = async () => {
     let hardsecond = "";
     try {
-      let data = await fetch("http://localhost:3004/hard");
+      let data = await fetch("https://farinush.github.io/digikalapro3/db.json");
       let res = await data.json();
       hardsecond += `
                   <div class="swiper-slide  text-center text-[18px] bg-[#fff] flex justify-center items-center">

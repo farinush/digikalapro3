@@ -1,7 +1,7 @@
 export const fetchMobilehead = async () => {
   let mobileheadphone = "";
   try {
-    let data = await fetch("http://localhost:3004/mobileheadphone");
+    let data = await fetch("https://farinush.github.io/digikalapro3/db.json");
     let res = await data.json();
     mobileheadphone += `       
          <div class="sub_mobile-hedphone w-[90%] lg:w-[70%]  my-[10px] mx-auto lg:border-[1px] lg:border-solid lg:border-[lightgray] rounded-[10px] flex flex-row flex-wrap box-border justify-center items-center">

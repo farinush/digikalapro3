@@ -1,7 +1,7 @@
 export const fetchPoshtibanilabel=async()=>{
     let poshtibanilabel=""
     try{
-        let data=await fetch("http://localhost:3004/poshtibani")
+        let data=await fetch("https://farinush.github.io/digikalapro3/db.json")
         let res=await data.json()
         poshtibanilabel+=`<img src="${res.imglabel}" alt="" class="w-[30px] inline-block h-[30px] text-[whitesmoke]">`
         document.querySelector(".labelposhtibani").innerHTML=poshtibanilabel;
@@ -13,7 +13,7 @@ export const fetchPoshtibanilabel=async()=>{
 export const fetchSubposhtibani=async()=>{
     let subposhtibani1=""
     try{
-        let data=await fetch("http://localhost:3004/poshtibani")
+        let data=await fetch("https://farinush.github.io/digikalapro3/db.json")
         let res=await data.json()
         subposhtibani1+=`
          <div class="redbox-sub-subposhtibani w-[100%] h-[10%] bg-[#ef4055] font-[iranyekanmedium] text-[whitesmoke] leading-[55px] ps-[15px] rounded-tl-[15px] rounded-tr-[15px]">${res.subtitle1}</div>
@@ -78,7 +78,7 @@ async function poshtibaniView() {
       }
   }
   const checkInterval = setInterval(function() {
-      setupEventListeners(); // ثبت رویدادها
+      setupEventListeners(); 
       if (document.querySelector(".inputviewposhtibani") && document.querySelector(".subposhtibani") && document.querySelector(".inputshutposhtibani")) {
           clearInterval(checkInterval);
       }

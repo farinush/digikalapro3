@@ -1,7 +1,7 @@
 export const fetchActivebeyken = async () => {
   let activebeyken = "";
   try {
-    let data = await fetch("http://localhost:3004/activebeyken");
+    let data = await fetch("https://farinush.github.io/digikalapro3/db.json");
     let res = await data.json();
     activebeyken += `
         <div class="child__active-beyken lg:w-[71%] w-[90%]   mx-auto ">

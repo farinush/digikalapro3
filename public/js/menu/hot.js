@@ -1,7 +1,7 @@
 export const fetchHot = async () => {
     let hotkala = "";
     try {
-      let data = await fetch("http://localhost:3004/hotkala");
+      let data = await fetch("https://farinush.github.io/digikalapro3/db.json");
       let res = await data.json();
       hotkala += `
            <img src="${res.svgfire}" alt="" class="w-[24px] h-[24px]"/>
@@ -19,7 +19,7 @@ export const fetchHot = async () => {
   export const fetchHotsecond = async () => {
     let hotsecond = "";
     try {
-      let data = await fetch("http://localhost:3004/hotkala");
+      let data = await fetch("https://farinush.github.io/digikalapro3/db.json");
       resData = await data.json();
       hotsecond += `
                   <div class="swiper-slide text-center text-[18px] bg-[#fff] flex justify-center items-center">
@@ -236,10 +236,8 @@ items.forEach(item => {
 
       if (!itemExists) {
         cart.push(itemData);
-        localStorage.setItem('cart', JSON.stringify(cart));
-        
+        localStorage.setItem('cart', JSON.stringify(cart));        
         console.log('سبد خرید به روز شد:', cart);
-         // باز کردن سبد خرید و نمایش محتوای جدید
          const basketpage = document.querySelector(".basketpage");
          const subbasketpage = document.querySelector(".subbasketpage");
  

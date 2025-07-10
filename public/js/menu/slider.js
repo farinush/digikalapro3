@@ -1,7 +1,7 @@
 export const fetchSlider = async () => {
     let sliderswiper = "";
     try {
-      const data = await fetch("http://localhost:3004/slider");
+      const data = await fetch("https://farinush.github.io/digikalapro3/db.json");
       const res = await data.json();
       sliderswiper+= 
        `

@@ -1,10 +1,8 @@
 export const fetchDigitype = async () => {
     let digitype = "";
     try {
-      let data = await fetch("http://localhost:3004/digitype");
+      let data = await fetch("https://farinush.github.io/digikalapro3/db.json");
       let res = await data.json();
-  
-      // دسترسی به داده‌ها بدون استفاده از map
       digitype += `   
         <div class="subdigitype w-[70%] lg:h-[118px] m-auto pt-[15px] box-border flex flex-row flex-wrap lg:flex-nowrap justify-between items-center gap-y-[7px]" >
             <div class="child__subdigitype w-[140px] h-[79px]">

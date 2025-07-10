@@ -1,7 +1,7 @@
 export const fetchPanberiz = async () => {
   let panberiz = "";
   try {
-    let data = await fetch("http://localhost:3004/panberiz");
+    let data = await fetch("https://farinush.github.io/digikalapro3/db.json");
     let res = await data.json();
     panberiz += ` 
         <div class="sub-panberiz mx-auto w-[95%] lg:w-[71%] h-[167px] rounded-[20px]">

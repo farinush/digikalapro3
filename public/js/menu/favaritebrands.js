@@ -1,7 +1,7 @@
 export const fetchFavaritebrand = async () => {
   let favaritebrand = "";
   try {
-    let data = await fetch("http://localhost:3004/favaritebrands");
+    let data = await fetch("https://farinush.github.io/digikalapro3/db.json");
     let res = await data.json();
     favaritebrand += `
         <div class="svg__favaritebrands w-[30px] h-[30px] lg:absolute top-[20px]"><img src="${res.svgstar}" alt=""></div>
@@ -18,7 +18,7 @@ export const fetchFavaritebrand = async () => {
 export const fetchFavariteswiper = async () => {
   let favariteswiper = "";
   try {
-    let data = await fetch("http://localhost:3004/favaritebrands");
+    let data = await fetch("https://farinush.github.io/digikalapro3/db.json");
     let res = await data.json();
     favariteswiper += `
         

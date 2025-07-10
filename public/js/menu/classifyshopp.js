@@ -1,7 +1,7 @@
 export const fetchClassifyshopp = async () => {
   let classify = "";
   try {
-    let data = await fetch("http://localhost:3004/classifyshopp");
+    let data = await fetch("https://farinush.github.io/digikalapro3/db.json");
     let res = await data.json();
     classify += `
         <div class="sub__classifyshopping lg:w-[70%] lg:h-[452px] lg:flex lg:flex-col flex-wrap justify-center items-center my-[3px] mx-auto">

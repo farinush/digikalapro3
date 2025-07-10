@@ -1,7 +1,7 @@
 export const fetchSubfooter = async () => {
   let subfoot = "";
   try {
-    let data = await fetch("http://localhost:3004/subfooter");
+    let data = await fetch("https://farinush.github.io/digikalapro3/db.json");
     let res = await data.json();
     subfoot += `
      <div class="box-1 w-[100%] h-[40px] flex flex-row flex-wrap justify-center lg:justify-between box-border px-[50px]">

@@ -1,7 +1,7 @@
 export const fetchUniqeestil = async () => {
     let uniqeestil = "";
     try {
-      let data = await fetch("http://localhost:3004/uniqeestil");
+      let data = await fetch("https://farinush.github.io/digikalapro3/db.json");
       let res = await data.json();
       uniqeestil += `
           <div class="child__uniqe-estil w-[90%] lg:w-[71%]   mx-auto ">
