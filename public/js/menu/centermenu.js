@@ -160,122 +160,46 @@ document.querySelector(".login_center_menu").innerHTML=logincenter.join("")
     console.log(error.message)
   }
 }
+// اضافه کردن رویداد storage برای همگام‌سازی بین صفحات
+window.addEventListener('storage', function(event) {
+  if (event.key === 'cart') {
+    console.log('سبد خرید تغییر کرد');
+    updateCartPage(); // بروزرسانی سبد خرید در صفحه centermenu.js
+  }
+});
+
 async function basketPage() {
   function setupEventListeners() {
     const basketicon = document.querySelector(".basketicon");
     const basketpage = document.querySelector(".basketpage");
     const subbasketpage = document.querySelector(".subbasketpage");
 
-    if (basketicon && basketpage) {
-      
+    if (basketicon && basketpage && subbasketpage) {
       basketicon.addEventListener("mouseenter", function () {
         basketpage.classList.remove("hidden");
         basketpage.classList.add("block");
         subbasketpage.classList.remove("hidden");
         subbasketpage.classList.add("block");
       });
+
       basketpage.addEventListener("click", function () {
         basketpage.classList.add("hidden");
         basketpage.classList.remove("block");
         subbasketpage.classList.add("hidden");
         subbasketpage.classList.remove("block");
       });
+
       subbasketpage.addEventListener("click", function (e) {
-        e.stopPropagation(); 
+        e.stopPropagation();
       });
     }
   }
 
-  const checkInterval = setInterval(function() {
+  const checkInterval = setInterval(function () {
     setupEventListeners();
     if (document.querySelector(".basketicon") && document.querySelector(".basketpage")) {
       clearInterval(checkInterval);
     }
   }, 100);
 }
-basketPage()
-
-
-
-
-
-const items = document.querySelectorAll(".swiper-slide-child");
-
-items.forEach(item => {
-  item.addEventListener("click", function() {
-    const itemData = {
-      img: item.getAttribute('data-img'),
-      name: item.getAttribute('data-name'),
-      price: item.getAttribute('data-price')
-    };
-    if (itemData.img && itemData.name && itemData.price) {
-      let cart = JSON.parse(localStorage.getItem('cart')) || [];
-      const itemExists = cart.some(existingItem => existingItem.img === itemData.img && existingItem.name === itemData.name && existingItem.price === itemData.price);
-
-      if (!itemExists) {
-        cart.push(itemData);
-        localStorage.setItem('cart', JSON.stringify(cart));
-        
-        console.log('سبد خرید به روز شد:', cart);
-
-        // باز کردن سبد خرید بعد از اضافه کردن آیتم
-        const basketpage = document.querySelector(".basketpage");
-        const subbasketpage = document.querySelector(".subbasketpage");
-        
-        if (basketpage && subbasketpage) {
-          basketpage.classList.remove("hidden");
-          basketpage.classList.add("block");
-          subbasketpage.classList.remove("hidden");
-          subbasketpage.classList.add("block");
-        }
-
-        updateCartPage(); // به روز رسانی محتوای سبد خرید
-      } else {
-        console.log('این آیتم قبلاً در سبد خرید وجود دارد.');
-      }
-    } else {
-      console.log("داده‌های آیتم معتبر نیستند.");
-    }
-  });
-});
-function updateCartPage() {
-  const subbasketpage = document.querySelector(".subbasketpage");
-
-  if (subbasketpage) {
-    subbasketpage.innerHTML = ''; 
-    let cart = JSON.parse(localStorage.getItem('cart')) || [];
-    cart = cart.filter(item => item.img && item.name && item.price); 
-    localStorage.setItem('cart', JSON.stringify(cart)); 
-
-    if (cart.length > 0) {
-      cart.forEach(item => {
-        const itemElement = document.createElement('div');
-        itemElement.classList.add('cart-item');
-        itemElement.innerHTML = `
-          <div class="w-[98%] mt-[2px] mx-auto flex flex-row justify-around items-center border-[1px] border-solid border-[lightgray] rounded-[15px]">
-            <img src="${item.img}" alt="product image" class="w-[30%] h-[114px]" />
-            <p class="w-[40%] font-[iranyekanmedium] text-[#2b2b2b] text-ellipsis text-wrap text-[12px]">${item.name}</p>
-            <a class="deletebutton block w-[20%] h-[20px]" href="#">
-              <img src="./public/svg/trashplus.svg" alt=""/>
-            </a>
-          </div>
-        `;
-        
-        const deleteButton = itemElement.querySelector(".deletebutton");
-        deleteButton.addEventListener('click', (e) => {
-          e.preventDefault(); 
-          let cart = JSON.parse(localStorage.getItem('cart')) || [];
-          cart = cart.filter(cartItem => cartItem.name !== item.name); 
-          localStorage.setItem('cart', JSON.stringify(cart));
-          updateCartPage(); 
-        });
-
-        subbasketpage.appendChild(itemElement);
-      });
-    } else {
-      subbasketpage.innerHTML = '<p>سبد خرید شما خالی است.</p>';
-    }
-  }
-}
-
-updateCartPage(); 
+basketPage();

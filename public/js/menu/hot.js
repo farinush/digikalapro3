@@ -218,6 +218,8 @@ export const fetchHot = async () => {
         },
       });
       
+      updateCartPage();
+      
 const items = document.querySelectorAll(".swiper-slide-child");
 
 items.forEach(item => {
@@ -237,6 +239,29 @@ items.forEach(item => {
         localStorage.setItem('cart', JSON.stringify(cart));
         
         console.log('سبد خرید به روز شد:', cart);
+         // باز کردن سبد خرید و نمایش محتوای جدید
+         const basketpage = document.querySelector(".basketpage");
+         const subbasketpage = document.querySelector(".subbasketpage");
+ 
+         if (basketpage && subbasketpage) {
+           basketpage.classList.remove("hidden");
+           basketpage.classList.add("block");
+           subbasketpage.classList.remove("hidden");
+           subbasketpage.classList.add("block");
+
+           basketpage.addEventListener("click", function () {
+            basketpage.classList.add("hidden");
+            basketpage.classList.remove("block");
+            subbasketpage.classList.add("hidden");
+            subbasketpage.classList.remove("block");
+          });
+    
+          subbasketpage.addEventListener("click", function (e) {
+            e.stopPropagation();
+          });
+         }
+ 
+         
       } else {
         console.log('این آیتم قبلاً در سبد خرید وجود دارد.');
       }
@@ -249,7 +274,55 @@ items.forEach(item => {
     } catch (error) {
       console.log(error.message);
     }
+    
   };
+  function updateCartPage() {
+    console.log('در حال بروزرسانی صفحه سبد خرید'); // برای بررسی
+    const subbasketpage = document.querySelector(".subbasketpage");
+  
+    if (subbasketpage) {
+      subbasketpage.innerHTML = ''; // پاک کردن محتوای قبلی
+      let cart = JSON.parse(localStorage.getItem('cart')) || [];
+      cart = cart.filter(item => item.img && item.name && item.price); 
+      localStorage.setItem('cart', JSON.stringify(cart));
+  
+      if (cart.length > 0) {
+        // به جای انجام به روز رسانی مستقیم، از setTimeout استفاده می‌کنیم تا مرورگر زمان بده
+        setTimeout(() => {
+            cart.forEach(item => {
+                const itemElement = document.createElement('div');
+                itemElement.classList.add('cart-item');
+                itemElement.innerHTML = `
+                    <div class="w-[98%] mt-[2px] mx-auto flex flex-row justify-around items-center border-[1px] border-solid border-[lightgray] rounded-[15px]">
+                        <img src="${item.img}" alt="product image" class="w-[30%] h-[114px]" />
+                        <p class="w-[40%] font-[iranyekanmedium] text-[#2b2b2b] text-ellipsis text-wrap text-[12px]">${item.name}</p>
+                        <a class="deletebutton block w-[20%] h-[20px]" href="#">
+                            <img src="./public/svg/trashplus.svg" alt=""/>
+                        </a>
+                    </div>
+                `;
+                
+                const deleteButton = itemElement.querySelector(".deletebutton");
+                deleteButton.addEventListener('click', (e) => {
+                    e.preventDefault(); 
+                    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+                    cart = cart.filter(cartItem => cartItem.name !== item.name); 
+                    localStorage.setItem('cart', JSON.stringify(cart));
+                    updateCartPage(); // بروزرسانی پس از حذف آیتم
+                });
+
+                subbasketpage.appendChild(itemElement);
+                console.log('آیتم اضافه شد:', item); // برای بررسی
+            });
+        }, 50); 
+      } else {
+        subbasketpage.innerHTML = '<p>سبد خرید شما خالی است.</p>';
+        console.log('سبد خرید خالی است');
+      }
+    } else {
+      console.log('subbasketpage پیدا نشد');
+    }
+  }
 
 
   
