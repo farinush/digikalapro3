@@ -1483,43 +1483,63 @@
     "img18": "./public/images/story/image18.png",
     "name18": "آبمیوه گیری آسانسوری"
   },
-  "slider": {
-    "img1": "./public/images/slider/image1.jpg",
-    "img2": "./public/images/slider/image2.jpg",
-    "img3": "./public/images/slider/image3.jpg",
-    "img4": "./public/images/slider/image4.jpg",
-    "img5": "./public/images/slider/image5.jpg",
-    "img6": "./public/images/slider/image6.jpg",
-    "img7": "./public/images/slider/image7.jpg",
-    "img1small": "./public/images/slider/img1small.png",
-    "img2small": "./public/images/slider/img2small.png",
-    "img3small": "./public/images/slider/img3small.png",
-    "img4small": "./public/images/slider/img4small.png",
-    "img5small": "./public/images/slider/img5small.png",
-    "img6small": "./public/images/slider/img6small.png"
-  },
-  "digitype": {
-    "img1": "./public/images/digitype/image1.png",
-    "name1": "سوپرمارکت دیجی کالا",
-    "img2": "./public/images/digitype/image2.png",
-    "name2": "اعتبار 4 قسطه",
-    "img3": "./public/images/digitype/image3.png",
-    "name3": "خرید طلای دیجیتال",
-    "img4": "./public/images/digitype/image4.png",
-    "name4": "تخفیف موبایل کار کرده",
-    "img5": "./public/images/digitype/image5.png",
-    "name5": "پلاس",
-    "img6": "./public/images/digitype/image6.png",
-    "name6": "خریدموبایل",
-    "img7": "./public/images/digitype/image7.png",
-    "name7": "خریدچکی",
-    "img8": "./public/images/digitype/image8.png",
-    "name8": "دیجی کالا سرویس",
-    "img9": "./public/images/digitype/image9.png",
-    "name9": "دیجی استایل",
-    "imgsvg10": "./public/svg/digitype/divchild.svg",
-    "name10": "بیشتر"
-  },
+  "slider": [
+    { "id": 1, "img": "./public/images/slider/image1.jpg" },
+    { "id": 2, "img": "./public/images/slider/image2.jpg" },
+    { "id": 3, "img": "./public/images/slider/image3.jpg" },
+    { "id": 4, "img": "./public/images/slider/image4.jpg" },
+    { "id": 5, "img": "./public/images/slider/image5.jpg" },
+    { "id": 6, "img": "./public/images/slider/image6.jpg" },
+    { "id": 7, "img": "./public/images/slider/image7.jpg" }
+  ],
+  "digitype": [
+    {
+      "id": 1,
+      "img": "./public/images/digitype/image1.png",
+      "name": "سوپرمارکت دیجی کالا"
+    },
+    {
+      "id": 2,
+      "img": "./public/images/digitype/image2.png",
+      "name": "اعتبار 4 قسطه"
+    },
+    {
+      "id": 3,
+      "img": "./public/images/digitype/image3.png",
+      "name": "خرید طلای دیجیتال"
+    },
+    {
+      "id": 4,
+      "img": "./public/images/digitype/image4.png",
+      "name": "تخفیف موبایل کار کرده"
+    },
+    { "id": 5, "img": "./public/images/digitype/image5.png", "name": "پلاس" },
+    {
+      "id": 6,
+      "img": "./public/images/digitype/image6.png",
+      "name": "خریدموبایل"
+    },
+    {
+      "id": 7,
+      "img": "./public/images/digitype/image7.png",
+      "name": "خریدچکی"
+    },
+    {
+      "id": 8,
+      "img": "./public/images/digitype/image8.png",
+      "name": "دیجی کالا سرویس"
+    },
+    {
+      "id": 9,
+      "img": "./public/images/digitype/image9.png",
+      "name": "دیجی استایل"
+    },
+    {
+      "id": 10,
+      "img": "./public/svg/digitype/divchild.svg",
+      "name": "بیشتر"
+    }
+  ],
   "amazing": {
     "imgitem1": "./public/svg/amazing/comment.svg",
     "imgitem2": "./public/images/amazing/box.png",
