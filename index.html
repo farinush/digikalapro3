@@ -7,12 +7,15 @@
     <link rel="stylesheet" href="./public/css/main.css" />
     <link rel="stylesheet" href="./public/css/setting.css" />
     <link rel="stylesheet" href="./public/css/slider.css" />
-    <link rel="stylesheet" href="./public/css/custom.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./public/css/custom.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <style>
       body {
         direction: rtl;
-        margin:0;
+        margin: 0;
         padding: 0;
         overflow-y: scroll;
       }
@@ -20,78 +23,187 @@
   </head>
   <body>
     <div id="root">
-      <div class="menu ">
-        <div class="top_menu w-[100%] !h-[30px] lg:!h-[60px] ">
+      <div class="menu">
+        <div class="top_menu w-[100%] !h-[30px] lg:!h-[60px]">
           <a class="a_top_menu !h-[30px] lg:!h-[60px]" href="#"></a>
         </div>
         <div class="center_menu py-3 w-[100%] lg:h-[68px] lg:mt-[10px]">
-          <div class="child_center_menu lg:flex w-[100%] lg:w-[80%] h-[100%] mx-auto">
-            <div class="logo_center_menu hidden lg:!block lg:w-[14%] h-fit"></div>
-            <div class="form_center_menu w-[100%] lg:w-[75%] flex items-center lg:pe-[30px] relative">
-              <input class="lg:w-[50%] w-[100%] h-[45px] rounded-[20px] lg:rounded-[7px] outline-none border-2 border-[lightgrey] border-solid font-[iranyekanmedium] text-[14px] px-[50px] lg:px-[5%] mx-[3%] pl-[40px]" type="text" placeholder="جستجو"/>
-              <img src="./public/images/center-menu/svgexport-2.jpeg" alt="Search Icon" class="absolute right-[6%] top-[50%] transform -translate-y-[50%] w-[20px] h-[20px]"/>
-              <div class="overlay hidden fixed top-[200px] right-0 w-[100%] h-[100%] bg-[#2b2b2b]/[0.2] z-[999]"></div>
-              <div class="newItem hidden overflow-y-auto overflow-x-hidden absolute h-[453px] top-0 right-[3%] rounded-[7px] bg-[white] w-[95%] lg:w-[50%] border-2 border-solid p-[10px] border-[lightgrey] z-[1000]"></div>
+          <div
+            class="child_center_menu lg:flex w-[100%] lg:w-[80%] h-[100%] mx-auto"
+          >
+            <div
+              class="logo_center_menu hidden lg:!block lg:w-[14%] h-fit"
+            ></div>
+            <div
+              class="form_center_menu w-[100%] lg:w-[75%] flex items-center lg:pe-[30px] relative"
+            >
+              <input
+                class="lg:w-[50%] w-[100%] h-[45px] rounded-[20px] lg:rounded-[7px] outline-none border-2 border-[lightgrey] border-solid font-[iranyekanmedium] text-[14px] px-[50px] lg:px-[5%] mx-[3%] pl-[40px]"
+                type="text"
+                placeholder="جستجو"
+              />
+              <img
+                src="./public/images/center-menu/svgexport-2.jpeg"
+                alt="Search Icon"
+                class="absolute right-[6%] top-[50%] transform -translate-y-[50%] w-[20px] h-[20px]"
+              />
+              <div
+                class="overlay hidden fixed top-[200px] right-0 w-[100%] h-[100%] bg-[#2b2b2b]/[0.2] z-[999]"
+              ></div>
+              <div
+                class="newItem hidden overflow-y-auto overflow-x-hidden absolute h-[453px] top-0 right-[3%] rounded-[7px] bg-[white] w-[95%] lg:w-[50%] border-2 border-solid p-[10px] border-[lightgrey] z-[1000]"
+              ></div>
             </div>
-            <div class="locresponsive w-[100%] flex lg:!hidden font-[iranyekanmedium] text-[12px] mt-[15px] px-[15px] gap-x-[8px]">
-              
-            </div>
-            <div class="login_center_menu hidden lg:!flex justify-center items-center gap-x-[5px] w-[10%] h-fit"></div>
+            <div
+              class="locresponsive w-[100%] flex lg:!hidden font-[iranyekanmedium] text-[12px] mt-[15px] px-[15px] gap-x-[8px]"
+            ></div>
+            <div
+              class="login_center_menu hidden lg:!flex justify-center items-center gap-x-[5px] w-[10%] h-fit"
+            ></div>
             <div class="basket justify-center items-center hidden lg:!flex">
-              <a class="basketicon w-fit h-fit block justify-center items-center" href="#">
-              <img src="./public/svg/basket.svg" alt="basket Icon" />
-              <div class="basketpage hidden w-[100%] h-[100vh] fixed left-0 top-0 z-[4]">
-              <div class="subbasketpage w-[400px] h-[482px] bg-[white] shadow-lg left-[195px] overflow-scroll top-[135px] rounded-[15px] felx flex-col flex-wrap absolute border-[1px] border-solid border-[lightgray]"></div>
-              </div>
-            </a></div>
+              <a
+                class="basketicon w-fit h-fit block justify-center items-center"
+                href="#"
+              >
+                <img src="./public/svg/basket.svg" alt="basket Icon" />
+                <div
+                  class="basketpage hidden w-[100%] h-[100vh] fixed left-0 top-0 z-[4]"
+                >
+                  <div
+                    class="subbasketpage w-[400px] h-[482px] bg-[white] shadow-lg left-[195px] overflow-scroll top-[135px] rounded-[15px] felx flex-col flex-wrap absolute border-[1px] border-solid border-[lightgray]"
+                  ></div>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
-        <div class="botom_menu hidden lg:!flex w-[100%] h-[40px]  lg:flex-row flex-wrap">
-          <div class="header__bottom__menu w-[83%] h-[inherit] ps-[130px] relative">
-            <nav class="nav__menu w-[100%] h-[inherit] flex items-center flex-row flex-wrap gap-y-[10px]">
-             <div class="div__nav__menu w-fit h-[inherit]">
-              <a class="link__div__nav__menu w-[inherit] block h-[inherit] text-[#575455] px-[10px] leading-[40px] font-[iranyekanmedium] text-[13px] relative" href="#"></a>
-              <div class="submenu__div__nav__menu absolute top-[40px] z-50 right-0 w-screen h-screen bg-[#0e060680]/[0.5] hidden transition-all overflow-hidden ease-linear">
-                <div class="sub__submenu__div__nav__menu rounded-[12px] w-[60%] overflow-hidden !h-[70%] z-999 flex  bg-white absolute right-32 top-0 transition-all duration-300 ">
-                  <div class="right__sub__submenu__div__nav__menu overflow-scroll w-[25%] h-full bg-[#edefee]/[0.3]">
-                    <div class="item__right__sub__submenu__div__nav__menu1 flex w-[100%] h-[50px] items-center justify-center cursor-pointer text-[13px] pe-[10px]"></div>
-                    <div class="item__right__sub__submenu__div__nav__menu2 flex w-[100%] h-[50px] items-center justify-center cursor-pointer text-[13px] pe-[10px]"></div>
-                    <div class="item__right__sub__submenu__div__nav__menu3 flex w-[100%] h-[50px] items-center justify-center cursor-pointer text-[13px] pe-[10px]"></div>
-                    <div class="item__right__sub__submenu__div__nav__menu4 flex w-[100%] h-[50px] items-center justify-center cursor-pointer text-[13px] pe-[10px]"></div>
-                    <div class="item__right__sub__submenu__div__nav__menu5 flex w-[100%] h-[50px] items-center justify-center cursor-pointer text-[13px] pe-[10px]"></div>
-                    <div class="item__right__sub__submenu__div__nav__menu6 flex w-[100%] h-[50px] items-center justify-center cursor-pointer text-[13px] pe-[10px]"></div>
-                    <div class="item__right__sub__submenu__div__nav__menu7 flex w-[100%] h-[50px] items-center justify-center cursor-pointer text-[13px] pe-[10px]"></div>
-                    <div class="item__right__sub__submenu__div__nav__menu8 flex w-[100%] h-[50px] items-center justify-center cursor-pointer text-[13px] pe-[10px]"></div>
-                    <div class="item__right__sub__submenu__div__nav__menu9 flex w-[100%] h-[50px] items-center justify-center cursor-pointer text-[13px] pe-[10px]"></div>
-                    <div class="item__right__sub__submenu__div__nav__menu10 flex w-[100%] h-[50px] items-center justify-center cursor-pointer text-[13px] pe-[10px]"></div>
-                    <div class="item__right__sub__submenu__div__nav__menu11 flex w-[100%] h-[50px] items-center justify-center cursor-pointer text-[13px] pe-[10px]"></div>
-                    <div class="item__right__sub__submenu__div__nav__menu12 flex w-[100%] h-[50px] items-center justify-center cursor-pointer text-[13px] pe-[10px]"></div>
-                    <div class="item__right__sub__submenu__div__nav__menu13 flex w-[100%] h-[50px] items-center justify-center cursor-pointer text-[13px] pe-[10px]"></div>
-                    <div class="item__right__sub__submenu__div__nav__menu14 flex w-[100%] h-[50px] items-center justify-center cursor-pointer text-[13px] pe-[10px]"></div>
-                    <div class="item__right__sub__submenu__div__nav__menu15 flex w-[100%] h-[50px] items-center justify-center cursor-pointer text-[13px] pe-[10px]"></div>
-                    <div class="item__right__sub__submenu__div__nav__menu16 flex w-[100%] h-[50px] items-center justify-center cursor-pointer text-[13px] pe-[10px]"></div>
+        <div
+          class="botom_menu hidden lg:!flex w-[100%] h-[40px] lg:flex-row flex-wrap"
+        >
+          <div
+            class="header__bottom__menu w-[83%] h-[inherit] ps-[130px] relative"
+          >
+            <nav
+              class="nav__menu w-[100%] h-[inherit] flex items-center flex-row flex-wrap gap-y-[10px]"
+            >
+              <div class="div__nav__menu w-fit h-[inherit]">
+                <a
+                  class="link__div__nav__menu w-[inherit] block h-[inherit] text-[#575455] px-[10px] leading-[40px] font-[iranyekanmedium] text-[13px] relative"
+                  href="#"
+                ></a>
+                <div
+                  class="submenu__div__nav__menu absolute top-[40px] z-50 right-0 w-screen h-screen bg-[#0e060680]/[0.5] hidden transition-all overflow-hidden ease-linear"
+                >
+                  <div
+                    class="sub__submenu__div__nav__menu rounded-[12px] w-[60%] overflow-hidden !h-[70%] z-999 flex bg-white absolute right-32 top-0 transition-all duration-300"
+                  >
+                    <div
+                      class="right__sub__submenu__div__nav__menu overflow-scroll w-[25%] h-full bg-[#edefee]/[0.3]"
+                    >
+                      <div
+                        class="item__right__sub__submenu__div__nav__menu1 flex w-[100%] h-[50px] items-center justify-center cursor-pointer text-[13px] pe-[10px]"
+                      ></div>
+                      <div
+                        class="item__right__sub__submenu__div__nav__menu2 flex w-[100%] h-[50px] items-center justify-center cursor-pointer text-[13px] pe-[10px]"
+                      ></div>
+                      <div
+                        class="item__right__sub__submenu__div__nav__menu3 flex w-[100%] h-[50px] items-center justify-center cursor-pointer text-[13px] pe-[10px]"
+                      ></div>
+                      <div
+                        class="item__right__sub__submenu__div__nav__menu4 flex w-[100%] h-[50px] items-center justify-center cursor-pointer text-[13px] pe-[10px]"
+                      ></div>
+                      <div
+                        class="item__right__sub__submenu__div__nav__menu5 flex w-[100%] h-[50px] items-center justify-center cursor-pointer text-[13px] pe-[10px]"
+                      ></div>
+                      <div
+                        class="item__right__sub__submenu__div__nav__menu6 flex w-[100%] h-[50px] items-center justify-center cursor-pointer text-[13px] pe-[10px]"
+                      ></div>
+                      <div
+                        class="item__right__sub__submenu__div__nav__menu7 flex w-[100%] h-[50px] items-center justify-center cursor-pointer text-[13px] pe-[10px]"
+                      ></div>
+                      <div
+                        class="item__right__sub__submenu__div__nav__menu8 flex w-[100%] h-[50px] items-center justify-center cursor-pointer text-[13px] pe-[10px]"
+                      ></div>
+                      <div
+                        class="item__right__sub__submenu__div__nav__menu9 flex w-[100%] h-[50px] items-center justify-center cursor-pointer text-[13px] pe-[10px]"
+                      ></div>
+                      <div
+                        class="item__right__sub__submenu__div__nav__menu10 flex w-[100%] h-[50px] items-center justify-center cursor-pointer text-[13px] pe-[10px]"
+                      ></div>
+                      <div
+                        class="item__right__sub__submenu__div__nav__menu11 flex w-[100%] h-[50px] items-center justify-center cursor-pointer text-[13px] pe-[10px]"
+                      ></div>
+                      <div
+                        class="item__right__sub__submenu__div__nav__menu12 flex w-[100%] h-[50px] items-center justify-center cursor-pointer text-[13px] pe-[10px]"
+                      ></div>
+                      <div
+                        class="item__right__sub__submenu__div__nav__menu13 flex w-[100%] h-[50px] items-center justify-center cursor-pointer text-[13px] pe-[10px]"
+                      ></div>
+                      <div
+                        class="item__right__sub__submenu__div__nav__menu14 flex w-[100%] h-[50px] items-center justify-center cursor-pointer text-[13px] pe-[10px]"
+                      ></div>
+                      <div
+                        class="item__right__sub__submenu__div__nav__menu15 flex w-[100%] h-[50px] items-center justify-center cursor-pointer text-[13px] pe-[10px]"
+                      ></div>
+                      <div
+                        class="item__right__sub__submenu__div__nav__menu16 flex w-[100%] h-[50px] items-center justify-center cursor-pointer text-[13px] pe-[10px]"
+                      ></div>
+                    </div>
+                    <div
+                      class="all__submenu__item__right__sub__submenu__div__nav__menu block w-[75%] overflow-scroll h-[100%] bg-[#ffffff]"
+                    >
+                      <div
+                        class="submenu__right__sub__submenu__div__nav__menu1 block"
+                      ></div>
+                      <div
+                        class="submenu__right__sub__submenu__div__nav__menu2"
+                      ></div>
+                      <div
+                        class="submenu__right__sub__submenu__div__nav__menu3"
+                      ></div>
+                      <div
+                        class="submenu__right__sub__submenu__div__nav__menu4"
+                      ></div>
+                      <div
+                        class="submenu__right__sub__submenu__div__nav__menu5"
+                      ></div>
+                      <div
+                        class="submenu__right__sub__submenu__div__nav__menu6"
+                      ></div>
+                      <div
+                        class="submenu__right__sub__submenu__div__nav__menu7"
+                      ></div>
+                      <div
+                        class="submenu__right__sub__submenu__div__nav__menu8"
+                      ></div>
+                      <div
+                        class="submenu__right__sub__submenu__div__nav__menu9"
+                      ></div>
+                      <div
+                        class="submenu__right__sub__submenu__div__nav__menu10"
+                      ></div>
+                      <div
+                        class="submenu__right__sub__submenu__div__nav__menu11"
+                      ></div>
+                      <div
+                        class="submenu__right__sub__submenu__div__nav__menu12"
+                      ></div>
+                      <div
+                        class="submenu__right__sub__submenu__div__nav__menu13"
+                      ></div>
+                      <div
+                        class="submenu__right__sub__submenu__div__nav__menu14"
+                      ></div>
+                      <div
+                        class="submenu__right__sub__submenu__div__nav__menu15"
+                      ></div>
+                      <div
+                        class="submenu__right__sub__submenu__div__nav__menu16"
+                      ></div>
+                    </div>
                   </div>
-                  <div class="all__submenu__item__right__sub__submenu__div__nav__menu block w-[75%] overflow-scroll  h-[100%] bg-[#ffffff]">
-                    <div class="submenu__right__sub__submenu__div__nav__menu1 block"></div>
-                    <div class="submenu__right__sub__submenu__div__nav__menu2"></div>
-                    <div class="submenu__right__sub__submenu__div__nav__menu3"></div>
-                    <div class="submenu__right__sub__submenu__div__nav__menu4"></div>
-                    <div class="submenu__right__sub__submenu__div__nav__menu5"></div>
-                    <div class="submenu__right__sub__submenu__div__nav__menu6"></div>
-                    <div class="submenu__right__sub__submenu__div__nav__menu7"></div>
-                    <div class="submenu__right__sub__submenu__div__nav__menu8"></div>
-                    <div class="submenu__right__sub__submenu__div__nav__menu9"></div>
-                    <div class="submenu__right__sub__submenu__div__nav__menu10"></div>
-                    <div class="submenu__right__sub__submenu__div__nav__menu11"></div>
-                    <div class="submenu__right__sub__submenu__div__nav__menu12"></div>
-                    <div class="submenu__right__sub__submenu__div__nav__menu13"></div>
-                    <div class="submenu__right__sub__submenu__div__nav__menu14"></div>
-                    <div class="submenu__right__sub__submenu__div__nav__menu15"></div>
-                    <div class="submenu__right__sub__submenu__div__nav__menu16"></div>
-                  </div>
-                 </div>
-               </div>
-            </div>
+                </div>
+              </div>
               <span class="span__a"></span>
               <div class="div__2__nav__menu1"></div>
               <div class="div__2__nav__menu2"></div>
@@ -103,103 +215,183 @@
               <div class="div__2__nav__menu7"></div>
             </nav>
           </div>
-          <label for="up" class="labelforshow w-[17%] h-[inherit] relative font-[iranyekanmedium] text-[13px]  text-[#8b868c] gap-y-[5px] cursor-pointer"></label>
-          <input type="radio" id="up" name="click" class="inputforshow hidden"/>
-          <input type="radio" id="down" name="click" class="inputforclose hidden"/>
-          <div class="subbottomcity w-[100%] h-[100vh] bg-[#0c050580]  absolute left-0 top-0 hidden">
-            <div class="sub-subbottomcity w-[459px] h-[650px]  bg-white rounded-[8px]  absolute flex flex-col flex-wrap gap-x-[3px] custom-position">
-            </div>
+          <label
+            for="up"
+            class="labelforshow w-[17%] h-[inherit] relative font-[iranyekanmedium] text-[13px] text-[#8b868c] gap-y-[5px] cursor-pointer"
+          ></label>
+          <input
+            type="radio"
+            id="up"
+            name="click"
+            class="inputforshow hidden"
+          />
+          <input
+            type="radio"
+            id="down"
+            name="click"
+            class="inputforclose hidden"
+          />
+          <div
+            class="subbottomcity w-[100%] h-[100vh] bg-[#0c050580] absolute left-0 top-0 hidden"
+          >
+            <div
+              class="sub-subbottomcity w-[459px] h-[650px] bg-white rounded-[8px] absolute flex flex-col flex-wrap gap-x-[3px] custom-position"
+            ></div>
           </div>
         </div>
       </div>
-      <div class="story w-[100%] lg:h-[173px] flex flex-row flex-wrap border-t-2 border-t-solid border-t-gray-300 justify-center lg:mt-[20px] overflow-hidden lg:overflow-visible">
-        <div class="story__center  w-[1340px] lg:h-[173px] ">
-          <div class="swiper mySwiper w-[100%] h-[100%] ">
-          </div>
+      <div
+        class="story w-[100%] lg:h-[173px] flex flex-row flex-wrap border-t-2 border-t-solid border-t-gray-300 justify-center lg:mt-[20px] overflow-hidden lg:overflow-visible"
+      >
+        <div class="story__center w-[1340px] lg:h-[173px]">
+          <div class="swiper mySwiper w-[100%] h-[100%]"></div>
         </div>
       </div>
       <div class="slider w-[100%] mt-[20px] lg:mt-0 !h-[180px] lg:!h-[430px]">
-        <div class="swiper mySlider w-[100%] h-[100%]">
-        </div>
+        <div class="swiper mySlider w-[100%] h-[100%]"></div>
       </div>
       <div class="digitype w-[100%] lg:h-[118px]"></div>
-      <div class="amazing w-[100%] h-auto felx flex-row flex-wrap justify-center mt-[10px] lg:mt-0 lg:p-[20px] overflow-hidden lg:overflow-visible">
-        <div class="amazing__center w-[1336px] h-[300px] mx-auto box-border shadow-lg rounded-[15px] bg-[#ef3c51] py-[20px] px-[2px]">
-          <div class="swiper myamazing w-[100%] h-[100%]">
-          </div>
+      <div
+        class="amazing w-[100%] h-auto felx flex-row flex-wrap justify-center mt-[10px] lg:mt-0 lg:p-[20px] overflow-hidden lg:overflow-visible"
+      >
+        <div
+          class="amazing__center w-[1336px] h-[300px] mx-auto box-border shadow-lg rounded-[15px] bg-[#ef3c51] py-[20px] px-[2px]"
+        >
+          <div class="swiper myamazing w-[100%] h-[100%]"></div>
         </div>
       </div>
-      <div class="fourpics w-[100%] box-border mt-[8px]">
-      </div>
+      <div class="fourpics w-[100%] box-border mt-[8px]"></div>
       <div class="supermarketamazing w-[100%] mt-[50px]">
-        <div class="sub__supermarketamazing shadow-lg lg:w-[70%] w-[90%] bg-[#d8d9d9] rounded-[15px] m-auto"> 
-        </div>
+        <div
+          class="sub__supermarketamazing shadow-lg lg:w-[70%] w-[90%] bg-[#d8d9d9] rounded-[15px] m-auto"
+        ></div>
       </div>
       <div class="classifyshopping w-[100%] lg:h-[452px] pt-[20px]"></div>
-      <div class="active-beyken w-[100%]  pt-[5px] mt-[30px]"></div>
-      <div class="favaritebrands my-[30px] w-[100%] overflow-hidden lg:overflow-visible  pt-[6px]">
-        <div class="child__favaritebrands w-[1340px] h-[223px] border-[1px] border-solid border-[#d6d4d4b3] rounded-[17px] my-0 mx-auto flex flex-col flex-wrap justify-center items-center">
-          <div class="child1__favaritebrands pt-[20px] lg:pt-0 w-[100%] ps-[30px] lg:ps-0 h-[30%] text-center flex flex-row flex-nowrap justify-start lg:justify-center items-start lg:items-center relative">
-            
-          </div>
-          <div class="child2__favaritebrands w-[100%] h-[70%]">
-            <div class="swiper myfavaritebrands w-[99%] h-[100%]">
-
-            </div>
-        </div>
+      <div class="active-beyken w-[100%] pt-[5px] mt-[30px]">
+        <div class="child__active-beyken lg:w-[71%] w-[90%] mx-auto">
+          <a
+            class="subchild__active-beyken w-[100%] h-[100%] flex flex-row flex-wrap justify-around items-center gap-y-[12px]"
+            href="#"
+          >
+          </a>
         </div>
       </div>
-      <div class="uniqe-estil  w-[100%] pt-[5px] mt-[30px]"></div>
-      <div class="mobile-hedphone w-[100%]  mb-[10px]"></div>
-      <div class="hard w-[100%] flex flex-row flex-wrap items-center overflow-hidden lg:overflow-visible  p-[20px]">
-        <div class="hard-center w-[1310px] lg:border-[0.1px] mx-auto lg:border-solid lg:border-[lightgray] rounded-[10px] box-border lg:shadow-sm flex flex-col flex-wrap items-center">
-          <div class="hard-center-top w-[100%] font-[iranyekanmedium] text-[18px] font-normal text-[#2b2b2b] capitalize ps-[50px] lg:ps-0 text-start lg:text-center pt-[20px] flex flex-row flex-wrap lg:justify-center justify-start gap-y-[5px]">
-            
+      <div
+        class="favaritebrands my-[30px] w-[100%] overflow-hidden lg:overflow-visible pt-[6px]"
+      >
+        <div
+          class="child__favaritebrands w-[1340px] h-[223px] border-[1px] border-solid border-[#d6d4d4b3] rounded-[17px] my-0 mx-auto flex flex-col flex-wrap justify-center items-center"
+        >
+          <div
+            class="child1__favaritebrands pt-[20px] lg:pt-0 w-[100%] ps-[30px] lg:ps-0 h-[30%] text-center flex flex-row flex-nowrap justify-start lg:justify-center items-start lg:items-center relative"
+          ></div>
+          <div class="child2__favaritebrands w-[100%] h-[70%]">
+            <div class="swiper myfavaritebrands w-[99%] h-[100%]"></div>
           </div>
+        </div>
+      </div>
+      <div class="uniqe-estil w-[100%] pt-[5px] mt-[30px]">
+        <div class="child__uniqe-estil w-[90%] lg:w-[71%] mx-auto">
+          <a
+            class="subchild__uniqe-estil w-[100%] h-[100%] flex flex-row flex-wrap justify-around items-center gap-y-[12px]"
+            href="#">
+          </a>
+        </div>
+      </div>
+      <div class="mobile-hedphone w-[100%] mb-[10px]"></div>
+      <div
+        class="hard w-[100%] flex flex-row flex-wrap items-center overflow-hidden lg:overflow-visible p-[20px]"
+      >
+        <div
+          class="hard-center w-[1310px] lg:border-[0.1px] mx-auto lg:border-solid lg:border-[lightgray] rounded-[10px] box-border lg:shadow-sm flex flex-col flex-wrap items-center"
+        >
+          <div
+            class="hard-center-top w-[100%] font-[iranyekanmedium] text-[18px] font-normal text-[#2b2b2b] capitalize ps-[50px] lg:ps-0 text-start lg:text-center pt-[20px] flex flex-row flex-wrap lg:justify-center justify-start gap-y-[5px]"
+          ></div>
           <div class="hard-center-bottom w-[100%]">
-            <a href="#" class="a-hard-center-bottom h-[100%] w-[100%] text-[#2b2b2b]">
-              <div class="swiper myhard w-[99%] h-[100%]">
-                
-              </div>
+            <a
+              href="#"
+              class="a-hard-center-bottom h-[100%] w-[100%] text-[#2b2b2b]"
+            >
+              <div class="swiper myhard w-[99%] h-[100%]"></div>
             </a>
           </div>
         </div>
       </div>
-      <div class="saat-laptop w-[100%]  mb-[10px]"></div>
+      <div class="saat-laptop w-[100%] mb-[10px]"></div>
       <div class="panberiz w-[100%] mt-[30px]"></div>
       <div class="montakhab w-[100%]"></div>
-      <div class="hotkala w-[100%] flex flex-row flex-wrap justify-start lg:justify-center items-start lg:items-center p-[20px] overflow-hidden lg:overflow-visible">
-        <div class="hotkala-center w-[1310px] lg:border-[0.1px] lg:border-solid lg:border-[lightgray] rounded-[10px] box-border shadow-sm flex flex-col flex-wrap items-start lg:items-center">
-          <div class="hotkala-center-top w-[100%] h-[20%] font-[iranyekanmedium] text-[18px] font-normal text-[#2b2b2b] capitalize lg:text-center text-start pt-[20px] flex flex-row flex-wrap lg:justify-center ps-[50px] lg:ps-0 justify-start gap-y-[5px]">
-            
-          </div>
+      <div
+        class="hotkala w-[100%] flex flex-row flex-wrap justify-start lg:justify-center items-start lg:items-center p-[20px] overflow-hidden lg:overflow-visible"
+      >
+        <div
+          class="hotkala-center w-[1310px] lg:border-[0.1px] lg:border-solid lg:border-[lightgray] rounded-[10px] box-border shadow-sm flex flex-col flex-wrap items-start lg:items-center"
+        >
+          <div
+            class="hotkala-center-top w-[100%] h-[20%] font-[iranyekanmedium] text-[18px] font-normal text-[#2b2b2b] capitalize lg:text-center text-start pt-[20px] flex flex-row flex-wrap lg:justify-center ps-[50px] lg:ps-0 justify-start gap-y-[5px]"
+          ></div>
           <div class="hotkala-center-bottom h-[80%] w-[100%]">
-            <a href="#" class="a-hotkala-center-bottom h-[100%] w-[100%] text-[#2b2b2b]">
-              <div class="swiper myhotkala w-[99%] h-[100%]">
-                
-              </div>
+            <a
+              href="#"
+              class="a-hotkala-center-bottom h-[100%] w-[100%] text-[#2b2b2b]"
+            >
+              <div class="swiper myhotkala w-[99%] h-[100%]"></div>
             </a>
           </div>
         </div>
       </div>
       <div class="khandaniha w-[100%]"></div>
-      <footer class="w-[100%]  mt-[50px] lg:border-[1px] lg:border-solid lg:border-[lightgray] box-border">
-        <div class="subfooter w-[90%] h-[100%] m-auto box-border py-[30px]"></div>
+      <footer
+        class="w-[100%] mt-[50px] lg:border-[1px] lg:border-solid lg:border-[lightgray] box-border"
+      >
+        <div
+          class="subfooter w-[90%] h-[100%] m-auto box-border py-[30px]"
+        ></div>
       </footer>
-      <div class="digichild-brands w-[100%] h-[165px] bg-[#f0f0f0] hidden lg:!block"></div>
-      <label for="show" class="labelshowbutton w-[145px] h-[50px] bg-[#029a48] absolute bottom-[20px] right-[50%] lg:!right-[92%] !z-[100] lg:z-0 border-none box-border rounded-[30px] pe-[5px] flex flex-row flex-wrap items-center cursor-pointer font-[iranyekanmedium] justify-center gap-x-[3px] text-[whitesmoke] transition-all duration-500 ease-in-out"></label>
-    <input type="radio" id="show" name="click" class="inputshowsoop hidden">
-    <input type="radio" id="close" name="click" class="inputclosesoop hidden">
-    <div class="subsoopermarket-button w-[100%] h-[100vh] bg-[#0c050580] z-[2] fixed left-0 top-0 hidden">
-      <div class="sub-subsoopermarket-button w-[460px] h-[355px] bg-white  rounded-[8px] absolute custom-position"></div>
-    </div>
-    <label for="view" class="labelposhtibani hidden lg:!flex w-[50px] h-[50px] bg-[#ef4055] sticky bottom-[30px] right-[40px] z-0 border-none  justify-center text-center items-center box-border rounded-[50%]  cursor-pointer"></label>
-  <input type="radio" id="view" name="click" class="inputviewposhtibani hidden">
-  <input type="radio" id="shut" name="click" class="inputshutposhtibani hidden">
-  <div class="subposhtibani w-[100%] h-[100vh] z-[3] fixed  left-0 top-0 hidden">
-    <div class="sub-subposhtibani w-[361px] h-[550px] bg-[white] rounded-[15px] flex flex-col flex-wrap gap-x-[3px] border-[1px] absolute border-solid border-[#ef4055]">
-</div>
-  </div>
+      <div
+        class="digichild-brands w-[100%] h-[165px] bg-[#f0f0f0] hidden lg:!block"
+      ></div>
+      <label
+        for="show"
+        class="labelshowbutton w-[145px] h-[50px] bg-[#029a48] absolute bottom-[20px] right-[50%] lg:!right-[92%] !z-[100] lg:z-0 border-none box-border rounded-[30px] pe-[5px] flex flex-row flex-wrap items-center cursor-pointer font-[iranyekanmedium] justify-center gap-x-[3px] text-[whitesmoke] transition-all duration-500 ease-in-out"
+      ></label>
+      <input type="radio" id="show" name="click" class="inputshowsoop hidden" />
+      <input
+        type="radio"
+        id="close"
+        name="click"
+        class="inputclosesoop hidden"
+      />
+      <div
+        class="subsoopermarket-button w-[100%] h-[100vh] bg-[#0c050580] z-[2] fixed left-0 top-0 hidden"
+      >
+        <div
+          class="sub-subsoopermarket-button w-[460px] h-[355px] bg-white rounded-[8px] absolute custom-position"
+        ></div>
+      </div>
+      <label
+        for="view"
+        class="labelposhtibani hidden lg:!flex w-[50px] h-[50px] bg-[#ef4055] sticky bottom-[30px] right-[40px] z-0 border-none justify-center text-center items-center box-border rounded-[50%] cursor-pointer"
+      ></label>
+      <input
+        type="radio"
+        id="view"
+        name="click"
+        class="inputviewposhtibani hidden"
+      />
+      <input
+        type="radio"
+        id="shut"
+        name="click"
+        class="inputshutposhtibani hidden"
+      />
+      <div
+        class="subposhtibani w-[100%] h-[100vh] z-[3] fixed left-0 top-0 hidden"
+      >
+        <div
+          class="sub-subposhtibani w-[361px] h-[550px] bg-[white] rounded-[15px] flex flex-col flex-wrap gap-x-[3px] border-[1px] absolute border-solid border-[#ef4055]"
+        ></div>
+      </div>
     </div>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./public/js/main.js" type="module"></script>

@@ -1679,10 +1679,10 @@
     "img21": "./public/images/favaritebrands/pic21.png",
     "img22": "./public/images/favaritebrands/pic22.png"
   },
-  "uniqeestil": {
-    "img1": "./public/images/uniqeestil/image1.png",
-    "img2": "./public/images/uniqeestil/image2.png"
-  },
+  "uniqeestil": [
+    { "id": 1, "img": "./public/images/uniqeestil/image1.png" },
+    { "id": 2, "img": "./public/images/uniqeestil/image2.png" }
+  ],
   "mobileheadphone": {
     "title1": "گوشی موبایل",
     "title2": "کیف و کاور گوشی",
