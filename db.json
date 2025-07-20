@@ -1892,65 +1892,149 @@
     "h5text18": "1.960.000",
     "h6row18": "9.800.000"
   },
-  "hotkala": {
+  "hotsecond": [
+    {
+      "id": 1,
+      "section": [
+        {
+          "id": 1,
+          "img": "./public/images/hotkala/image1.png",
+          "number": 1,
+          "text": "ماشین ظرفشویی 15 نفره جی پلاس"
+        },
+        {
+          "id": 2,
+          "img": "./public/images/hotkala/image2.png",
+          "number": 2,
+          "text": "اسپیکر بلوتوثی قابل حمل کلومن مدل ks-145"
+        },
+        {
+          "id": 3,
+          "img": "./public/images/hotkala/image3.png",
+          "number": 3,
+          "text": "لپ تاپ 15.6 اینچی لنوو مدل v15 iRU-i5 1342oh-16GB"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "section": [
+        {
+          "id": 4,
+          "img": "./public/images/hotkala/image4.png",
+          "number": 4,
+          "text": "ساعت هوشمند شیائومی مدل smart ACTIVE,brand9,کنترل موسیقی"
+        },
+        {
+          "id": 5,
+          "img": "./public/images/hotkala/image5.png",
+          "number": 5,
+          "text": "پیراهن زنانه افراتین کد 9595"
+        },
+        {
+          "id": 6,
+          "img": "./public/images/hotkala/image6.png",
+          "number": 6,
+          "text": "دستگاه بخور سرد فرش لایف مدل c8"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "section": [
+        {
+          "id": 7,
+          "img": "./public/images/hotkala/image7.png",
+          "number": 7,
+          "text": "قرص کافئین نوفرما نچرالز-200میلی گرم بسته 100 عددی"
+        },
+        {
+          "id": 8,
+          "img": "./public/images/hotkala/image8.png",
+          "number": 8,
+          "text": "کفش کوهنوردی چرم عطارد مدل چرم طبیعی کد shk05"
+        },
+        {
+          "id": 9,
+          "img": "./public/images/hotkala/image9.png",
+          "number": 9,
+          "text": "سرویس چینی28 پارچه غذاخوری چینی زرین ایران سری ایتالیااف مد"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "section": [
+        {
+          "id": 10,
+          "img": "./public/images/hotkala/image10.png",
+          "number": 10,
+          "text": "سرویس غذاخوری 28 پارچه چینی زرین ایران مدل ایتالیا اف کامومیلا"
+        },
+        {
+          "id": 11,
+          "img": "./public/images/hotkala/image11.png",
+          "number": 11,
+          "text": "هدست بلوتوثی اکسیژن مدل e7"
+        },
+        {
+          "id": 12,
+          "img": "./public/images/hotkala/image12.png",
+          "number": 12,
+          "text": "سرخ کن بدون روغن کنوود مدل HFP90"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "section": [
+        {
+          "id": 13,
+          "img": "./public/images/hotkala/image13.png",
+          "number": 13,
+          "text": "سرویس غذاخوری 26پارچه دینو مدل 2001"
+        },
+        {
+          "id": 14,
+          "img": "./public/images/hotkala/image14.png",
+          "number": 14,
+          "text": "روکش صندلی خودروهایکو طرح اطلس چرم مناسب برای پژو206"
+        },
+        {
+          "id": 15,
+          "img": "./public/images/hotkala/image15.png",
+          "number": 15,
+          "text": "زاویه ساز فک و صورت مدل 3levelis 40.50.60 بسته 60عددی"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "section": [
+        {
+          "id": 16,
+          "img": "./public/images/hotkala/image16.png",
+          "number": 16,
+          "text": "خوشبوکننده هوا مدل summer حجم 250میلی لیتر"
+        },
+        {
+          "id": 17,
+          "img": "./public/images/hotkala/image17.png",
+          "number": 17,
+          "text": "قمقمه مدل Glax گنجایش 0.55لیتر به همراه ساک دستی و کابل"
+        },
+        {
+          "id": 18,
+          "img": "./public/images/hotkala/image18.png",
+          "number": 18,
+          "text": "قرص جوشان ویتامین ث 500 زینگ با طعم انبه سام راد درمان بسته 20عددی"
+        }
+      ]
+    }
+  ],
+  "hotkala2": {
     "trashsvg": "./public/svg/trashplus.svg",
-    "svgfire": "./public/svg/hard/fire.svg",
-    "titlefire": "داغ ترین چندساعت گذشته",
-    "subtitle": "مشاهده همه",
-    "img1": "./public/images/hotkala/image1.png",
-    "number1": 1,
-    "text1": "ماشین ظرفشویی 15 نفره جی پلاس",
-    "img2": "./public/images/hotkala/image2.png",
-    "number2": 2,
-    "text2": "اسپیکر بلوتوثی قابل حمل کلومن مدل ks-145",
-    "img3": "./public/images/hotkala/image3.png",
-    "number3": 3,
-    "text3": "لپ تاپ 15.6 اینچی لنوو مدل v15 iRU-i5 1342oh-16GB",
-    "img4": "./public/images/hotkala/image4.png",
-    "number4": 4,
-    "text4": "ساعت هوشمند شیائومی مدل smart ACTIVE,brand9,کنترل موسیقی",
-    "img5": "./public/images/hotkala/image5.png",
-    "number5": 5,
-    "text5": "پیراهن زنانه افراتین کد 9595",
-    "img6": "./public/images/hotkala/image6.png",
-    "number6": 6,
-    "text6": "دستگاه بخور سرد فرش لایف مدل c8",
-    "img7": "./public/images/hotkala/image7.png",
-    "number7": 7,
-    "text7": "قرص کافئین نوفرما نچرالز-200میلی گرم بسته 100 عددی",
-    "img8": "./public/images/hotkala/image8.png",
-    "number8": 8,
-    "text8": "کفش کوهنوردی چرم عطارد مدل چرم طبیعی کد shk05",
-    "img9": "./public/images/hotkala/image9.png",
-    "number9": 9,
-    "text9": "سرویس چینی28 پارچه غذاخوری چینی زرین ایران سری ایتالیااف مد",
-    "img10": "./public/images/hotkala/image10.png",
-    "number10": 10,
-    "text10": "سرویس غذاخوری 28 پارچه چینی زرین ایران مدل ایتالیا اف کامومیلا",
-    "img11": "./public/images/hotkala/image11.png",
-    "number11": 11,
-    "text11": "هدست بلوتوثی اکسیژن مدل e7",
-    "img12": "./public/images/hotkala/image12.png",
-    "number12": 12,
-    "text12": "سرخ کن بدون روغن کنوود مدل HFP90",
-    "img13": "./public/images/hotkala/image13.png",
-    "number13": 13,
-    "text13": "سرویس غذاخوری 26پارچه دینو مدل 2001",
-    "img14": "./public/images/hotkala/image14.png",
-    "number14": 14,
-    "text14": "روکش صندلی خودروهایکو طرح اطلس چرم مناسب برای پژو206",
-    "img15": "./public/images/hotkala/image15.png",
-    "number15": 15,
-    "text15": "زاویه ساز فک و صورت مدل 3levelis 40.50.60 بسته 60عددی",
-    "img16": "./public/images/hotkala/image16.png",
-    "number16": 16,
-    "text16": "خوشبوکننده هوا مدل summer حجم 250میلی لیتر",
-    "img17": "./public/images/hotkala/image17.png",
-    "number17": 17,
-    "text17": "قمقمه مدل Glax گنجایش 0.55لیتر به همراه ساک دستی و کابل",
-    "img18": "./public/images/hotkala/image18.png",
-    "number18": 18,
-    "text18": "قرص جوشان ویتامین ث 500 زینگ با طعم انبه سام راد درمان بسته 20عددی"
+    "subtitle": "مشاهده همه"
   },
   "khandaniha": {
     "title1": "خواندنی ها",

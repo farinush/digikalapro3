@@ -50,7 +50,7 @@ import { fetchHardfirst, fetchHardsecond } from "./menu/hard.js";
 import { fetchSaatlaptop } from "./menu/saatlaptop.js";
 import { fetchPanberiz } from "./menu/panberiz.js";
 import { fetchMontakhab } from "./menu/montakhab.js";
-import { fetchHot, fetchHotsecond } from "./menu/hot.js";
+import {fetchHotsecond } from "./menu/hot.js";
 import { fetchKhandaniha } from "./menu/khandaniha.js";
 import { buttonMore, buttonReverse, fetchSubfooter } from "./menu/subfooter.js";
 import { fetchDigichild } from "./menu/digichildbrand.js";
