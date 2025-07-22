@@ -1728,65 +1728,151 @@
     "text": "مشاهده",
     "svgfleshbechap": "./public/svg/mobile-headphone/svgfleshbechap.svg"
   },
-  "hard": {
-    "svgfire": "./public/svg/hard/fire.svg",
-    "titlefire": "پرفروش ترین کالاها",
-    "subtitle": "مشاهده همه",
-    "img1": "./public/images/hard/image1.png",
-    "number1": 1,
-    "text1": "هدفون بلوتوثی انکر مدل soundcore ",
-    "img2": "./public/images/hard/image2.png",
-    "number2": 2,
-    "text2": "رب گوجه فرنگی روژین مقدار 800 گرم",
-    "img3": "./public/images/hard/image3.png",
-    "number3": 3,
-    "text3": "پنیر فتا دوشه هراز-400گرم",
-    "img4": "./public/images/hard/image4.png",
-    "number4": 4,
-    "text4": "شکر سفیدالماس دانه-1کیلوگرم",
-    "img5": "./public/images/hard/image5.png",
-    "number5": 5,
-    "text5": "گوشی موبایل شیائومی مدل redmi note13 دو سیم کارت",
-    "img6": "./public/images/hard/image6.png",
-    "number6": 6,
-    "text6": "شامپومولتی ویتامین گلرنگ سری plus protein مدل oily",
-    "img7": "./public/images/hard/image7.png",
-    "number7": 7,
-    "text7": "هدفون بلوتوثی کیوسی وای مدل t13 ANC",
-    "img8": "./public/images/hard/image8.png",
-    "number8": 8,
-    "text8": "مرغ کامل سمین-1300گرم",
-    "img9": "./public/images/hard/image9.png",
-    "number9": 9,
-    "text9": "پنیر سفید ایرانی پگاه-400گرم",
-    "img10": "./public/images/hard/image10.png",
-    "number10": 10,
-    "text10": "مایع جرم گیر و تمیزکننده من مدل A2 حجم 1000میلی لیتر",
-    "img11": "./public/images/hard/image11.png",
-    "number11": 11,
-    "text11": "بیسکوییت با آردجو و شهدتوت ساقه طلایی مینو-170گرم",
-    "img12": "./public/images/hard/image12.png",
-    "number12": 12,
-    "text12": "مایع طرفشویی پریل مدل پرتغال وزن 1000 گرم",
-    "img13": "./public/images/hard/image13.png",
-    "number13": 13,
-    "text13": "خامه رامک-200 گرم",
-    "img14": "./public/images/hard/image14.png",
-    "number14": 14,
-    "text14": "پودر رختشویی دستی سافتلن مقدار 500 گرم",
-    "img15": "./public/images/hard/image15.png",
-    "number15": 15,
-    "text15": "مایع لباسشویی جنرال اکتیو مدل سبز حجم 2500 میلی لیتر",
-    "img16": "./public/images/hard/image16.png",
-    "number16": 16,
-    "text16": "هدفون بلوتوثی کیوسی وای مدل t13x",
-    "img17": "./public/images/hard/image17.png",
-    "number17": 17,
-    "text17": "کالباس 90 درصد گوشت مرغ مهیا پروتئین-250 گرم",
-    "img18": "./public/images/hard/image18.png",
-    "number18": 18,
-    "text18": "خامه صبحانه پاک-200 گرم"
-  },
+  "hardsecond": [
+    {
+      "id": 1,
+      "section": [
+        {
+          "id": 1,
+          "img": "./public/images/hard/image1.png",
+          "number": 1,
+          "text": "هدفون بلوتوثی انکر مدل soundcore "
+        },
+        {
+          "id": 2,
+          "img": "./public/images/hard/image2.png",
+          "number": 2,
+          "text": "رب گوجه فرنگی روژین مقدار 800 گرم"
+        },
+        {
+          "id": 3,
+          "img": "./public/images/hard/image3.png",
+          "number": 3,
+          "text": "پنیر فتا دوشه هراز-400گرم"
+        }
+      ]
+    },
+
+    {
+      "id": 2,
+      "section": [
+        {
+          "id": 4,
+          "img": "./public/images/hard/image4.png",
+          "number": 4,
+          "text": "شکر سفیدالماس دانه-1کیلوگرم"
+        },
+        {
+          "id": 5,
+          "img": "./public/images/hard/image5.png",
+          "number": 5,
+          "text": "گوشی موبایل شیائومی مدل redmi note13 دو سیم کارت"
+        },
+        {
+          "id": 6,
+          "img": "./public/images/hard/image6.png",
+          "number": 6,
+          "text": "شامپومولتی ویتامین گلرنگ سری plus protein مدل oily"
+        }
+      ]
+    },
+
+    {
+      "id": 3,
+      "section": [
+        {
+          "id": 7,
+          "img": "./public/images/hard/image7.png",
+          "number": 7,
+          "text": "هدفون بلوتوثی کیوسی وای مدل t13 ANC"
+        },
+        {
+          "id": 8,
+          "img": "./public/images/hard/image8.png",
+          "number": 8,
+          "text": "مرغ کامل سمین-1300گرم"
+        },
+        {
+          "id": 9,
+          "img": "./public/images/hard/image9.png",
+          "number": 9,
+          "text": "پنیر سفید ایرانی پگاه-400گرم"
+        }
+      ]
+    },
+
+    {
+      "id": 4,
+      "section": [
+        {
+          "id": 10,
+          "img": "./public/images/hard/image10.png",
+          "number": 10,
+          "text": "مایع جرم گیر و تمیزکننده من مدل A2 حجم 1000میلی لیتر"
+        },
+        {
+          "id": 11,
+          "img": "./public/images/hard/image11.png",
+          "number": 11,
+          "text": "بیسکوییت با آردجو و شهدتوت ساقه طلایی مینو-170گرم"
+        },
+        {
+          "id": 12,
+          "img": "./public/images/hard/image12.png",
+          "number": 12,
+          "text": "مایع طرفشویی پریل مدل پرتغال وزن 1000 گرم"
+        }
+      ]
+    },
+
+    {
+      "id": 5,
+      "section": [
+        {
+          "id": 13,
+          "img": "./public/images/hard/image13.png",
+          "number": 13,
+          "text": "خامه رامک-200 گرم"
+        },
+        {
+          "id": 14,
+          "img": "./public/images/hard/image14.png",
+          "number": 14,
+          "text": "پودر رختشویی دستی سافتلن مقدار 500 گرم"
+        },
+        {
+          "id": 15,
+          "img": "./public/images/hard/image15.png",
+          "number": 15,
+          "text": "مایع لباسشویی جنرال اکتیو مدل سبز حجم 2500 میلی لیتر"
+        }
+      ]
+    },
+
+    {
+      "id": 6,
+      "section": [
+        {
+          "id": 16,
+          "img": "./public/images/hard/image16.png",
+          "number": 16,
+          "text": "هدفون بلوتوثی کیوسی وای مدل t13x"
+        },
+        {
+          "id": 17,
+          "img": "./public/images/hard/image17.png",
+          "number": 17,
+          "text": "کالباس 90 درصد گوشت مرغ مهیا پروتئین-250 گرم"
+        },
+        {
+          "id": 18,
+          "img": "./public/images/hard/image18.png",
+          "number": 18,
+          "text": "خامه صبحانه پاک-200 گرم"
+        }
+      ]
+    }
+  ],
   "saatlaptop": {
     "title1": "ساعت هوشمند",
     "title2": "لپ تاپ و الترابوک",
@@ -1815,83 +1901,164 @@
   "panberiz": {
     "img1": "./public/images/panberiz/image1.png"
   },
-  "montakhab": {
-    "svgharaj": "./public/svg/montakhab/haraj.svg",
-    "subtitle": "منتخب محصولات تخفیف و حراج",
-    "svgtoman": "./public/svg/montakhab/toman.svg",
-    "img1": "./public/images/montakhab/image1.png",
-    "h6text1": "13%",
-    "h5text1": "1.049.000",
-    "h6row1": "1.199.000",
-    "img2": "./public/images/montakhab/image2.png",
-    "h6text2": "89%",
-    "h5text2": "48.400",
-    "h6row2": "440.000",
-    "img3": "./public/images/montakhab/image3.png",
-    "h6text3": "52%",
-    "h5text3": "157.440",
-    "h6row3": "328.000",
-    "img4": "./public/images/montakhab/image4.png",
-    "h6text4": "11%",
-    "h5text4": "9.229.000",
-    "h6row4": "10.390.000",
-    "img5": "./public/images/montakhab/image5.png",
-    "h6text5": "89%",
-    "h5text5": "55.000",
-    "h6row5": "500.000",
-    "img6": "./public/images/montakhab/image6.png",
-    "h6text6": "50%",
-    "h5text6": "190.000",
-    "h6row6": "380.000",
-    "img7": "./public/images/montakhab/image7.png",
-    "h6text7": "10%",
-    "h5text7": "8.549.000",
-    "h6row7": "9.540.000",
-    "img8": "./public/images/montakhab/image8.png",
-    "h6text8": "89%",
-    "h5text8": "279.000",
-    "h6row8": "2.650.000",
-    "img9": "./public/images/montakhab/image9.png",
-    "h6text9": "46%",
-    "h5text9": "536.000",
-    "h6row9": "1.000.000",
-    "img10": "./public/images/montakhab/image10.png",
-    "h6text10": "89%",
-    "h5text10": "1.150.000",
-    "h6row10": "5.000.000",
-    "img11": "./public/images/montakhab/image11.png",
-    "h6text11": "89%",
-    "h5text11": "1.060.000",
-    "h6row11": "10.000.000",
-    "img12": "./public/images/montakhab/image12.png",
-    "h6text12": "89%",
-    "h5text12": "66.660",
-    "h6row12": "120.000",
-    "img13": "./public/images/montakhab/image13.png",
-    "h6text13": "89%",
-    "h5text13": "55.000",
-    "h6row13": "500.000",
-    "img14": "./public/images/montakhab/image14.png",
-    "h6text14": "89%",
-    "h5text14": "1.060.000",
-    "h6row14": "10.000.000",
-    "img15": "./public/images/montakhab/image15.png",
-    "h6text15": "44%",
-    "h5text15": "660.000",
-    "h6row15": "6.000.000",
-    "img16": "./public/images/montakhab/image16.png",
-    "h6text16": "89%",
-    "h5text16": "104.500",
-    "h6row16": "950.000",
-    "img17": "./public/images/montakhab/image17.png",
-    "h6text17": "89%",
-    "h5text17": "1.060.000",
-    "h6row17": "10.000.000",
-    "img18": "./public/images/montakhab/image18.png",
-    "h6text18": "80%",
-    "h5text18": "1.960.000",
-    "h6row18": "9.800.000"
-  },
+  "montakhab": [
+    {
+      "id": 1,
+      "section": [
+        {
+          "id": 1,
+          "img": "./public/images/montakhab/image1.png",
+          "h6text": "13%",
+          "h5text": "1.049.000",
+          "h6row": "1.199.000"
+        },
+        {
+          "id": 2,
+          "img": "./public/images/montakhab/image2.png",
+          "h6text": "89%",
+          "h5text": "48.400",
+          "h6row": "440.000"
+        },
+        {
+          "id": 3,
+          "img": "./public/images/montakhab/image3.png",
+          "h6text": "52%",
+          "h5text": "157.440",
+          "h6row": "328.000"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "section": [
+        {
+          "id": 4,
+          "img": "./public/images/montakhab/image4.png",
+          "h6text": "11%",
+          "h5text": "9.229.000",
+          "h6row": "10.390.000"
+        },
+        {
+          "id": 5,
+          "img": "./public/images/montakhab/image5.png",
+          "h6text": "89%",
+          "h5text": "55.000",
+          "h6row": "500.000"
+        },
+        {
+          "id": 6,
+          "img": "./public/images/montakhab/image6.png",
+          "h6text": "50%",
+          "h5text": "190.000",
+          "h6row": "380.000"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "section": [
+        {
+          "id": 7,
+          "img": "./public/images/montakhab/image7.png",
+          "h6text": "10%",
+          "h5text": "8.549.000",
+          "h6row": "9.540.000"
+        },
+        {
+          "id": 8,
+          "img": "./public/images/montakhab/image8.png",
+          "h6text": "89%",
+          "h5text": "279.000",
+          "h6row": "2.650.000"
+        },
+        {
+          "id": 9,
+          "img": "./public/images/montakhab/image9.png",
+          "h6text": "46%",
+          "h5text": "536.000",
+          "h6row": "1.000.000"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "section": [
+        {
+          "id": 10,
+          "img": "./public/images/montakhab/image10.png",
+          "h6text": "89%",
+          "h5text": "1.150.000",
+          "h6row": "5.000.000"
+        },
+        {
+          "id": 11,
+          "img": "./public/images/montakhab/image11.png",
+          "h6text": "89%",
+          "h5text": "1.060.000",
+          "h6row": "10.000.000"
+        },
+        {
+          "id": 12,
+          "img": "./public/images/montakhab/image12.png",
+          "h6text": "89%",
+          "h5text": "66.660",
+          "h6row": "120.000"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "section": [
+        {
+          "id": 13,
+          "img": "./public/images/montakhab/image13.png",
+          "h6text": "89%",
+          "h5text": "55.000",
+          "h6row": "500.000"
+        },
+        {
+          "id": 14,
+          "img": "./public/images/montakhab/image14.png",
+          "h6text": "89%",
+          "h5text": "1.060.000",
+          "h6row": "10.000.000"
+        },
+        {
+          "id": 15,
+          "img": "./public/images/montakhab/image15.png",
+          "h6text": "44%",
+          "h5text": "660.000",
+          "h6row": "6.000.000"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "section": [
+        {
+          "id": 16,
+          "img": "./public/images/montakhab/image16.png",
+          "h6text": "89%",
+          "h5text": "104.500",
+          "h6row": "950.000"
+        },
+        {
+          "id": 17,
+          "img": "./public/images/montakhab/image17.png",
+          "h6text": "89%",
+          "h5text": "1.060.000",
+          "h6row": "10.000.000"
+        },
+        {
+          "id": 18,
+          "img": "./public/images/montakhab/image18.png",
+          "h6text": "80%",
+          "h5text": "1.960.000",
+          "h6row": "9.800.000"
+        }
+      ]
+    }
+  ],
   "hotsecond": [
     {
       "id": 1,
@@ -2032,10 +2199,6 @@
       ]
     }
   ],
-  "hotkala2": {
-    "trashsvg": "./public/svg/trashplus.svg",
-    "subtitle": "مشاهده همه"
-  },
   "khandaniha": {
     "title1": "خواندنی ها",
     "title2": "مطالب بیشتر در دیجی کالا مگ",
