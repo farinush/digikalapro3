@@ -1873,34 +1873,89 @@
       ]
     }
   ],
-  "saatlaptop": {
-    "title1": "ساعت هوشمند",
-    "title2": "لپ تاپ و الترابوک",
-    "title3": "ساعت عقربه ای مردانه",
-    "title4": "سایر لوازم خودرو",
-    "subtitle": "براساس سلیقه شما",
-    "img1": "./public/images/saatlaptop/image1.png",
-    "img2": "./public/images/saatlaptop/image2.png",
-    "img3": "./public/images/saatlaptop/image3.png",
-    "img4": "./public/images/saatlaptop/image4.png",
-    "img5": "./public/images/saatlaptop/image5.png",
-    "img6": "./public/images/saatlaptop/image6.png",
-    "img7": "./public/images/saatlaptop/image7.png",
-    "img8": "./public/images/saatlaptop/image8.png",
-    "img9": "./public/images/saatlaptop/image9.png",
-    "img10": "./public/images/saatlaptop/image10.png",
-    "img11": "./public/images/saatlaptop/image11.png",
-    "img12": "./public/images/saatlaptop/image12.png",
-    "img13": "./public/images/saatlaptop/image13.png",
-    "img14": "./public/images/saatlaptop/image14.png",
-    "img15": "./public/images/saatlaptop/image15.png",
-    "img16": "./public/images/saatlaptop/image16.png",
-    "text": "مشاهده",
-    "svgfleshbechap": "./public/svg/mobile-headphone/svgfleshbechap.svg"
-  },
-  "panberiz": {
-    "img1": "./public/images/panberiz/image1.png"
-  },
+  "saatlaptop": [
+    {
+      "id": 1,
+      "title": "ساعت هوشمند",
+      "section": [
+        {
+          "id": 1,
+          "part": [
+            { "id": 1, "img": "./public/images/saatlaptop/image1.png" },
+            { "id": 2, "img": "./public/images/saatlaptop/image2.png" }
+          ]
+        },
+        {
+          "id": 2,
+          "part": [
+            { "id": 3, "img": "./public/images/saatlaptop/image3.png" },
+            { "id": 4, "img": "./public/images/saatlaptop/image4.png" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "لپ تاپ و الترابوک",
+      "section": [
+        {
+          "id": 3,
+          "part": [
+            { "id": 5, "img": "./public/images/saatlaptop/image5.png" },
+            { "id": 6, "img": "./public/images/saatlaptop/image6.png" }
+          ]
+        },
+
+        {
+          "id": 4,
+          "part": [
+            { "id": 7, "img": "./public/images/saatlaptop/image7.png" },
+            { "id": 8, "img": "./public/images/saatlaptop/image8.png" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "ساعت عقربه ای مردانه",
+      "section": [
+        {
+          "id": 5,
+          "part": [
+            { "id": 9, "img": "./public/images/saatlaptop/image9.png" },
+            { "id": 10, "img": "./public/images/saatlaptop/image10.png" }
+          ]
+        },
+        {
+          "id": 6,
+          "part": [
+            { "id": 11, "img": "./public/images/saatlaptop/image11.png" },
+            { "id": 12, "img": "./public/images/saatlaptop/image12.png" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "سایر لوازم خودرو",
+      "section": [
+        {
+          "id": 7,
+          "part": [
+            { "id": 13, "img": "./public/images/saatlaptop/image13.png" },
+            { "id": 14, "img": "./public/images/saatlaptop/image14.png" }
+          ]
+        },
+        {
+          "id": 8,
+          "part": [
+            { "id": 15, "img": "./public/images/saatlaptop/image15.png" },
+            { "id": 16, "img": "./public/images/saatlaptop/image16.png" }
+          ]
+        }
+      ]
+    }
+  ],
   "montakhab": [
     {
       "id": 1,
@@ -2199,19 +2254,28 @@
       ]
     }
   ],
-  "khandaniha": {
-    "title1": "خواندنی ها",
-    "title2": "مطالب بیشتر در دیجی کالا مگ",
-    "svgfleshbechap": "./public/svg/khandaniha/svgfleshbechap.svg",
-    "img1": "./public/images/khandaniha/image1.png",
-    "p1": "راهنمای جامع ثبت و استعلام چک صیادی",
-    "img2": "./public/images/khandaniha/image2.png",
-    "p2": "10کتاب جذاب برای هدبه به آقایان",
-    "img3": "./public/images/khandaniha/image3.png",
-    "p3": "ترکیب آب جوش ,عسل و آبلیمو برای سرماخوردگی",
-    "img4": "./public/images/khandaniha/image4.png",
-    "p4": "قرص منیزیم برای چیست و مصرف آن چه فوایدی و عوارضی دارد؟"
-  },
+  "khandaniha": [
+    {
+      "id": 1,
+      "img": "./images/khandaniha/image1.png",
+      "p": "ترندترین ترین مدل های شومیز مشکی 1404;راهنمای خرید"
+    },
+    {
+      "id": 2,
+      "img": "./images/khandaniha/image2.png",
+      "p": "جی بی واتساپ(GB Whatsapp)چیست و چه کاربرد هایی دارد؟"
+    },
+    {
+      "id": 3,
+      "img": "./images/khandaniha/image3.png",
+      "p": "معرفی کد بهترین یسته اینترنت همراه اول یک ماهه"
+    },
+    {
+      "id": 4,
+      "img": "./images/khandaniha/image4.png",
+      "p": "پایان فصل سوم بازی مرکب از آینده ی این مجموعه چه میگوید؟"
+    }
+  ],
   "subfooter": {
     "svgdigikala": "./public/svg/subfooter/svgdigikala.svg",
     "button1": "بازگشت به بالا",

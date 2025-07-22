@@ -46,9 +46,8 @@ import {
 } from "./menu/favaritebrands.js";
 import { fetchUniqeestil } from "./menu/uniqeestil.js";
 import { fetchMobilehead } from "./menu/mobileheadphone.js";
-import { fetchHardfirst, fetchHardsecond } from "./menu/hard.js";
+import { fetchHardsecond } from "./menu/hard.js";
 import { fetchSaatlaptop } from "./menu/saatlaptop.js";
-import { fetchPanberiz } from "./menu/panberiz.js";
 import { fetchMontakhab } from "./menu/montakhab.js";
 import {fetchHotsecond } from "./menu/hot.js";
 import { fetchKhandaniha } from "./menu/khandaniha.js";
@@ -108,7 +107,6 @@ fetchUniqeestil();
 fetchMobilehead();
 fetchHardsecond();
 fetchSaatlaptop();
-fetchPanberiz();
 fetchMontakhab();
 fetchHotsecond();
 fetchKhandaniha();
