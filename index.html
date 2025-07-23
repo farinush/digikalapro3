@@ -30,58 +30,48 @@
           </a>
         </div>
         <div class="center_menu py-3 w-[100%] lg:h-[68px] lg:mt-[10px]">
-          <div
-            class="child_center_menu lg:flex w-[100%] lg:w-[80%] h-[100%] mx-auto"
-          >
-            <div
-              class="logo_center_menu hidden lg:!block lg:w-[14%] h-fit"
-            ></div>
-            <div
-              class="form_center_menu w-[100%] lg:w-[75%] flex items-center lg:pe-[30px] relative"
-            >
-              <input
-                class="lg:w-[50%] w-[100%] h-[45px] rounded-[20px] lg:rounded-[7px] outline-none border-2 border-[lightgrey] border-solid font-[iranyekanmedium] text-[14px] px-[50px] lg:px-[5%] mx-[3%] pl-[40px]"
-                type="text"
-                placeholder="جستجو"
-              />
-              <img
-                src="./public/images/center-menu/svgexport-2.jpeg"
-                alt="Search Icon"
-                class="absolute right-[6%] top-[50%] transform -translate-y-[50%] w-[20px] h-[20px]"
-              />
-              <div
-                class="overlay hidden fixed top-[200px] right-0 w-[100%] h-[100%] bg-[#2b2b2b]/[0.2] z-[999]"
-              ></div>
-              <div
-                class="newItem hidden overflow-y-auto overflow-x-hidden absolute h-[453px] top-0 right-[3%] rounded-[7px] bg-[white] w-[95%] lg:w-[50%] border-2 border-solid p-[10px] border-[lightgrey] z-[1000]"
-              ></div>
+          <div class="child_center_menu lg:flex w-[100%] lg:w-[80%] h-[100%] mx-auto">
+            <div class="logo_center_menu hidden lg:!block lg:w-[14%] h-fit"></div>
+            <div class="form_center_menu w-[100%] lg:w-[75%] flex items-center lg:pe-[30px] relative">
+              <input class="lg:w-[50%] w-[100%] h-[45px] rounded-[20px] lg:rounded-[7px] outline-none border-2 border-[lightgrey] border-solid font-[iranyekanmedium] text-[14px] px-[50px] lg:px-[5%] mx-[3%] pl-[40px]" type="text" placeholder="جستجو"/>
+              <img src="./public/images/center-menu/svgexport-2.jpeg" alt="Search Icon" class="absolute right-[6%] top-[50%] transform -translate-y-[50%] w-[20px] h-[20px]"/>
+              <div class="overlay hidden fixed top-[200px] right-0 w-[100%] h-[100%] bg-[#2b2b2b]/[0.2] z-[999]"></div>
+              <div class="newItem hidden overflow-y-auto overflow-x-hidden absolute h-[453px] top-0 right-[3%] rounded-[7px] bg-[white] w-[95%] lg:w-[50%] border-2 border-solid p-[10px] border-[lightgrey] z-[1000]">
+                <input type="text" placeholder="جستجو"  class="border-none outline-none font-[iranyekanmedium] text-[14px] text-[#9c9797] mx-5" />
+                <hr class="w-[95%] mx-auto mt-[15px] mb-[20px] h-[2px] bg-[#df2a2a]" />
+               <img class="block w-[95%] shadow-md mx-auto"  src="./public/images/center-menu/image-2.jpg" alt="search-image" />
+               <div class="data-lastshop mx-[5%] mt-[5%] w-[100%] justify-center h-[48px] flex flex-row">
+                 <div class="svg-clock h-fit w-[7%]"><img src="./public/svg/lastshop.svg" alt="Clock Icon"/></div>
+                 <div class="w-[95%] h-fit font-[iranyekanmedium] text-[#424158] text-[14px]"> آخرین جستجوهای شما</div>
+                 <div class="svg-trash w-[20%] h-fit"><img src="./public/svg/trash.svg" alt="Trash Icon"/></div>
+                </div>
+                 <div class="items-slider1">
+                     <div class="swiper myslider">
+                     </div>
+                 </div>
+                <div class="famous mx-[5%] mt-[5%] w-[100%] justify-center h-[48px] flex flex-row">
+                  <div class="svg-fire h-fit w-[7%]"><img src="./public/svg/fire.svg" alt="Fire Icon"/></div>
+                  <div class="w-[95%] h-fit font-[iranyekanmedium] text-[#424158] text-[14px]">جستجوهای پرطرفدار</div>
+                </div>
+                <div class="items-slider2">
+                     <div class="swiper myslider">
+                     </div>
+                 </div>
+              </div>
             </div>
-            <div
-              class="locresponsive w-[100%] flex lg:!hidden font-[iranyekanmedium] text-[12px] mt-[15px] px-[15px] gap-x-[8px]"
-            ></div>
-            <div
-              class="login_center_menu hidden lg:!flex justify-center items-center gap-x-[5px] w-[10%] h-fit"
-            ></div>
+            <div class="locresponsive w-[100%] flex lg:!hidden font-[iranyekanmedium] text-[12px] mt-[15px] px-[15px] gap-x-[8px]"></div>
+            <div class="login_center_menu hidden lg:!flex justify-center items-center gap-x-[5px] w-[10%] h-fit"></div>
             <div class="basket justify-center items-center hidden lg:!flex">
-              <a
-                class="basketicon w-fit h-fit block justify-center items-center"
-                href="#"
-              >
+              <a class="basketicon w-fit h-fit block justify-center items-center" href="#">
                 <img src="./public/svg/basket.svg" alt="basket Icon" />
-                <div
-                  class="basketpage hidden w-[100%] h-[100vh] fixed left-0 top-0 z-[4]"
-                >
-                  <div
-                    class="subbasketpage w-[400px] h-[482px] bg-[white] shadow-lg left-[195px] overflow-scroll top-[135px] rounded-[15px] felx flex-col flex-wrap absolute border-[1px] border-solid border-[lightgray]"
-                  ></div>
+                <div class="basketpage hidden w-[100%] h-[100vh] fixed left-0 top-0 z-[4]">
+                  <div class="subbasketpage w-[400px] h-[482px] bg-[white] shadow-lg left-[195px] overflow-scroll top-[135px] rounded-[15px] felx flex-col flex-wrap absolute border-[1px] border-solid border-[lightgray]"></div>
                 </div>
               </a>
             </div>
           </div>
         </div>
-        <div
-          class="botom_menu hidden lg:!flex w-[100%] h-[40px] lg:flex-row flex-wrap"
-        >
+        <div class="botom_menu hidden lg:!flex w-[100%] h-[40px] lg:flex-row flex-wrap">
           <div
             class="header__bottom__menu w-[83%] h-[inherit] ps-[130px] relative"
           >
@@ -242,9 +232,7 @@
           </div>
         </div>
       </div>
-      <div
-        class="story w-[100%] lg:h-[173px] flex flex-row flex-wrap border-t-2 border-t-solid border-t-gray-300 justify-center lg:mt-[20px] overflow-hidden lg:overflow-visible"
-      >
+      <div class="story w-[100%] lg:h-[173px] flex flex-row flex-wrap border-t-2 border-t-solid border-t-gray-300 justify-center lg:mt-[20px] overflow-hidden lg:overflow-visible">
         <div class="story__center w-[1340px] lg:h-[173px]">
           <div class="swiper mySwiper w-[100%] h-[100%]"></div>
         </div>
@@ -255,16 +243,16 @@
       <div class="digitype w-[100%] lg:h-[118px]">
          <div class="subdigitype w-[70%] lg:h-[118px] m-auto pt-[15px] box-border flex flex-row flex-wrap lg:flex-nowrap justify-between items-center gap-y-[7px]" ></div>
       </div>
-      <div
-        class="amazing w-[100%] h-auto felx flex-row flex-wrap justify-center mt-[10px] lg:mt-0 lg:p-[20px] overflow-hidden lg:overflow-visible"
-      >
+      <div class="amazing w-[100%] h-auto felx flex-row flex-wrap justify-center mt-[10px] lg:mt-0 lg:p-[20px] overflow-hidden lg:overflow-visible">
         <div
           class="amazing__center w-[1336px] h-[300px] mx-auto box-border shadow-lg rounded-[15px] bg-[#ef3c51] py-[20px] px-[2px]"
         >
           <div class="swiper myamazing w-[100%] h-[100%]"></div>
         </div>
       </div>
-      <div class="fourpics w-[100%] box-border mt-[8px]"></div>
+      <div class="fourpics w-[100%] box-border mt-[8px]">
+        <div class="subfourpics lg:w-[80%] w-[95%] my-[5px] mx-auto flex-row flex flex-wrap justify-center items-center gap-x-[15px] gap-y-[5px] "></div>
+      </div>
       <div class="supermarketamazing w-[100%] mt-[50px]">
         <div class="sub__supermarketamazing shadow-lg lg:w-[70%] w-[90%] bg-[#d8d9d9] rounded-[15px] m-auto">
            <a class="a__sub__supermarketamazing flex flex-row flex-wrap justify-center py-[20px] items-center w-[100%]" href="#">

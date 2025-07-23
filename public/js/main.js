@@ -1,4 +1,4 @@
-import fetchformShow, { formShow, fetchLogin } from "./menu/centermenu.js";
+import { formShow, fetchLogin, fetchSlidercentermenu, fetchSlidercentermenu2 } from "./menu/centermenu.js";
 import { fetchFormpage } from "./menu/form.js";
 import {
   fetchBottomlink,
@@ -65,7 +65,6 @@ fetchBottomlink4();
 fetchBottomlink5();
 fetchBottomlink6();
 fetchBottomlink7();
-fetchformShow();
 formShow();
 fetchLogin();
 fetchRightsub();
@@ -114,4 +113,5 @@ fetchButtonsoop();
 fetchSubbottonsoop();
 fetchPoshtibanilabel();
 fetchSubposhtibani();
-
+fetchSlidercentermenu()
+fetchSlidercentermenu2()

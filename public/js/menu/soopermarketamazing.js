@@ -23,7 +23,7 @@ export const fetchSooperamazing = async () => {
         <div class="child__continue__child2__a__sub__supermarketamazing w-[80px] h-[20px] font-[iranyekanmedium] text-[12px] font-[500] absolute right-[20px] top-[2px]">
           بیش از <span class="font-[yekan] text-[12px]">100</span> کالا
         </div>
-        <img src="../../svg/sooperamazing/svgflesh.svg" alt="" class="absolute bottom-[20px] left-[16px]"/>
+        <img src="./public/svg/sooperamazing/svgflesh.svg" alt="" class="absolute bottom-[20px] left-[16px]"/>
       </div>
     `;
 

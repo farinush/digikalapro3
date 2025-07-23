@@ -1,57 +1,18 @@
 {
-  "centerMenu": {
-    "inputs": [
-      {
-        "id": 1,
-        "type": "text",
-        "placeholder": "جستجو",
-        "className": "input"
-      }
-    ],
-    "images": [
-      {
-        "id": 2,
-        "name": "searchImage",
-        "link": "./public/images/center-menu/image-2.jpg"
-      }
-    ],
-    "lastShop": {
-      "id": 3,
-      "title": "lastShop",
-      "svg": "./public/svg/lastshop.svg",
-      "body": "آخرین جستجوهای شما",
-      "trashSvg": "./public/svg/trash.svg"
-    },
-    "sliders": [
-      {
-        "id": 4,
-        "title": "slider1",
-        "items": [
-          { "index1": "s1", "body1": "دروغ هایی که به خودمان می گوییم" },
-          { "index2": "s2", "body2": "لپ تاپ" },
-          { "index3": "s3", "body3": "لپ تاپ ایسوس" },
-          { "index4": "s4", "body4": "کتاب بزرگ علوی" },
-          { "index5": "s5", "body5": "چشم هایش" }
-        ]
-      },
-      {
-        "id": 5,
-        "title": "slider2",
-        "items": [
-          { "index6": "s6", "body6": "ظرف یلدا" },
-          { "index7": "s7", "body7": "نوار درزگیر خودرو" },
-          { "index8": "s8", "body8": "a04 گوشی" },
-          { "index9": "s9", "body9": "پک یلدا" },
-          { "index10": "s10", "body10": "دفترخاطرات قفل دار" }
-        ]
-      }
-    ],
-    "famousSearches": {
-      "id": 6,
-      "svg": "./public/svg/fire.svg",
-      "body": "جستجوهای پرطرفدار"
-    }
-  },
+  "centermenuslider1": [
+    { "id": 1, "body": "دروغ هایی که به خودمان می گوییم" },
+    { "id": 2, "body": "لپ تاپ" },
+    { "id": 3, "body": "لپ تاپ ایسوس" },
+    { "id": 4, "body": "کتاب بزرگ علوی" },
+    { "id": 5, "body": "چشم هایش" }
+  ],
+  "centermenuslider2": [
+    { "id": 6, "body": "ظرف یلدا" },
+    { "id": 7, "body": "نوار درزگیر خودرو" },
+    { "id": 8, "body": "a04 گوشی" },
+    { "id": 9, "body": "پک یلدا" },
+    { "id": 10, "body": "دفترخاطرات قفل دار"}
+  ],
   "centermenu2": {
     "svglogo": "./public/svg/digikala.svg",
     "homesvg": "./public/svg/homeloc.svg",
@@ -1604,13 +1565,13 @@
     "percentage12": "30%",
     "subtitle13": "مشاهده همه"
   },
-  "fourpics": {
-    "img1": "./public/images/fourpics/image1.png",
-    "img2": "./public/images/fourpics/image2.png",
-    "img3": "./public/images/fourpics/image3.png",
-    "img4": "./public/images/fourpics/image4.png",
-    "img5": "./public/images/fourpics/image5.png"
-  },
+  "fourpics": [
+    { "id": 1, "img": "./public/images/fourpics/image1.png" },
+    { "id": 2, "img": "./public/images/fourpics/image2.png" },
+    { "id": 3, "img": "./public/images/fourpics/image3.png" },
+    { "id": 4, "img": "./public/images/fourpics/image4.png" },
+    { "id": 5, "img": "./public/images/fourpics/image5.png" }
+  ],
   "sooperamazing": [
     {
       "id": 1,
