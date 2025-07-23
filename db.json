@@ -1703,31 +1703,89 @@
     { "id": 1, "img": "./public/images/uniqeestil/image1.png" },
     { "id": 2, "img": "./public/images/uniqeestil/image2.png" }
   ],
-  "mobileheadphone": {
-    "title1": "گوشی موبایل",
-    "title2": "کیف و کاور گوشی",
-    "title3": "هدفون,هدست و هندزفری",
-    "title4": "جوراب مردانه",
-    "subtitle": "براساس سلیقه شما",
-    "img1": "./public/images/mobileheadphone/image1.png",
-    "img2": "./public/images/mobileheadphone/image2.png",
-    "img3": "./public/images/mobileheadphone/image3.png",
-    "img4": "./public/images/mobileheadphone/image4.png",
-    "img5": "./public/images/mobileheadphone/image5.png",
-    "img6": "./public/images/mobileheadphone/image6.png",
-    "img7": "./public/images/mobileheadphone/image7.png",
-    "img8": "./public/images/mobileheadphone/image8.png",
-    "img9": "./public/images/mobileheadphone/image9.png",
-    "img10": "./public/images/mobileheadphone/image10.png",
-    "img11": "./public/images/mobileheadphone/image11.png",
-    "img12": "./public/images/mobileheadphone/image12.png",
-    "img13": "./public/images/mobileheadphone/image13.png",
-    "img14": "./public/images/mobileheadphone/image14.png",
-    "img15": "./public/images/mobileheadphone/image15.png",
-    "img16": "./public/images/mobileheadphone/image16.png",
-    "text": "مشاهده",
-    "svgfleshbechap": "./public/svg/mobile-headphone/svgfleshbechap.svg"
-  },
+  "mobileheadphone": [
+    {
+      "id": 1,
+      "title": "گوشی موبایل",
+      "section": [
+        {
+          "id": 1,
+          "part": [
+            { "id": 1, "img": "./public/images/mobileheadphone/image1.png" },
+            { "id": 2, "img": "./public/images/mobileheadphone/image2.png" }
+          ]
+        },
+        {
+          "id": 2,
+          "part": [
+            { "id": 3, "img": "./public/images/mobileheadphone/image3.png" },
+            { "id": 4, "img": "./public/images/mobileheadphone/image4.png" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "کیف و کاور گوشی",
+      "section": [
+        {
+          "id": 3,
+          "part": [
+            { "id": 5, "img": "./public/images/mobileheadphone/image5.png" },
+            { "id": 6, "img": "./public/images/mobileheadphone/image6.png" }
+          ]
+        },
+
+        {
+          "id": 4,
+          "part": [
+            { "id": 7, "img": "./public/images/mobileheadphone/image7.png" },
+            { "id": 8, "img": "./public/images/mobileheadphone/image8.png" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "هدفون,هدست و هندزفری",
+      "section": [
+        {
+          "id": 5,
+          "part": [
+            { "id": 9, "img": "./public/images/mobileheadphone/image9.png" },
+            { "id": 10, "img": "./public/images/mobileheadphone/image10.png" }
+          ]
+        },
+        {
+          "id": 6,
+          "part": [
+            { "id": 11, "img": "./public/images/mobileheadphone/image11.png" },
+            { "id": 12, "img": "./public/images/mobileheadphone/image12.png" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "جوراب مردانه",
+      "section": [
+        {
+          "id": 7,
+          "part": [
+            { "id": 13, "img": "./public/images/mobileheadphone/image13.png" },
+            { "id": 14, "img": "./public/images/mobileheadphone/image14.png" }
+          ]
+        },
+        {
+          "id": 8,
+          "part": [
+            { "id": 15, "img": "./public/images/mobileheadphone/image15.png" },
+            { "id": 16, "img": "./public/images/mobileheadphone/image16.png" }
+          ]
+        }
+      ]
+    }
+  ],
   "hardsecond": [
     {
       "id": 1,

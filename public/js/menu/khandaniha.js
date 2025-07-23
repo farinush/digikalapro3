@@ -13,7 +13,6 @@ export const fetchKhandaniha = async () => {
               </a>
             </div>`;
     });
-
     document.querySelector(".image-child-khandaniha").innerHTML = khandaniha;
   } catch (error) {
     console.log(error.message);
