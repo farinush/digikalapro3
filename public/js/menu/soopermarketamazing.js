@@ -28,7 +28,7 @@ export const fetchSooperamazing = async () => {
     `;
 
     // قرار دادن کل HTML در DOM
-    document.querySelector(".a__sub__supermarketamazing").innerHTML = sooperamazingItems + continueButton;
+    document.querySelector(".child2__a__sub__supermarketamazing").innerHTML = sooperamazingItems + continueButton;
 
   } catch (error) {
     console.log(error.message);
