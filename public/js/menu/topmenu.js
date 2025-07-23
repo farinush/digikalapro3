@@ -3,7 +3,7 @@ const topMenu = async () => {
   try {
     let data=await fetch("https://farinush.github.io/digikalapro3/db.json")
     let res = await data.json();
-    topmenu+=`<img src="${res.link}" alt="${res.top_menu}" class="w-[100%] !h-[30px] lg:!h-[60px]" />`
+    topmenu+=``
       ;
     
     console.log("topmenu")

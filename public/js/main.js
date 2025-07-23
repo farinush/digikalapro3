@@ -1,4 +1,3 @@
-import topMenu from "./menu/topmenu.js";
 import fetchformShow, { formShow, fetchLogin } from "./menu/centermenu.js";
 import { fetchFormpage } from "./menu/form.js";
 import {
@@ -41,8 +40,7 @@ import { fetchSooperamazing } from "./menu/soopermarketamazing.js";
 import { fetchClassifyshopp } from "./menu/classifyshopp.js";
 import { fetchActivebeyken } from "./menu/activebeyken.js";
 import {
-  fetchFavaritebrand,
-  fetchFavariteswiper,
+  fetchFavaritebrands,
 } from "./menu/favaritebrands.js";
 import { fetchUniqeestil } from "./menu/uniqeestil.js";
 import { fetchMobilehead } from "./menu/mobileheadphone.js";
@@ -67,7 +65,6 @@ fetchBottomlink4();
 fetchBottomlink5();
 fetchBottomlink6();
 fetchBottomlink7();
-topMenu();
 fetchformShow();
 formShow();
 fetchLogin();
@@ -101,8 +98,7 @@ fetchFourpics();
 fetchSooperamazing();
 fetchClassifyshopp();
 fetchActivebeyken();
-fetchFavaritebrand();
-fetchFavariteswiper();
+fetchFavaritebrands();
 fetchUniqeestil();
 fetchMobilehead();
 fetchHardsecond();

@@ -25,7 +25,9 @@
     <div id="root">
       <div class="menu">
         <div class="top_menu w-[100%] !h-[30px] lg:!h-[60px]">
-          <a class="a_top_menu !h-[30px] lg:!h-[60px]" href="#"></a>
+          <a class="a_top_menu !h-[30px] lg:!h-[60px]" href="#">
+            <img src="./public/images/top-menu/image-1.jpg" alt="" class="w-[100%] !h-[30px] lg:!h-[60px]" />
+          </a>
         </div>
         <div class="center_menu py-3 w-[100%] lg:h-[68px] lg:mt-[10px]">
           <div
@@ -268,7 +270,14 @@
           class="sub__supermarketamazing shadow-lg lg:w-[70%] w-[90%] bg-[#d8d9d9] rounded-[15px] m-auto"
         ></div>
       </div>
-      <div class="classifyshopping w-[100%] lg:h-[452px] pt-[20px]"></div>
+      <div class="classifyshopping w-[100%] lg:h-[452px] pt-[20px]">
+        <div class="sub__classifyshopping lg:w-[70%] lg:h-[452px] lg:flex lg:flex-col flex-wrap justify-center items-center my-[3px] mx-auto">
+          <div class="text__sub__classifyshopping w-[100%] h-[10%] text-center">
+            <span class="font-[iranyekanmedium] text-[20px] leading-[70px]">خرید براساس دسته بندی</span>
+          </div>
+          <div class="image__sub__classifyshopping w-[100%] h-[90%] flex flex-row flex-wrap justify-center items-center gap-x-[5px]"></div>
+        </div>
+      </div>
       <div class="active-beyken w-[100%] pt-[5px] mt-[30px]">
         <div class="child__active-beyken lg:w-[71%] w-[90%] mx-auto">
           <a
@@ -278,14 +287,12 @@
           </a>
         </div>
       </div>
-      <div class="favaritebrands my-[30px] w-[100%] overflow-hidden lg:overflow-visible pt-[6px]"
-      >
-        <div
-          class="child__favaritebrands w-[1340px] h-[223px] border-[1px] border-solid border-[#d6d4d4b3] rounded-[17px] my-0 mx-auto flex flex-col flex-wrap justify-center items-center"
-        >
-          <div
-            class="child1__favaritebrands pt-[20px] lg:pt-0 w-[100%] ps-[30px] lg:ps-0 h-[30%] text-center flex flex-row flex-nowrap justify-start lg:justify-center items-start lg:items-center relative"
-          ></div>
+      <div class="favaritebrands my-[30px] w-[100%] overflow-hidden lg:overflow-visible pt-[6px]">
+        <div class="child__favaritebrands w-[1340px] h-[223px] border-[1px] border-solid border-[#d6d4d4b3] rounded-[17px] my-0 mx-auto flex flex-col flex-wrap justify-center items-center">
+          <div class="child1__favaritebrands pt-[20px] lg:pt-0 w-[100%] ps-[30px] lg:ps-0 h-[30%] text-center flex flex-row flex-nowrap justify-start lg:justify-center items-start lg:items-center relative">
+            <div class="svg__favaritebrands w-[30px] h-[30px] lg:absolute top-[20px]"><img src="./public/svg/favaritebrands/star.svg" alt=""></div>
+            <span class="font-[iranyekanmedium] text-[22px] w-[200px] h-[34px] block lg:absolute">محبوب ترین برندها</span>
+          </div>
           <div class="child2__favaritebrands w-[100%] h-[70%]">
             <div class="swiper myfavaritebrands w-[99%] h-[100%]"></div>
           </div>

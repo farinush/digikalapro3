@@ -1,9 +1,4 @@
 {
-  "topMenu": {
-    "id": 1,
-    "name": "topMenuImage",
-    "link": "./public/images/top-menu/image-1.jpg"
-  },
   "centerMenu": {
     "inputs": [
       {
@@ -1634,71 +1629,156 @@
     "text8": "50%",
     "textlast": 100
   },
-  "classifyshopp": {
-    "subtitle": "خرید براساس دسته بندی",
-    "img1": "./public/images/classifyshopp/mobile.png",
-    "text1": "موبایل",
-    "img2": "./public/images/classifyshopp/salamat va pezeshki.png",
-    "text2": "تجهیزات پزشکی و سلامت",
-    "img3": "./public/images/classifyshopp/digital.png",
-    "text3": "کالای دیجیتال",
-    "img4": "./public/images/classifyshopp/varzesh.png",
-    "text4": "ورزش و سفر",
-    "img5": "./public/images/classifyshopp/ketab.png",
-    "text5": "کتاب,لوازم التحریر و هنر",
-    "img6": "./public/images/classifyshopp/khodro.png",
-    "text6": "خودرو و موتورسیکلت",
-    "img7": "./public/images/classifyshopp/khane.png",
-    "text7": "خانه و آشپزخانه",
-    "img8": "./public/images/classifyshopp/abzaralat.png",
-    "text8": "ابزارآلات و تجهیزات",
-    "img9": "./public/images/classifyshopp/barghi.png",
-    "text9": "لوازم خانگی برقی",
-    "img10": "./public/images/classifyshopp/kart hedie.png",
-    "text10": "کارت هدبه و گیفت کارت",
-    "img11": "./public/images/classifyshopp/mod va poshak.png",
-    "text11": "مدو پوشاک",
-    "img12": "./public/images/classifyshopp/supermarketi.png",
-    "text12": "کالای خوراکی و اساسی",
-    "img13": "./public/images/classifyshopp/saat va tala.png",
-    "text13": "طلاو نقره",
-    "img14": "./public/images/classifyshopp/asbabbazi.png",
-    "text14": "اسباب بازی,کودک و نوزاد",
-    "img15": "./public/images/classifyshopp/arayeshi.png",
-    "text15": "آرایشی و بهداشتی",
-    "img16": "./public/images/classifyshopp/bomi.png",
-    "text16": "محصولات بومی و محلی"
-  },
+  "classify": [
+    {
+      "id": 1,
+      "section": [
+        {
+          "id": 1,
+          "img": "./public/images/classifyshopp/mobile.png",
+          "text": "موبایل"
+        },
+        {
+          "id": 2,
+          "img": "./public/images/classifyshopp/salamat va pezeshki.png",
+          "text": "تجهیزات پزشکی و سلامت"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "section": [
+        {
+          "id": 3,
+          "img": "./public/images/classifyshopp/digital.png",
+          "text": "کالای دیجیتال"
+        },
+        {
+          "id": 4,
+          "img": "./public/images/classifyshopp/varzesh.png",
+          "text": "ورزش و سفر"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "section": [
+        {
+          "id": 5,
+          "img": "./public/images/classifyshopp/ketab.png",
+          "text": "کتاب,لوازم التحریر و هنر"
+        },
+        {
+          "id": 6,
+          "img": "./public/images/classifyshopp/khodro.png",
+          "text": "خودرو و موتورسیکلت"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "section": [
+        {
+          "id": 7,
+          "img": "./public/images/classifyshopp/khane.png",
+          "text": "خانه و آشپزخانه"
+        },
+        {
+          "id": 8,
+          "img": "./public/images/classifyshopp/abzaralat.png",
+          "text": "ابزارآلات و تجهیزات"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "section": [
+        {
+          "id": 9,
+          "img": "./public/images/classifyshopp/barghi.png",
+          "text": "لوازم خانگی برقی"
+        },
+        {
+          "id": 10,
+          "img": "./public/images/classifyshopp/kart hedie.png",
+          "text": "کارت هدبه و گیفت کارت"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "section": [
+        {
+          "id": 11,
+          "img": "./public/images/classifyshopp/mod va poshak.png",
+          "text": "مدو پوشاک"
+        },
+        {
+          "id": 12,
+          "img": "./public/images/classifyshopp/supermarketi.png",
+          "text": "کالای خوراکی و اساسی"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "section": [
+        {
+          "id": 13,
+          "img": "./public/images/classifyshopp/saat va tala.png",
+          "text": "طلاو نقره"
+        },
+        {
+          "id": 14,
+          "img": "./public/images/classifyshopp/asbabbazi.png",
+          "text": "اسباب بازی,کودک و نوزاد"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "section": [
+        {
+          "id": 15,
+          "img": "./public/images/classifyshopp/arayeshi.png",
+          "text": "آرایشی و بهداشتی"
+        },
+        {
+          "id": 16,
+          "img": "./public/images/classifyshopp/bomi.png",
+          "text": "محصولات بومی و محلی"
+        }
+      ]
+    }
+  ],
   "activebeyken": [
     { "id": 1, "img": "./public/images/activebeyken/image1.png" },
     { "id": 2, "img": "./public/images/activebeyken/image2.png" }
   ],
-  "favaritebrands": {
-    "svgstar": "./public/svg/favaritebrands/star.svg",
-    "titlestar": "محبوب ترین برندها",
-    "img1": "./public/images/favaritebrands/pic1.png",
-    "img2": "./public/images/favaritebrands/pic2.png",
-    "img3": "./public/images/favaritebrands/pic3.png",
-    "img4": "./public/images/favaritebrands/pic4.png",
-    "img5": "./public/images/favaritebrands/pic5.png",
-    "img6": "./public/images/favaritebrands/pic6.png",
-    "img7": "./public/images/favaritebrands/pic7.png",
-    "img8": "./public/images/favaritebrands/pic8.png",
-    "img9": "./public/images/favaritebrands/pic9.png",
-    "img10": "./public/images/favaritebrands/pic10.png",
-    "img11": "./public/images/favaritebrands/pic11.png",
-    "img12": "./public/images/favaritebrands/pic12.png",
-    "img13": "./public/images/favaritebrands/pic13.png",
-    "img14": "./public/images/favaritebrands/pic14.png",
-    "img15": "./public/images/favaritebrands/pic15.png",
-    "img16": "./public/images/favaritebrands/pic16.png",
-    "img17": "./public/images/favaritebrands/pic17.png",
-    "img18": "./public/images/favaritebrands/pic18.png",
-    "img19": "./public/images/favaritebrands/pic19.png",
-    "img20": "./public/images/favaritebrands/pic20.png",
-    "img21": "./public/images/favaritebrands/pic21.png",
-    "img22": "./public/images/favaritebrands/pic22.png"
-  },
+  "favaritebrands": [
+    { "id": 1, "img": "./public/images/favaritebrands/pic1.png" },
+    { "id": 2, "img": "./public/images/favaritebrands/pic2.png" },
+    { "id": 3, "img": "./public/images/favaritebrands/pic3.png" },
+    { "id": 4, "img": "./public/images/favaritebrands/pic4.png" },
+    { "id": 5, "img": "./public/images/favaritebrands/pic5.png" },
+    { "id": 6, "img": "./public/images/favaritebrands/pic6.png" },
+    { "id": 7, "img": "./public/images/favaritebrands/pic7.png" },
+    { "id": 8, "img": "./public/images/favaritebrands/pic8.png" },
+    { "id": 9, "img": "./public/images/favaritebrands/pic9.png" },
+    { "id": 10, "img": "./public/images/favaritebrands/pic10.png" },
+    { "id": 11, "img": "./public/images/favaritebrands/pic11.png" },
+    { "id": 12, "img": "./public/images/favaritebrands/pic12.png" },
+    { "id": 13, "img": "./public/images/favaritebrands/pic13.png" },
+    { "id": 14, "img": "./public/images/favaritebrands/pic14.png" },
+    { "id": 15, "img": "./public/images/favaritebrands/pic15.png" },
+    { "id": 16, "img": "./public/images/favaritebrands/pic16.png" },
+    { "id": 17, "img": "./public/images/favaritebrands/pic17.png" },
+    { "id": 18, "img": "./public/images/favaritebrands/pic18.png" },
+    { "id": 19, "img": "./public/images/favaritebrands/pic19.png" },
+    { "id": 20, "img": "./public/images/favaritebrands/pic20.png" },
+    { "id": 21, "img": "./public/images/favaritebrands/pic21.png" },
+    { "id": 22, "img": "./public/images/favaritebrands/pic22.png" }
+  ],
   "uniqeestil": [
     { "id": 1, "img": "./public/images/uniqeestil/image1.png" },
     { "id": 2, "img": "./public/images/uniqeestil/image2.png" }
