@@ -1611,24 +1611,38 @@
     "img4": "./public/images/fourpics/image4.png",
     "img5": "./public/images/fourpics/image5.png"
   },
-  "sooperamazing": {
-    "img1": "./public/images/sooperamazing/basket.png",
-    "img2": "./public/images/sooperamazing/text.png",
-    "text1": "59%",
-    "img3": "./public/images/sooperamazing/image1.png",
-    "text3": "55%",
-    "img4": "./public/images/sooperamazing/image2.png",
-    "text4": "53%",
-    "img5": "./public/images/sooperamazing/image3.png",
-    "text5": "45%",
-    "img6": "./public/images/sooperamazing/image4.png",
-    "text6": "50%",
-    "img7": "./public/images/sooperamazing/image5.png",
-    "text7": "48%",
-    "img8": "./public/images/sooperamazing/image6.png",
-    "text8": "50%",
-    "textlast": 100
-  },
+  "sooperamazing": [
+    {
+      "id": 1,
+      "img": "./public/images/sooperamazing/image1.png",
+      "text": "55%"
+    },
+    {
+      "id": 2,
+      "img": "./public/images/sooperamazing/image2.png",
+      "text": "53%"
+    },
+    {
+      "id": 3,
+      "img": "./public/images/sooperamazing/image3.png",
+      "text": "45%"
+    },
+    {
+      "id": 4,
+      "img": "./public/images/sooperamazing/image4.png",
+      "text": "50%"
+    },
+    {
+      "id": 5,
+      "img": "./public/images/sooperamazing/image5.png",
+      "text": "48%"
+    },
+    {
+      "id": 6,
+      "img": "./public/images/sooperamazing/image6.png",
+      "text": "50%"
+    }
+  ],
   "classify": [
     {
       "id": 1,
