@@ -25,11 +25,11 @@ export const fetchSlidercentermenu = async () => {
     const data = await fetch("https://farinush.github.io/digikalapro3/db.json");
     const res = await data.json();
     let centermenuslider1 = res.centermenuslider1.map((item) => {
-      return `<div class="swiper-slide" key=${item.id}>${item.body}</div>`;
+      return `<div class="swiper-slide flex py-3 text-center w-fit rounded-[15px] border-[1px] border-solid border-black font-[iranyekanmedium]" key=${item.id}>${item.body}</div>`;
     });
     document.querySelector(".items-slider1 .myslider").innerHTML = `
         <div class="swiper-wrapper">
-          ${centermenuslider1}
+          ${centermenuslider1.join('')}
         </div>
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
@@ -56,11 +56,11 @@ export const fetchSlidercentermenu2 = async () => {
     const data = await fetch("https://farinush.github.io/digikalapro3/db.json");
     const res = await data.json();
     let centermenuslider2 = res.centermenuslider2.map((item) => {
-      return `<div class="swiper-slide" key=${item.id}>${item.body}</div>`;
+      return `<div class="swiper-slide flex py-3 text-center w-fit rounded-[15px] border-[1px] border-solid border-grey font-[iranyekanmedium]" key=${item.id}>${item.body}</div>`;
     });
     document.querySelector(".items-slider2 .myslider").innerHTML = `
         <div class="swiper-wrapper">
-          ${centermenuslider2}
+          ${centermenuslider2.join('')}
         </div>
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>

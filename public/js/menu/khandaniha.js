@@ -13,7 +13,7 @@ export const fetchKhandaniha = async () => {
               </a>
             </div>`;
     });
-    document.querySelector(".image-child-khandaniha").innerHTML = khandaniha;
+    document.querySelector(".image-child-khandaniha").innerHTML = khandaniha.join('');
   } catch (error) {
     console.log(error.message);
   }

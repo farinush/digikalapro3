@@ -7,7 +7,7 @@ export const fetchUniqeestil = async () => {
               <img src="${item.img}" alt="" class="w-[660px] h-[100%] rounded-[15px]"/>
            `;
     });
-    document.querySelector(".subchild__uniqe-estil").innerHTML = uniqeestil;
+    document.querySelector(".subchild__uniqe-estil").innerHTML = uniqeestil.join('');
   } catch (error) {
     console.log(error.message);
   }

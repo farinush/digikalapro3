@@ -8,10 +8,10 @@
   ],
   "centermenuslider2": [
     { "id": 6, "body": "ظرف یلدا" },
-    { "id": 7, "body": "نوار درزگیر خودرو" },
-    { "id": 8, "body": "a04 گوشی" },
+    { "id": 7, "body":"نوار درز گیر خودرو" },
+    { "id": 8, "body": "گوشی a04" },
     { "id": 9, "body": "پک یلدا" },
-    { "id": 10, "body": "دفترخاطرات قفل دار"}
+    { "id": 10, "body": "دفتر خاطرات قفل دار"}
   ],
   "centermenu2": {
     "svglogo": "./public/svg/digikala.svg",
@@ -1569,9 +1569,9 @@
     { "id": 1, "img": "./public/images/fourpics/image1.png" },
     { "id": 2, "img": "./public/images/fourpics/image2.png" },
     { "id": 3, "img": "./public/images/fourpics/image3.png" },
-    { "id": 4, "img": "./public/images/fourpics/image4.png" },
-    { "id": 5, "img": "./public/images/fourpics/image5.png" }
+    { "id": 4, "img": "./public/images/fourpics/image4.png" }
   ],
+  "fourpicsimage5":"./public/images/fourpics/image5.png",
   "sooperamazing": [
     {
       "id": 1,

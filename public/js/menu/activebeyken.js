@@ -8,7 +8,7 @@ export const fetchActivebeyken = async () => {
             <img src="${item.img}" alt="" class="w-[660px] h-[100%] rounded-[15px]" data-id=${item.id}/>
           `;
     });
-    document.querySelector(".subchild__active-beyken").innerHTML = activebeyken;
+    document.querySelector(".subchild__active-beyken").innerHTML = activebeyken.join('');
   } catch (error) {
     console.log(error.message);
   }

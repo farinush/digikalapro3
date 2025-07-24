@@ -14,7 +14,7 @@ export const fetchDigitype = async () => {
             </div>
        `;
     });
-    document.querySelector(".subdigitype").innerHTML = digitype;
+    document.querySelector(".subdigitype").innerHTML = digitype.join('');
   } catch (error) {
     console.log(error.message);
   }

@@ -6,25 +6,27 @@ export const fetchFourpics = async () => {
         return  `
           <div class="div__subfourpics w-[218px] h-[164px] lg:w-[305px] lg:h-[260px]">
             <a class="a__div__subfourpics w-[218px] h-[164px] lg:w-[305px] lg:h-[260px] block" href="#">
-              <img src="${item.img}" alt="" class="w-[218px] h-[164px] lg:w-[305px] lg:h-[260px] rounded-[20px]" id="firstImage"/>
+              <img src="${item.img}" alt="" class="w-[218px] h-[164px] lg:w-[305px] lg:h-[260px] rounded-[20px]"/>
             </a>
           </div>`;
       })
-      document.querySelector(".subfourpics").innerHTML = fourpic;
-      const secondImage = new Image(); 
-      secondImage.src = res.img2; 
-      secondImage.style.display = 'none';
-      const changeFirstImage = () => {
-       const images = [res.img1, res.img2];
-        const firstImage = document.getElementById('firstImage');
-        currentIndex = (currentIndex + 1) % images.length; 
-        firstImage.src = images[currentIndex];
+      document.querySelector(".subfourpics").innerHTML = fourpic.join('');
+
+    const allImages = document.querySelectorAll(".subfourpics img");
+
+    if (allImages.length > 0 && res.fourpicsimage5) {
+      const targetImage = allImages[0]; // تغییر روی عکس اول
+      const images = [res.fourpics[0].img, res.fourpicsimage5]; // اسلایدر بین عکس اول و image5
+      let currentIndex = 0;
+
+      const changeImage = () => {
+        currentIndex = (currentIndex + 1) % images.length;
+        targetImage.src = images[currentIndex];
       };
-      if (changeInterval) {
-        clearInterval(changeInterval); 
-      }
-  
-      changeInterval = setInterval(changeFirstImage, 1000);
+
+      if (window.changeInterval) clearInterval(window.changeInterval);
+      window.changeInterval = setInterval(changeImage, 1000);
+    }
   
     } catch (error) {
       console.log(error.message);
