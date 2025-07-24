@@ -1,15 +1,6 @@
-import { formShow, fetchLogin, fetchSlidercentermenu, fetchSlidercentermenu2 } from "./menu/centermenu.js";
+import { formShow, fetchSlidercentermenu, fetchSlidercentermenu2 } from "./menu/centermenu.js";
 import { fetchFormpage } from "./menu/form.js";
 import {
-  fetchBottomlink,
-  fetchBottomlink1,
-  fetchBottomlink2,
-  fetchBottomlink3,
-  fetchBottomlink4,
-  fetchBottomlink5,
-  fetchBottomlink6,
-  fetchBottomlink7,
-  fetchRightsub,
   fetchShahr,
   fetchSubbottomcity,
   fetchSubmenuItem,
@@ -53,21 +44,8 @@ import { buttonMore, buttonReverse, fetchSubfooter } from "./menu/subfooter.js";
 import { fetchDigichild } from "./menu/digichildbrand.js";
 import { fetchButtonsoop, fetchSubbottonsoop } from "./menu/labelsoopermarket.js";
 import { fetchPoshtibanilabel, fetchSubposhtibani } from "./menu/poshtibani.js";
-import { fetchCenterlogo, fetchLocresponsive } from "./menu/centermenu2.js";
 fetchFormpage();
-fetchLocresponsive();
-fetchCenterlogo();
-fetchBottomlink();
-fetchBottomlink1();
-fetchBottomlink2();
-fetchBottomlink3();
-fetchBottomlink4();
-fetchBottomlink5();
-fetchBottomlink6();
-fetchBottomlink7();
 formShow();
-fetchLogin();
-fetchRightsub();
 fetchSubmenuItem();
 fetchSubmenuItem2();
 fetchSubmenuItem3();

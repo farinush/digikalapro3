@@ -83,30 +83,6 @@ export const fetchSlidercentermenu2 = async () => {
 };
 
 
-
-
-export const fetchLogin = async () => {
-  try {
-    let data = await fetch("https://farinush.github.io/digikalapro3/db.json");
-    let res = await data.json();
-    if (!res || !Array.isArray(res)) {
-      console.error("Invalid data structure received");
-      return;
-    }
-    const logincenter = res.map((item) => {
-      return `<a href="./form.html" class="a_login_center_menu w-[160px] h-[40px] flex font-[iranyekanmedium] gap-x-[2px] justify-center items-center text-[12px] leading-[40px] text-center text-[#2b2b2b] border-[lightgrey] border-[1px] border-solid rounded-[12px] mx-auto">
-              <img src="${item.svg1}" alt="login Icon" />
-              ${item.body2}<span class="w-[2px] mx-[1px] rounded-[2px] h-[50%] bg-[#2b2b2b]">.</span>${item.body1}
-              </a>
-              <span class="devider w-[3px] h-[60%] mx-[3px] rounded-[2px]  bg-[#2b2b2b] ">.</span>
-              `;
-    });
-    document.querySelector(".login_center_menu").innerHTML =
-      logincenter.join("");
-  } catch (error) {
-    console.log(error.message);
-  }
-};
 window.addEventListener("storage", function (event) {
   if (event.key === "cart") {
     console.log("سبد خرید تغییر کرد");

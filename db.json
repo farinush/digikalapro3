@@ -13,22 +13,6 @@
     { "id": 9, "body": "پک یلدا" },
     { "id": 10, "body": "دفتر خاطرات قفل دار"}
   ],
-  "centermenu2": {
-    "svglogo": "./public/svg/digikala.svg",
-    "homesvg": "./public/svg/homeloc.svg",
-    "titleloc": "ارسال به استان تهران, شهرتهران",
-    "svgfleshbechap": "./public/svg/svgfleshbechap.svg"
-  },
-  "logincenter": [
-    {
-      "id": 1,
-      "name": "login",
-      "body1": "ثبت نام",
-      "body2": "ورود",
-      "svg1": "./public/svg/login.svg",
-      "svg2": "./public/svg/basket.svg"
-    }
-  ],
   "formpage": [
     {
       "id": 1,
@@ -44,25 +28,6 @@
       "body5": "ورود شما به معنای پذیرش",
       "body6": "شرایط ذیجی کالا",
       "body7": "قوانین حریم خصوصی"
-    }
-  ],
-  "bottommenucategory": [
-    {
-      "id": 1,
-      "svg1": "./public/svg/bottommenu/dastebandikala.svg",
-      "title1": "دسته بندی کالا",
-      "svg2": "./public/svg/bottommenu/shegeftangiz.svg",
-      "title2": "شگفت انگیزها",
-      "svg3": "./public/svg/bottommenu/sopermarket.svg",
-      "title3": "سوپرمارکت",
-      "svg4": "./public/svg/bottommenu/karthedie.svg",
-      "title4": "کارت هدیه",
-      "svg5": "./public/svg/bottommenu/porforoshtarin.svg",
-      "title5": "پرفروش ترین ها",
-      "svg6": "./public/svg/bottommenu/takhfifha.svg",
-      "title6": "تخفیف ها و پیشتهادات",
-      "title7": "سوالی دارید؟",
-      "title8": "در دیجی کالا بفروشید!"
     }
   ],
   "navCategories": [
