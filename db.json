@@ -8,10 +8,10 @@
   ],
   "centermenuslider2": [
     { "id": 6, "body": "ظرف یلدا" },
-    { "id": 7, "body":"نوار درز گیر خودرو" },
+    { "id": 7, "body": "نوار درز گیر خودرو" },
     { "id": 8, "body": "گوشی a04" },
     { "id": 9, "body": "پک یلدا" },
-    { "id": 10, "body": "دفتر خاطرات قفل دار"}
+    { "id": 10, "body": "دفتر خاطرات قفل دار" }
   ],
   "formpage": [
     {
@@ -48,90 +48,117 @@
     { "svg": "./public/svg/khodro.svg", "name": "خودرو و موتورسیکلت" },
     { "svg": "./public/svg/bomi.svg", "name": "محصولات بومی و محلی" }
   ],
-  "submenumobileclassify": {
-    "id": 3,
-    "titlesub": "همه محصولات موبایل",
-    "namehuge1": "داغ ترین ها",
-    "namehuge2": "برند های برتر",
-    "namehuge3": "لوازم جانبی موبایل",
-    "namehuge4": "تبلت",
-    "namehuge5": "هدفون",
-    "namehuge6": "گوشی براساس قیمت",
-    "namehuge7": "گوشی براساس عملکرد",
-    "namehuge8": "برندهای مختلف گوشی موبایل",
-    "svgfleshbechap": "./public/svg/bottommenu/fleshbechap.svg",
-
-    "subdiv1name1": "گلکسی s23 ultra",
-    "subdiv1name2": "گلکسی A54",
-    "subdiv1name3": "گلکسی A34",
-    "subdiv1name4": "گلکسی A24",
-    "subdiv1name5": "گلکسی A14",
-    "subdiv1name6": "گلکسی S23 FE",
-    "subdiv1name7": "ردمی نوت 12",
-    "subdiv1name8": "پوکو C40",
-    "subdiv1name9": "پوکو  XS pro 5G",
-    "subdiv1name10": "ردمی A2plus",
-    "subdiv1name11": "پوکو A55",
-    "subdiv1name12": "آنرX9A",
-    "subdiv1name13": "موتورلا MOTO E13",
-    "subdiv1name14": "جی پلاس Q2OS",
-    "subdiv1name15": "داریاباندG",
-    "subdiv1name16": "جدیدترین محصولات اپل",
-    "subdiv1name17": "اپل",
-
-    "subdiv2name1": "شارژر گوشی",
-    "subdiv2name2": "قاب و کاور گوشی",
-    "subdiv2name3": "گلس گوشی",
-    "subdiv2name4": "هولدر گوشی موبایل",
-    "subdiv2name5": "کابل شارژ و مبدل",
-    "subdiv2name6": "پاور بانک(شارژر همراه)",
-    "subdiv2name7": "تبلت سامسونگ",
-    "subdiv2name8": "تبلت اپل(آیپد)",
-    "subdiv2name9": "تبلت شیائومی",
-    "subdiv2name10": "تبلت لنوو",
-    "subdiv2name11": "تبلت مایکروسافت",
-    "subdiv2name12": "تبلت دانش آموزی",
-    "subdiv2name13": "هدفون بی سیم",
-    "subdiv2name14": "هدفون اپل(ایرپاد)",
-    "subdiv2name15": "هدفون بیتس",
-
-    "subdiv3name1": "گوشی موبایل ارزان",
-    "subdiv3name2": "گوشی موبایل قسطی",
-    "subdiv3name3": "گوشی تا 2 میلیون تومان",
-    "subdiv3name4": "گوشی تا 5 میلیون تومان",
-    "subdiv3name5": "گوشی تا 7 میلیون تومان",
-    "subdiv3name6": "گوشی تا 15 میلیون تومان",
-    "subdiv3name7": "گوشی بالای 15 میلیون تومان",
-    "subdiv3name8": "گوشی گیمینگ",
-    "subdiv3name9": "گوشی 5G",
-    "subdiv3name10": "گوشی دکمه ای",
-    "subdiv3name11": "گوشی ضدآب",
-    "subdiv3name12": "گوشی مناسب عکاسی",
-    "subdiv3name13": "گوشی میان رده",
-    "subdiv3name14": "گوشی اقتصادی",
-    "subdiv3name15": "گوشی دانش آموزی",
-    "subdiv3name16": "گوشی پرچمدار",
-    "subdiv3name17": "گوشی دوسیکارت",
-
-    "subdiv4name1": "گوشی آیفون",
-    "subdiv4name2": "گوشی سامسونگ",
-    "subdiv4name3": "گوشی شیائومی",
-    "subdiv4name4": "گوشی نوکیا",
-    "subdiv4name5": "گوشی ریلمی",
-    "subdiv4name6": "گوشی آنر",
-    "subdiv4name7": "گوشی موتورلا",
-    "subdiv4name8": "گوشی ناتینگ فون",
-    "subdiv4name9": "گوشی جی پلاس",
-    "subdiv4name10": "گوشی هواوی",
-    "subdiv4name11": "گوشی جی ال ایکس",
-    "subdiv4name12": "گوشی های جنرال لوکس",
-    "subdiv4name13": "گوشی داریا",
-    "subdiv4name14": "گوشی گوگل",
-    "subdiv4name15": "گوشی اوپو",
-    "subdiv4name16": "گوشی ارد",
-    "subdiv4name17": "گوشی وان پلاس",
-    "subdiv4name18": "گوشی موبایل رنسو"
-  },
+  "mobile": [
+    {
+      "id": 1,
+      "titlehuge": "داغ ترین ها",
+      "items": [
+        { "id": 1, "body": "گلکسی s23 ultra" },
+        { "id": 2, "body": "گلکسی A54" },
+        { "id": 3, "body": "گلکسی A34" },
+        { "id": 4, "body": "گلکسی A24" },
+        { "id": 5, "body": "گلکسی A14" },
+        { "id": 6, "body": "گلکسی S23 FE" },
+        { "id": 7, "body": "ردمی نوت 12" },
+        { "id": 8, "body": "پوکو C40" },
+        { "id": 9, "body": "پوکو  XS pro 5G" },
+        { "id": 10, "body": "ردمی A2plus" },
+        { "id": 11, "body": "پوکو A55" },
+        { "id": 12, "body": "آنرX9A" },
+        { "id": 13, "body": "موتورلا MOTO E13" },
+        { "id": 14, "body": "جی پلاس Q2OS" },
+        { "id": 15, "body": "داریاباندG" },
+        { "id": 16, "body": "جدیدترین محصولات اپل" }
+      ]
+    },
+    { "id": 2, "titlehuge": "برند های برتر", "items": ["اپل"] },
+    {
+      "id": 3,
+      "titlehuge": "لوازم جانبی موبایل",
+      "items": [
+        { "id": 17, "body": "شارژر گوشی" },
+        { "id": 18, "body": "قاب و کاور گوشی" },
+        { "id": 19, "body": "گلس گوشی" },
+        { "id": 20, "body": "هولدر گوشی موبایل" },
+        { "id": 21, "body": "کابل شارژ و مبدل" },
+        { "id": 22, "body": "پاور بانک(شارژر همراه)" }
+      ]
+    },
+    {
+      "id": 4,
+      "titlehuge": "تبلت",
+      "items": [
+        { "id": 23, "body": "تبلت سامسونگ" },
+        { "id": 24, "body": "تبلت اپل(آیپد)" },
+        { "id": 25, "body": "تبلت شیائومی" },
+        { "id": 26, "body": "تبلت لنوو" },
+        { "id": 27, "body": "تبلت مایکروسافت" },
+        { "id": 28, "body": "تبلت دانش آموزی" }
+      ]
+    },
+    {
+      "id": 5,
+      "titlehuge": "هدفون",
+      "items": [
+        { "id": 29, "body": "هدفون بی سیم" },
+        { "id": 30, "body": "هدفون اپل(ایرپاد)" },
+        { "id": 31, "body": "هدفون بیتس" }
+      ]
+    },
+    {
+      "id": 6,
+      "titlehuge": "گوشی بر اساس قیمت",
+      "items": [
+        { "id": 32, "body": "گوشی موبایل ارزان" },
+        { "id": 33, "body": "گوشی موبایل قسطی" },
+        { "id": 34, "body": "گوشی تا 2 میلیون تومان" },
+        { "id": 35, "body": "گوشی تا 5 میلیون تومان" },
+        { "id": 36, "body": "گوشی تا 7 میلیون تومان" },
+        { "id": 37, "body": "گوشی تا 15 میلیون تومان" },
+        { "id": 38, "body": "گوشی بالای 15 میلیون تومان" }
+      ]
+    },
+    {
+      "id": 7,
+      "titlehuge": "گوشی براساس عملکرد",
+      "items": [
+        { "id": 39, "body": "گوشی گیمینگ" },
+        { "id": 40, "body": "گوشی 5G" },
+        { "id": 41, "body": "گوشی دکمه ای" },
+        { "id": 42, "body": "گوشی ضدآب" },
+        { "id": 43, "body": "گوشی مناسب عکاسی" },
+        { "id": 44, "body": "گوشی میان رده" },
+        { "id": 45, "body": "گوشی اقتصادی" },
+        { "id": 46, "body": "گوشی دانش آموزی" },
+        { "id": 47, "body": "گوشی پرچمدار" },
+        { "id": 48, "body": "گوشی دوسیکارت" }
+      ]
+    },
+    {
+      "id": 8,
+      "titlehuge": "برندهای مختلف گوشی موبایل",
+      "items": [
+        { "id": 49, "body": "گوشی آیفون" },
+        { "id": 50, "body": "گوشی سامسونگ" },
+        { "id": 51, "body": "گوشی شیائومی" },
+        { "id": 52, "body": "گوشی نوکیا" },
+        { "id": 53, "body": "گوشی ریلمی" },
+        { "id": 54, "body": "گوشی آنر" },
+        { "id": 55, "body": "گوشی موتورلا" },
+        { "id": 56, "body": "گوشی ناتینگ فون" },
+        { "id": 57, "body": "گوشی جی پلاس" },
+        { "id": 58, "body": "گوشی هواوی" },
+        { "id": 59, "body": "گوشی جی ال ایکس" },
+        { "id": 60, "body": "گوشی های جنرال لوکس" },
+        { "id": 61, "body": "گوشی داریا" },
+        { "id": 62, "body": "گوشی گوگل" },
+        { "id": 63, "body": "گوشی اوپو" },
+        { "id": 64, "body": "گوشی ارد" },
+        { "id": 65, "body": "گوشی وان پلاس" },
+        { "id": 66, "body": "گوشی موبایل رنسو" }
+      ]
+    }
+  ],
   "submenuketabclassify": {
     "id": 4,
     "titlesub": "همه محصولات کتاب,لوازم التحریر و هنر",
@@ -1536,7 +1563,7 @@
     { "id": 3, "img": "./public/images/fourpics/image3.png" },
     { "id": 4, "img": "./public/images/fourpics/image4.png" }
   ],
-  "fourpicsimage5":"./public/images/fourpics/image5.png",
+  "fourpicsimage5": "./public/images/fourpics/image5.png",
   "sooperamazing": [
     {
       "id": 1,

@@ -54,73 +54,14 @@
         column-gap: 8px !important;
       }
     }
-    .classify__div__submenu__item__right__sub__submenu__div__nav__menu {
-      width: inherit !important;
-      height: 86.5vh !important;
-      background-color: #ffffff !important;
-      display: flex !important;
-      flex-flow: row nowrap !important;
-      column-gap: 1px !important;
-      position: absolute !important;
-      top: 80px !important;
-      .div__classify__div__submenu__item__right__sub__submenu__div__nav__menu {
-        width: 25% !important;
-        height: inherit !important;
-        background-color: #ffffff !important;
-        direction: rtl !important;
-        display: flex !important;
-        flex-flow: column wrap !important;
-        justify-content: flex-start !important;
-        padding-top: 15px !important;
-
-        .subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu {
-          height: 40px !important;
-          padding-right: 20px !important;
-          .a__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu {
-            display: block !important;
-            font-family: var(--font-family) !important;
-            font-size: 12px !important;
-            height: inherit !important;
-            text-align: right !important;
-            color: #66666b !important;
-            font-weight: 100 !important;
-            &:hover {
-              color: #d82f4e !important;
-            }
-          }
-        }
-        .huge__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu {
-          height: 40px !important;
-          padding-right: 20px !important;
-          display: flex !important;
-          flex-flow: row nowrap !important;
-          justify-content: flex-start !important;
-          align-items: center !important;
-          column-gap: 5px !important;
-
-          .a__huge__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu {
-            font-family: var(--font-family) !important;
-            font-size: 13px !important;
-            padding-bottom: 20px !important;
-
+  }
+  .a__huge__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu {
             &::before {
               content: "";
               border-right: 2px solid #d82f4e !important;
               padding-left: 8px !important;
             }
           }
-          .svg__huge__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu {
-            position: relative;
-            padding-bottom: 20px;
-            svg {
-              position: absolute;
-              bottom: 15px !important;
-            }
-          }
-        }
-      }
-    }
-  }
 
   .div__2__nav__menu1,
   .div__2__nav__menu2,
