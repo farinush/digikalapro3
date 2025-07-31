@@ -3684,7 +3684,7 @@ details.collapse summary::-webkit-details-marker {
       position: absolute !important;
       top: 80px !important;
       .div__classify__div__submenu__item__right__sub__submenu__div__nav__menu {
-        width: 25% !important;
+        width: 100% !important;
         height: inherit !important;
         background-color: #ffffff !important;
         direction: rtl !important;

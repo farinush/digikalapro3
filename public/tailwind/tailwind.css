@@ -3,58 +3,6 @@
 @tailwind utilities;
 
 @layer component {
-  .submenu__right__sub__submenu__div__nav__menu1,
-  .submenu__right__sub__submenu__div__nav__menu2,
-  .submenu__right__sub__submenu__div__nav__menu3,
-  .submenu__right__sub__submenu__div__nav__menu4,
-  .submenu__right__sub__submenu__div__nav__menu5,
-  .submenu__right__sub__submenu__div__nav__menu6,
-  .submenu__right__sub__submenu__div__nav__menu7,
-  .submenu__right__sub__submenu__div__nav__menu8,
-  .submenu__right__sub__submenu__div__nav__menu9,
-  .submenu__right__sub__submenu__div__nav__menu10,
-  .submenu__right__sub__submenu__div__nav__menu11,
-  .submenu__right__sub__submenu__div__nav__menu12,
-  .submenu__right__sub__submenu__div__nav__menu13,
-  .submenu__right__sub__submenu__div__nav__menu14,
-  .submenu__right__sub__submenu__div__nav__menu15,
-  .submenu__right__sub__submenu__div__nav__menu16 {
-    width: 100%;
-    height: inherit;
-    padding: 10px;
-  }
-
-  .div__submenu__item__right__sub__submenu__div__nav__menu {
-    width: 100%;
-    height: inherit;
-    background-color: #ffffff;
-    display: flex;
-    flex-flow: column wrap;
-    position: relative;
-    .title__div__submenu__item__right__sub__submenu__div__nav__menu {
-      width: inherit !important;
-      background-color: #ffffff !important;
-      direction: rtl !important;
-      line-height: 80px !important;
-      display: flex !important;
-      position: absolute !important;
-      padding-right: 30px !important;
-      .subtitle__title__div__submenu__item__right__sub__submenu__div__nav__menu {
-        font-family: var(--font-family) !important;
-        font-size: 12px !important;
-        position: absolute !important;
-        right: 50px !important;
-        color: #36b4c3 !important;
-        font-weight: 600 !important;
-        word-spacing: 2px !important;
-        display: flex !important;
-        flex-flow: row wrap !important;
-        justify-content: center !important;
-        align-items: center !important;
-        column-gap: 8px !important;
-      }
-    }
-  }
   .a__huge__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu {
             &::before {
               content: "";
