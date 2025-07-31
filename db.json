@@ -31,10 +31,6 @@
     }
   ],
   "navCategories": [
-    { "svg": "./public/svg/mobile.svg", "name": "موبایل" },
-    { "svg": "./public/svg/ketab.svg", "name": "کتاب و لوازم التحریر" },
-    { "svg": "./public/svg/digitalkala.svg", "name": "کالای دیحیتال" },
-    { "svg": "./public/svg/home.svg", "name": "خانه و آشپزخانه" },
     { "svg": "./public/svg/barghi.svg", "name": "لوازم خانگی برقی" },
     { "svg": "./public/svg/mod&poshak.svg", "name": "مد و پوشاک" },
     { "svg": "./public/svg/saat&tala.svg", "name": "ساعت,طلا و جواهرات" },
@@ -243,168 +239,232 @@
     { "id": 10, "titlehuge": "فیلم سینمایی و مستند", "items": [null] },
     { "id": 11, "titlehuge": "آلبوم موسیقی", "items": [null] }
   ],
-  "submenudigitalclassify": {
-    "id": 5,
-    "titlesub": "همه محصولات کالای دیجیتال",
-    "namehuge1": "تبلت",
-    "namehuge2": "خانه هوشمند",
-    "namehuge3": "برندهای برتر",
-    "namehuge4": "پرینتر",
-    "namehuge5": "ماشین های اداری",
-    "namehuge6": "تجهیزات شبکه و ارتباطات",
-    "namehuge7": "هدفون",
-    "namehuge8": "هدست",
-    "namehuge9": "ساعت و مچ بند هوشمند",
-    "namehuge10": "دوربین",
-    "namehuge11": "لپ تاپ",
-    "namehuge12": "لوازم جانبی لپ تاپ",
-    "namehuge13": "کنسول بازی",
-    "svgfleshbechap": "./public/svg/bottommenu/fleshbechap.svg",
+  "digital": [
+    { "id": 1, "titlehuge": "تبلت", "items": [null] },
+    {
+      "id": 2,
+      "titlehuge": "خانه هوشمند",
+      "items": [
+        { "id": 1, "body": "نورو روشنایی هوشمند" },
+        { "id": 2, "body": "کلید و پریز هوشمند" },
+        { "id": 3, "body": "سنسور هوشمند" },
+        { "id": 4, "body": "هاب و دستیار صوتی هوشمند" },
+        { "id": 5, "body": "جارو هوشمند(رباتیک)" }
+      ]
+    },
 
-    "subdiv1name1": "نورو روشنایی هوشمند",
-    "subdiv1name2": "کلید و پریز هوشمند",
-    "subdiv1name3": "سنسور هوشمند",
-    "subdiv1name4": "هاب و دستیار صوتی هوشمند",
-    "subdiv1name5": "جارو هوشمند(رباتیک)",
-    "subdiv1name6": "شیائومی",
-    "subdiv1name7": "سامسونگ",
-    "subdiv1name8": "اپل",
-    "subdiv1name9": "هواووی",
-    "subdiv1name10": "آنر",
-    "subdiv1name11": "ریلمی",
-    "subdiv1name12": "توشیبا",
-    "subdiv1name13": "تکنو",
-    "subdiv1name14": "ایرانسل",
-    "subdiv1name15": "مبین نت",
-
-    "subdiv2name1": "پرینتر سه بعدی",
-    "subdiv2name2": "پرینتر حرارتی",
-    "subdiv2name3": "پرینتر رنگی",
-    "subdiv2name4": "پرینتر لیبل زن",
-    "subdiv2name5": "پرینتر اچ پی",
-    "subdiv2name6": "کابل پرینتر",
-    "subdiv2name7": "کارتریچ",
-    "subdiv2name8": "اسکنر",
-    "subdiv2name9": "تلفن",
-    "subdiv2name10": "بارکدخوان",
-    "subdiv2name11": "ویدیووال",
-    "subdiv2name12": "ویدیو پروژکتور",
-    "subdiv2name13": "دستگاه حضور و غیاب",
-    "subdiv2name14": "یوپی اس",
-    "subdiv2name15": "سوییچ",
-
-    "subdiv3name1": "هدفون بی سیم",
-    "subdiv3name2": "هدفون اپل(ایرپاد)",
-    "subdiv3name3": "هدفون بیتس",
-    "subdiv3name4": "هدفون سونی",
-    "subdiv3name5": "هدفون سامسونگ (ایرپادز)",
-    "subdiv3name6": "هدفون شیائومی",
-    "subdiv3name7": "هدفون جی بی ال",
-    "subdiv3name8": "هدفون ریزر",
-    "subdiv3name9": "ساعت هوشمند سامسونگ",
-    "subdiv3name10": "ساعت هوشمند شیائومی",
-    "subdiv3name11": "اپل واچ",
-    "subdiv3name12": "بند اپل واچ",
-    "subdiv3name13": "بند ساعت هوشمند",
-    "subdiv3name14": "لوازم جانبی ساعت هوشمند",
-
-    "subdiv4name1": "لپ تاپ ایسوس",
-    "subdiv4name2": "لپ تاپ لنوو",
-    "subdiv4name3": "مک بوک",
-    "subdiv4name4": "لپ تاپ HP",
-    "subdiv4name5": "لپ تاپ دل",
-    "subdiv4name6": "لپ تاپ ایسر",
-    "subdiv4name7": "لپ تاپ ام اس آی",
-    "subdiv4name8": "لپ تاپ کاستوم",
-    "subdiv4name9": "شارژر لپ تاپ",
-    "subdiv4name10": "کیف لپ تاپ",
-    "subdiv4name11": "کول پد",
-    "subdiv4name12": "استیکر لپ تاپ",
-    "subdiv4name13": "PS5",
-    "subdiv4name14": "xbox",
-    "subdiv4name15": "PS4"
-  },
-  "submenuhomeclassify": {
-    "id": 6,
-    "titlesub": "همه محصولات کالای دیجیتال",
-    "namehuge1": "تبلت",
-    "namehuge2": "خانه هوشمند",
-    "namehuge3": "برندهای برتر",
-    "namehuge4": "پرینتر",
-    "namehuge5": "ماشین های اداری",
-    "namehuge6": "تجهیزات شبکه و ارتباطات",
-    "namehuge7": "هدفون",
-    "namehuge8": "هدست",
-    "namehuge9": "ساعت و مچ بند هوشمند",
-    "namehuge10": "دوربین",
-    "namehuge11": "لپ تاپ",
-    "namehuge12": "لوازم جانبی لپ تاپ",
-    "namehuge13": "کنسول بازی",
-    "svgfleshbechap": "./public/svg/bottommenu/fleshbechap.svg",
-
-    "subdiv1name1": "نورو روشنایی هوشمند",
-    "subdiv1name2": "کلید و پریز هوشمند",
-    "subdiv1name3": "سنسور هوشمند",
-    "subdiv1name4": "هاب و دستیار صوتی هوشمند",
-    "subdiv1name5": "جارو هوشمند(رباتیک)",
-    "subdiv1name6": "شیائومی",
-    "subdiv1name7": "سامسونگ",
-    "subdiv1name8": "اپل",
-    "subdiv1name9": "هواووی",
-    "subdiv1name10": "آنر",
-    "subdiv1name11": "ریلمی",
-    "subdiv1name12": "توشیبا",
-    "subdiv1name13": "تکنو",
-    "subdiv1name14": "ایرانسل",
-    "subdiv1name15": "مبین نت",
-
-    "subdiv2name1": "پرینتر سه بعدی",
-    "subdiv2name2": "پرینتر حرارتی",
-    "subdiv2name3": "پرینتر رنگی",
-    "subdiv2name4": "پرینتر لیبل زن",
-    "subdiv2name5": "پرینتر اچ پی",
-    "subdiv2name6": "کابل پرینتر",
-    "subdiv2name7": "کارتریچ",
-    "subdiv2name8": "اسکنر",
-    "subdiv2name9": "تلفن",
-    "subdiv2name10": "بارکدخوان",
-    "subdiv2name11": "ویدیووال",
-    "subdiv2name12": "ویدیو پروژکتور",
-    "subdiv2name13": "دستگاه حضور و غیاب",
-    "subdiv2name14": "یوپی اس",
-    "subdiv2name15": "سوییچ",
-
-    "subdiv3name1": "هدفون بی سیم",
-    "subdiv3name2": "هدفون اپل(ایرپاد)",
-    "subdiv3name3": "هدفون بیتس",
-    "subdiv3name4": "هدفون سونی",
-    "subdiv3name5": "هدفون سامسونگ (ایرپادز)",
-    "subdiv3name6": "هدفون شیائومی",
-    "subdiv3name7": "هدفون جی بی ال",
-    "subdiv3name8": "هدفون ریزر",
-    "subdiv3name9": "ساعت هوشمند سامسونگ",
-    "subdiv3name10": "ساعت هوشمند شیائومی",
-    "subdiv3name11": "اپل واچ",
-    "subdiv3name12": "بند اپل واچ",
-    "subdiv3name13": "بند ساعت هوشمند",
-    "subdiv3name14": "لوازم جانبی ساعت هوشمند",
-
-    "subdiv4name1": "لپ تاپ ایسوس",
-    "subdiv4name2": "لپ تاپ لنوو",
-    "subdiv4name3": "مک بوک",
-    "subdiv4name4": "لپ تاپ HP",
-    "subdiv4name5": "لپ تاپ دل",
-    "subdiv4name6": "لپ تاپ ایسر",
-    "subdiv4name7": "لپ تاپ ام اس آی",
-    "subdiv4name8": "لپ تاپ کاستوم",
-    "subdiv4name9": "شارژر لپ تاپ",
-    "subdiv4name10": "کیف لپ تاپ",
-    "subdiv4name11": "کول پد",
-    "subdiv4name12": "استیکر لپ تاپ",
-    "subdiv4name13": "PS5",
-    "subdiv4name14": "xbox",
-    "subdiv4name15": "PS4"
-  },
+    {
+      "id": 3,
+      "titlehuge": "برندهای برتر",
+      "items": [
+        { "id": 6, "body": "شیائومی" },
+        { "id": 7, "body": "سامسونگ" },
+        { "id": 8, "body": "اپل" },
+        { "id": 9, "body": "هواووی" },
+        { "id": 10, "body": "آنر" },
+        { "id": 11, "body": "ریلمی" },
+        { "id": 12, "body": "توشیبا" },
+        { "id": 13, "body": "تکنو" },
+        { "id": 14, "body": "ایرانسل" },
+        { "id": 15, "body": "مبین نت" }
+      ]
+    },
+    {
+      "id": 4,
+      "titlehuge": "پرینتر",
+      "items": [
+        { "id": 16, "body": "پرینتر سه بعدی" },
+        { "id": 17, "body": "پرینتر حرارتی" },
+        { "id": 18, "body": "پرینتر رنگی" },
+        { "id": 19, "body": "پرینتر لیبل زن" },
+        { "id": 20, "body": "پرینتر اچ پی" }
+      ]
+    },
+    {
+      "id": 5,
+      "titlehuge": "ماشین های اداری",
+      "items": [
+        { "id": 21, "body": "کابل پرینتر" },
+        { "id": 22, "body": "کارتریچ" },
+        { "id": 23, "body": "اسکنر" },
+        { "id": 24, "body": "تلفن" },
+        { "id": 25, "body": "بارکدخوان" },
+        { "id": 26, "body": "ویدیووال" },
+        { "id": 27, "body": "ویدیو پروژکتور" },
+        { "id": 28, "body": "دستگاه حضور و غیاب" }
+      ]
+    },
+    {
+      "id": 6,
+      "titlehuge": "تجهیزات شبکه و ارتباطات",
+      "items": [
+        { "id": 29, "body": "یوپی اس" },
+        { "id": 30, "body": "سوییچ" }
+      ]
+    },
+    {
+      "id": 7,
+      "titlehuge": "هدفون",
+      "items": [
+        { "id": 31, "body": "هدفون بی سیم" },
+        { "id": 32, "body": "هدفون اپل(ایرپاد)" },
+        { "id": 33, "body": "هدفون بیتس" },
+        { "id": 34, "body": "هدفون سونی" },
+        { "id": 35, "body": "هدفون سامسونگ (ایرپادز)" },
+        { "id": 36, "body": "هدفون شیائومی" },
+        { "id": 37, "body": "هدفون جی بی ال" },
+        { "id": 38, "body": "هدفون ریزر" }
+      ]
+    },
+    { "id": 8, "titlehuge": "هدست", "items": [null] },
+    {
+      "id": 9,
+      "titlehuge": "ساعت و مچ بند هوشمند",
+      "items": [
+        { "id": 39, "body": "ساعت هوشمند سامسونگ" },
+        { "id": 40, "body": "ساعت هوشمند شیائومی" },
+        { "id": 41, "body": "اپل واچ" },
+        { "id": 42, "body": "بند اپل واچ" },
+        { "id": 43, "body": "بند ساعت هوشمند" },
+        { "id": 44, "body": "لوازم جانبی ساعت هوشمند" }
+      ]
+    },
+    { "id": 10, "titlehuge": "دوربین", "items": [null] },
+    {
+      "id": 11,
+      "titlehuge": "لپ تاپ",
+      "items": [
+        { "id": 45, "body": "لپ تاپ ایسوس" },
+        { "id": 46, "body": "لپ تاپ لنوو" },
+        { "id": 47, "body": "مک بوک" },
+        { "id": 48, "body": "لپ تاپ HP" },
+        { "id": 49, "body": "لپ تاپ دل" },
+        { "id": 50, "body": "لپ تاپ ایسر" },
+        { "id": 51, "body": "لپ تاپ ام اس آی" },
+        { "id": 52, "body": "لپ تاپ کاستوم" }
+      ]
+    },
+    {
+      "id": 12,
+      "titlehuge": "لوازم جانبی لپ تاپ",
+      "items": [
+        { "id": 9, "subdiv4name": "شارژر لپ تاپ" },
+        { "id": 10, "subdiv4name": "کیف لپ تاپ" },
+        { "id": 11, "subdiv4name": "کول پد" },
+        { "id": 12, "subdiv4name": "استیکر لپ تاپ" }
+      ]
+    },
+    {
+      "id": 13,
+      "titlehuge": "کنسول بازی",
+      "items": [
+        { "id": 13, "subdiv4name": "PS5" },
+        { "id": 14, "subdiv4name": "xbox" },
+        { "id": 15, "subdiv4name": "PS4" }
+      ]
+    }
+  ],
+  "home": [
+    {
+      "id": 1,
+      "titlehuge": "ظروف پخت و پز",
+      "items": [
+        { "id": 1, "body": "قابلمه و تابه" },
+        { "id": 2, "body": "زودپز" },
+        { "id": 3, "body": "سرویس پخت و پز" }
+      ]
+    },
+     {
+      "id": 2,
+      "titlehuge": "ابزار آشپزی",
+      "items": [
+        { "id": 4, "body":"ست کفگیر و ملاقه" },
+        { "id": 5, "body": "چاقو" },
+        { "id": 6, "body": "تخته گوشت" },
+        { "id": 7, "body": "ظرف و قالب یخ" },
+        { "id": 8, "body": "قیف" },
+        { "id": 9, "body": "صافی" },
+        { "id": 10, "body": "گردوشکن" },
+        { "id": 11, "body": "فندک آشپزخانه" },
+        { "id": 12, "body": "ترازوی آشپزخانه" }
+      ]
+    },
+     {
+      "id": 3,
+      "titlehuge":"تهیه و سرو چای و قهوه",
+      "items": [
+        { "id": 13, "body":"قهوه ساز و دمنوش  ساز" },
+        { "id": 14, "body": "سماور" },
+        { "id": 15, "body": "شیرجوش-قهوه جوش" },
+        { "id": 16, "body": "قوری" },
+        { "id": 17, "body": "کتری و قوری" },
+        { "id": 18, "body": "فیلترچای" }
+      ]
+    },
+    {
+      "id": 4,
+      "titlehuge":"مبل",
+      "items": [
+        { "id": 19, "body":"مبل راحتی" },
+        { "id": 20, "body": "مبل تختخواب شو" },
+        { "id": 21, "body": "مبل بادی" },
+        { "id": 22, "body": "مبل تدی" },
+        { "id": 23, "body": "مبل ال" },
+        { "id": 24, "body": "مبل مینیمال" },
+        { "id": 25, "body": "مبل چستر" },
+        { "id": 26, "body": "مبل اداری و صندلی انتظار" },
+        { "id": 27, "body": "پاف و بین بگ" },
+        { "id": 28, "body": "صندلی کودک" }
+      ]
+    },
+    {
+      "id": 5,
+      "titlehuge":"دکوراسیون خانگی",
+      "items": [
+        { "id": 19, "body":"کتابخانه" },
+        { "id": 20, "body": "شلف و طبقه" },
+        { "id": 21, "body": "کنسول" },
+        { "id": 22, "body": "صندلی" },
+        { "id": 23, "body": "میز ناهارخوری" }
+      ]
+    },
+     {
+      "id": 6,
+      "titlehuge":"مبلمان و دکوراسیون اداری",
+      "items": [
+        { "id": 24, "body":"صندلی اداری" },
+        { "id": 25, "body": "میزاداری" }
+      ]
+    },
+    {
+      "id": 7,
+      "titlehuge":"حمام",
+      "items": [
+        { "id": 26, "body":"حوله" },
+        { "id": 27, "body": "دمپایی" },
+        { "id": 28, "body": "لیف" },
+        { "id": 29, "body": "پرده حمام" },
+        { "id": 30, "body": "وان و جکوزی" },
+        { "id": 31, "body": "ابزار حمام" }
+      ]
+    },
+     {
+      "id": 8,
+      "titlehuge":"سرویس بهداشتی",
+      "items": [
+        { "id": 26, "body":"توالت فرنگی" },
+        { "id": 27, "body": "ست سرویس بهداشتی" },
+        { "id": 28, "body": "روشویی" },
+        { "id": 29, "body": "جامسواکی" },
+        { "id": 30, "body": "آینه سرویس بهداشتی" },
+        { "id": 31, "body": "فلاش تانک" },
+        { "id": 32, "body": "مخزن مایع دستشویی" },
+        { "id": 33, "body": "پایه رول دستمال" },
+        { "id": 34, "body": "توالت ایرانی" },
+        { "id": 35, "body": "آفتابه" }
+      ]
+    }
+  ],
   "submenubarghiclassify": {
     "id": 7,
     "titlesub": "همه محصولات کالای دیجیتال",

@@ -58,48 +58,54 @@ export const fetchSubmenuItem = async () => {
   }
 };
 
-
 export const fetchSubmenuItem2 = async () => {
   try {
     const response = await fetch("https://farinush.github.io/digikalapro3/db.json");
     const data = await response.json();
 
-    const ketab = data.ketab;
+    const ketab = Array.isArray(data.ketab) ? data.ketab : [];
     const columnsCount = 4;
-
-    // آرایه‌ای از ۴ ستون خالی
     const columns = Array.from({ length: columnsCount }, () => []);
 
-    // چرخشی پر کردن ستون‌ها به شکل مورد نظر
+    // تقسیم‌بندی آیتم‌ها در ستون‌ها
     ketab.forEach((item, index) => {
-      if (index === 0 ) {
+      if (!item) return;
+
+      if (index === 0) {
         columns[0].push(item);
-      } else if ( index === 1 || index === 2) {
+      } else if (index === 1 || index === 2) {
         columns[1].push(item);
       } else if (index === 3 || index === 4) {
         columns[2].push(item);
-      } else if (index === 5 || index === 6 || index === 7 || index === 8 || index === 9 || index === 10) {
+      } else if (index >= 5 && index <= 10) {
         columns[3].push(item);
       }
     });
 
-    // ساخت HTML برای هر ستون
     const columnsHtml = columns.map((group) => {
       const columnHtml = group.map((category) => {
-        const itemsHtml = Array.isArray(category.items)
-          ? category.items.map((item) => {
-              const body = typeof item === "string" ? item : item.body;
-              return `
-                <div class="subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu h-[40px] ps-[20px]">
-                  <a class="a__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu block font-[iranyekanmdeium] text-[12px] h-[40px] text-right text-[#66666b] font-[100] hover:text-[#d82f4e]" href="#">${body}</a>
-                </div>`;
-            }).join("")
-          : "";
+        const titlehuge = category?.titlehuge ?? "بدون عنوان";
+
+        // حذف مقادیر null از items
+        const filteredItems = Array.isArray(category?.items)
+          ? category.items.filter(Boolean)
+          : [];
+
+        const itemsHtml = filteredItems.map((item) => {
+          const body = typeof item === "string"
+            ? item
+            : item?.body ?? "بدون نام";
+
+          return `
+            <div class="subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu h-[40px] ps-[20px]">
+              <a class="a__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu block font-[iranyekanmdeium] text-[12px] h-[40px] text-right text-[#66666b] font-[100] hover:text-[#d82f4e]" href="#">${body}</a>
+            </div>`;
+        }).join("");
 
         return `
           <div class="div__classify__div__submenu__item__right__sub__submenu__div__nav__menu bg-white flex-col dir-rtl flex-wrap flex justify-start pt-[15px]">
             <div class="huge__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu h-[40px] ps-[20px] flex flex-row flex-nowrap flex-start items-center gap-y-[5px]">
-              <a class="a__huge__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu font-[iranyekanmedium] text-[13px] pb-[20px]" href="#">${category.titlehuge}</a>
+              <a class="a__huge__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu font-[iranyekanmedium] text-[13px] pb-[20px]" href="#">${titlehuge}</a>
               <div class="svg__huge__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu relative pb-[20px]">
                 <img src="./public/svg/bottommenu/fleshbechap.svg" alt="">
               </div>
@@ -111,995 +117,147 @@ export const fetchSubmenuItem2 = async () => {
       return `<div class="w-[25%] flex flex-col gap-y-[10px]">${columnHtml}</div>`;
     });
 
-    // قرار دادن در DOM
-    document.querySelector(".classify__div__submenu__item__right__sub__submenu__div__nav__menu2 .classify22").innerHTML = columnsHtml.join("");
+    document.querySelector(".classify__div__submenu__item__right__sub__submenu__div__nav__menu .classify").innerHTML = columnsHtml.join("");
 
   } catch (error) {
     console.log("خطا در دریافت داده‌ها: ", error.message);
   }
 };
-
-
-
-
-
-
 
 export const fetchSubmenuItem3 = async () => {
   try {
-    let response = await fetch("https://farinush.github.io/digikalapro3/db.json");
-    if (!response.ok) {
-      throw new Error(`خطا در دریافت داده‌ها: ${response.status}`);
-    }
-    let data = await response.json();
-    console.log("داده‌های دریافتی: ", data);
-    if (!data) {
-      console.error("داده‌ها به درستی دریافت نشده‌اند.");
-      return;
-    }
-    const submenu = data;
-    let fullHTML = [];
-    fullHTML.push(`  
-                      <div class="div__submenu__item__right__sub__submenu__div__nav__menu">
-                        <div class="title__div__submenu__item__right__sub__submenu__div__nav__menu">
-                          <div class="subtitle__title__div__submenu__item__right__sub__submenu__div__nav__menu">
-                            ${submenu.titlesub}
-                            <img src="${submenu.svgfleshbechap}" alt="">
-                          </div>
-                        </div>
-                        <div class="classify__div__submenu__item__right__sub__submenu__div__nav__menu">
-                          <div class="div__classify__div__submenu__item__right__sub__submenu__div__nav__menu">
-                            <div class="huge__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu">
-                              <a class="a__huge__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu" href="" >${submenu.namehuge1}</a>
-                              <div class="svg__huge__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu">
-                              <img src="${submenu.svgfleshbechap}" alt="">
-                              </div>
-                            </div>
-                            <div class="huge__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu">
-                              <a class="a__huge__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu" href="">${submenu.namehuge2}</a>
-                              <div class="svg__huge__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu" >
-                              <img src="${submenu.svgfleshbechap}" alt="">
-                              </div>
-                            </div>
-                            <div class="subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu">
-                              <a class="a__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu" href="#">${submenu.subdiv1name1}</a>
-                            </div>
-                            <div
-                              class="subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                            >
-                              <a
-                                class="a__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                                href="#"
-                                >${submenu.subdiv1name2}</a
-                              >
-                            </div>
-                            <div
-                              class="subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                            >
-                              <a
-                                class="a__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                                href="#"
-                                >${submenu.subdiv1name3}</a
-                              >
-                            </div>
-                            <div
-                              class="subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                            >
-                              <a
-                                class="a__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                                href="#"
-                                >${submenu.subdiv1name4}</a
-                              >
-                            </div>
-                            <div
-                              class="subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                            >
-                              <a
-                                class="a__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                                href="#"
-                                >${submenu.subdiv1name5}</a>
-                            </div>
-                            <div class="huge__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu">
-                              <a class="a__huge__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu" href="">${submenu.namehuge3}</a>
-                              <div class="svg__huge__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu">
-                              <img src="${submenu.svgfleshbechap}" alt="">
-                              </div>
-                            </div>
-                            <div
-                              class="subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                            >
-                              <a
-                                class="a__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                                href="#"
-                                >${submenu.subdiv1name6}</a
-                              >
-                            </div>
-                            <div
-                              class="subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                            >
-                              <a
-                                class="a__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                                href="#"
-                                >${submenu.subdiv1name7}</a
-                              >
-                            </div>
-                            <div
-                              class="subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                            >
-                              <a
-                                class="a__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                                href="#"
-                                >${submenu.subdiv1name8}</a
-                              >
-                            </div>
-                            <div
-                              class="subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                            >
-                              <a
-                                class="a__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                                href="#"
-                                >${submenu.subdiv1name9}</a
-                              >
-                            </div>
-                            <div
-                              class="subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                            >
-                              <a
-                                class="a__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                                href="#"
-                                >${submenu.subdiv1name10}</a
-                              >
-                            </div>
-                            <div
-                              class="subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                            >
-                              <a
-                                class="a__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                                href="#"
-                                >${submenu.subdiv1name11}</a
-                              >
-                            </div>
-                            <div
-                              class="subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                            >
-                              <a
-                                class="a__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                                href="#"
-                                >${submenu.subdiv1name12}</a
-                              >
-                            </div>
-                            <div
-                              class="subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                            >
-                              <a
-                                class="a__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                                href="#"
-                                >${submenu.subdiv1name13}</a
-                              >
-                            </div>
-                            <div
-                              class="subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                            >
-                              <a
-                                class="a__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                                href="#"
-                                >${submenu.subdiv1name14}</a
-                              >
-                            </div>
-                            <div
-                              class="subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                            >
-                              <a
-                                class="a__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                                href="#"
-                                >${submenu.subdiv1name15}</a
-                              >
-                            </div>
-                          </div>
-                          <div class="div__classify__div__submenu__item__right__sub__submenu__div__nav__menu">
-                            <div class="huge__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu">
-                              <a class="a__huge__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu" href="">${submenu.namehuge4}</a>
-                              <div class="svg__huge__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu">
-                              <img src="${submenu.svgfleshbechap}" alt="">
-                              </div>
-                            </div>
-                            <div
-                              class="subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                            >
-                              <a
-                                class="a__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                                href="#"
-                                >${submenu.subdiv2name1}</a
-                              >
-                            </div>
-                            <div
-                              class="subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                            >
-                              <a
-                                class="a__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                                href="#"
-                                >${submenu.subdiv2name2}</a
-                              >
-                            </div>
-                            <div
-                              class="subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                            >
-                              <a
-                                class="a__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                                href="#"
-                                >${submenu.subdiv2name3}</a
-                              >
-                            </div>
-                            <div
-                              class="subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu">
-                              <a
-                                class="a__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                                href="#">${submenu.subdiv2name4}</a>
-                            </div>
-                            <div class="subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu">
-                              <a class="a__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu" href="#">${submenu.subdiv2name5}</a>
-                            </div>
-                            <div class="huge__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu">
-                              <a class="a__huge__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu" href="">${submenu.namehuge5}</a>
-                              <div class="svg__huge__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu">
-                              <img src="${submenu.svgfleshbechap}" alt="">
-                              </div>
-                            </div>
-                            <div
-                              class="subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu">
-                              <a class="a__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu" href="#">${submenu.subdiv2name6}</a>
-                            </div>
-                            <div class="subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu">
-                              <a class="a__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu" href="#">${submenu.subdiv2name7}</a>
-                            </div>
-                            <div
-                              class="subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                            >
-                              <a
-                                class="a__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                                href="#"
-                                >${submenu.subdiv2name8}</a
-                              >
-                            </div>
-                            <div
-                              class="subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                            >
-                              <a
-                                class="a__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                                href="#"
-                                >${submenu.subdiv2name9}</a
-                              >
-                            </div>
-                            <div
-                              class="subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                            >
-                              <a
-                                class="a__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                                href="#"
-                                >${submenu.subdiv2name10}</a
-                              >
-                            </div>
-                            <div
-                              class="subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                            >
-                              <a
-                                class="a__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                                href="#"
-                                >${submenu.subdiv2name11}</a
-                              >
-                            </div>
-                            <div
-                              class="subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                            >
-                              <a
-                                class="a__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                                href="#"
-                                >${submenu.subdiv2name12}</a
-                              >
-                            </div>
-                            <div
-                              class="subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                            >
-                              <a
-                                class="a__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                                href="#"
-                                >${submenu.subdiv2name13}</a
-                              >
-                            </div>
-                            <div class="huge__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu">
-                              <a class="a__huge__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu" href="">${submenu.namehuge6}</a>
-                              <div class="svg__huge__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu">
-                              <img src="${submenu.svgfleshbechap}" alt="">
-                              </div>
-                            </div>
-                            <div class="subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu">
-                              <a class="a__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu" href="#">${submenu.subdiv2name14}</a>
-                            </div>
-                            <div class="subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu">
-                              <a class="a__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu" href="#">${submenu.subdiv2name15}</a>
-                            </div>
-                          </div>
-                          <div class="div__classify__div__submenu__item__right__sub__submenu__div__nav__menu">
-                            <div class="huge__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu">
-                              <a class="a__huge__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu" href="">${submenu.namehuge7}</a>
-                              <div class="svg__huge__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu">
-                              <img src="${submenu.svgfleshbechap}" alt="">
-                              </div>
-                            </div>
-                            <div class="subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu">
-                              <a class="a__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu" href="#">${submenu.subdiv3name1}</a>
-                            </div>
-                            <div
-                              class="subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu">
-                              <a
-                                class="a__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                                href="#"
-                                >${submenu.subdiv3name2}</a>
-                            </div>
-                            <div
-                              class="subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu">
-                              <a
-                                class="a__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                                href="#"
-                                >${submenu.subdiv3name3}</a
-                              >
-                            </div>
-                            <div
-                              class="subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                            >
-                              <a
-                                class="a__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                                href="#"
-                                >${submenu.subdiv3name4}</a
-                              >
-                            </div>
-                            <div
-                              class="subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                            >
-                              <a
-                                class="a__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                                href="#"
-                                >${submenu.subdiv3name5}</a
-                              >
-                            </div>
-                            <div
-                              class="subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                            >
-                              <a
-                                class="a__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                                href="#"
-                                >${submenu.subdiv3name6}</a
-                              >
-                            </div>
-                            <div
-                              class="subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                            >
-                              <a
-                                class="a__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                                href="#"
-                                >${submenu.subdiv3name7}</a
-                              >
-                            </div>
-                            <div
-                              class="subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                            >
-                              <a
-                                class="a__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                                href="#"
-                                >${submenu.subdiv3name8}</a
-                              >
-                            </div>
-                            <div class="huge__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu">
-                              <a class="a__huge__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu" href="">${submenu.namehuge8}</a>
-                              <div class="svg__huge__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu">
-                              <img src="${submenu.svgfleshbechap}" alt="">
-                              </div>
-                            </div>
-                            <div class="huge__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu">
-                              <a class="a__huge__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu" href="">${submenu.namehuge9}</a>
-                              <div class="svg__huge__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu">
-                              <img src="${submenu.svgfleshbechap}" alt="">
-                              </div>
-                            </div>
-                            <div
-                              class="subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                            >
-                              <a
-                                class="a__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                                href="#"
-                                >${submenu.subdiv3name9}</a
-                              >
-                            </div>
-                            <div
-                              class="subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                            >
-                              <a
-                                class="a__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                                href="#"
-                                >${submenu.subdiv3name10}</a
-                              >
-                            </div>
-                            <div
-                              class="subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                            >
-                              <a
-                                class="a__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                                href="#"
-                                >${submenu.subdiv3name11}</a
-                              >
-                            </div>
-                            <div
-                              class="subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                            >
-                              <a
-                                class="a__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                                href="#"
-                                >${submenu.subdiv3name12}</a
-                              >
-                            </div>
-                            <div
-                              class="subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                            >
-                              <a
-                                class="a__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                                href=""
-                                >${submenu.subdiv3name13}</a
-                              >
-                            </div>
-                            <div
-                              class="subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                            >
-                              <a
-                                class="a__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                                href="#"
-                                >${submenu.subdiv3name14}</a
-                              >
-                            </div>
-                            <div class="huge__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu">
-                              <a class="a__huge__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu" href="">${submenu.namehuge10}</a>
-                              <div class="svg__huge__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu">
-                              <img src="${submenu.svgfleshbechap}" alt="">
-                              </div>
-                            </div>
-                          </div>
-                          <div class="div__classify__div__submenu__item__right__sub__submenu__div__nav__menu">
-                            <div class="huge__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu">
-                              <a class="a__huge__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu" href="">${submenu.namehuge11}</a>
-                              <div class="svg__huge__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu">
-                              <img src="${submenu.svgfleshbechap}" alt="">
-                              </div>
-                            </div>
-                            <div
-                              class="subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                            >
-                              <a
-                                class="a__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                                href="#"
-                                >${submenu.subdiv4name1}</a
-                              >
-                            </div>
-                            <div
-                              class="subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                            >
-                              <a
-                                class="a__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                                href="#"
-                                >${submenu.subdiv4name2}</a
-                              >
-                            </div>
-                            <div
-                              class="subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                            >
-                              <a
-                                class="a__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                                href="#"
-                                >${submenu.subdiv4name3}</a
-                              >
-                            </div>
-                            <div
-                              class="subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                            >
-                              <a
-                                class="a__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                                href="#"
-                                >${submenu.subdiv4name4}</a
-                              >
-                            </div>
-                            <div
-                              class="subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                            >
-                              <a
-                                class="a__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                                href="#"
-                                >${submenu.subdiv4name5}</a
-                              >
-                            </div>
-                            <div
-                              class="subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                            >
-                              <a
-                                class="a__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                                href="#"
-                                >${submenu.subdiv4name6}</a
-                              >
-                            </div>
-                            <div
-                              class="subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                            >
-                              <a
-                                class="a__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                                href="#"
-                                >${submenu.subdiv4name7}</a
-                              >
-                            </div>
-                            <div
-                              class="subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                            >
-                              <a
-                                class="a__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                                href="#"
-                                >${submenu.subdiv4name8}</a
-                              >
-                            </div>
-                            <div class="huge__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu">
-                              <a class="a__huge__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu" href="">${submenu.namehuge12}</a>
-                              <div class="svg__huge__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu">
-                              <img src="${submenu.svgfleshbechap}" alt="">
-                              </div>
-                            </div>
-                            <div
-                              class="subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                            >
-                              <a
-                                class="a__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                                href="#"
-                                >${submenu.subdiv4name9}</a
-                              >
-                            </div>
-                            <div
-                              class="subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                            >
-                              <a
-                                class="a__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                                href="#"
-                                >${submenu.subdiv4name10}</a
-                              >
-                            </div>
-                            <div
-                              class="subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                            >
-                              <a
-                                class="a__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                                href="#"
-                                >${submenu.subdiv4name11}</a
-                              >
-                            </div>
-                            <div
-                              class="subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                            >
-                              <a
-                                class="a__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                                href="#"
-                                >${submenu.subdiv4name12}</a>
-                            </div>
-                            <div class="huge__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu">
-                              <a class="a__huge__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu" href="">${submenu.namehuge13}</a>
-                              <div class="svg__huge__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu">
-                              <img src="${submenu.svgfleshbechap}" alt="">
-                              </div>
-                            </div>
-                            <div class="subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu">
-                              <a
-                                class="a__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                                href="#"
-                                >${submenu.subdiv4name13}</a
-                              >
-                            </div>
-                            <div
-                              class="subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                            >
-                              <a
-                                class="a__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                                href="#"
-                                >${submenu.subdiv4name14}</a
-                              >
-                            </div>
-                            <div
-                              class="subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                            >
-                              <a
-                                class="a__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                                href="#"
-                                >${submenu.subdiv4name15}</a
-                              >
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                   `);
-    fullHTML = fullHTML.join("");
-    document.querySelector(
-      ".all__submenu__item__right__sub__submenu__div__nav__menu .submenu__right__sub__submenu__div__nav__menu3"
-    ).innerHTML = fullHTML;
+    const response = await fetch("https://farinush.github.io/digikalapro3/db.json");
+    const data = await response.json();
+
+    const digital = Array.isArray(data.digital) ? data.digital : [];
+    const columnsCount = 4;
+    const columns = Array.from({ length: columnsCount }, () => []);
+
+    // تقسیم‌بندی آیتم‌ها در ستون‌ها
+    digital.forEach((item, index) => {
+      if (!item) return;
+
+      if (index === 0 || index === 1 || index === 2) {
+        columns[0].push(item);
+      } else if (index === 3 || index === 4 || index === 5) {
+        columns[1].push(item);
+      } else if (index === 6 || index === 7 || index === 8 || index === 9) {
+        columns[2].push(item);
+      } else if (index === 10 || index === 11 || index === 12) {
+        columns[3].push(item);
+      }
+    });
+
+    const columnsHtml = columns.map((group) => {
+      const columnHtml = group.map((category) => {
+        const titlehuge = category?.titlehuge ?? "بدون عنوان";
+
+        // حذف مقادیر null از items
+        const filteredItems = Array.isArray(category?.items)
+          ? category.items.filter(Boolean)
+          : [];
+
+        const itemsHtml = filteredItems.map((item) => {
+          const body = typeof item === "string"
+            ? item
+            : item?.body ?? "بدون نام";
+
+          return `
+            <div class="subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu h-[40px] ps-[20px]">
+              <a class="a__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu block font-[iranyekanmdeium] text-[12px] h-[40px] text-right text-[#66666b] font-[100] hover:text-[#d82f4e]" href="#">${body}</a>
+            </div>`;
+        }).join("");
+
+        return `
+          <div class="div__classify__div__submenu__item__right__sub__submenu__div__nav__menu bg-white flex-col dir-rtl flex-wrap flex justify-start pt-[15px]">
+            <div class="huge__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu h-[40px] ps-[20px] flex flex-row flex-nowrap flex-start items-center gap-y-[5px]">
+              <a class="a__huge__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu font-[iranyekanmedium] text-[13px] pb-[20px]" href="#">${titlehuge}</a>
+              <div class="svg__huge__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu relative pb-[20px]">
+                <img src="./public/svg/bottommenu/fleshbechap.svg" alt="">
+              </div>
+            </div>
+            ${itemsHtml}
+          </div>`;
+      }).join("");
+
+      return `<div class="w-[25%] flex flex-col gap-y-[10px]">${columnHtml}</div>`;
+    });
+
+    document.querySelector(".classify__div__submenu__item__right__sub__submenu__div__nav__menu .classify").innerHTML = columnsHtml.join("");
+
   } catch (error) {
     console.log("خطا در دریافت داده‌ها: ", error.message);
   }
 };
+
 export const fetchSubmenuItem4 = async () => {
   try {
-    let response = await fetch("https://farinush.github.io/digikalapro3/db.json");
-    if (!response.ok) {
-      throw new Error(`خطا در دریافت داده‌ها: ${response.status}`);
-    }
-    let data = await response.json();
-    console.log("داده‌های دریافتی: ", data);
-    if (!data) {
-      console.error("داده‌ها به درستی دریافت نشده‌اند.");
-      return;
-    }
-    const submenu = data;
-    let fullHTML = [];
-    fullHTML.push(`  
-                                          <div class="div__submenu__item__right__sub__submenu__div__nav__menu">
-                        <div class="title__div__submenu__item__right__sub__submenu__div__nav__menu">
-                          <div class="subtitle__title__div__submenu__item__right__sub__submenu__div__nav__menu">
-                            همه محصولات خانه و آشپزخانه
-                            <img src="./public/svg/bottommenu/fleshbechap.svg" alt="">
-                          </div>
-                        </div>
-                        <div class="classify__div__submenu__item__right__sub__submenu__div__nav__menu">
-                          <div class="div__classify__div__submenu__item__right__sub__submenu__div__nav__menu">
-                            <div class="huge__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu">
-                              <a class="a__huge__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu" href="">صنایع دستی</a>
-                              <div class="svg__huge__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu">
-                                <img src="./public/svg/bottommenu/fleshbechap.svg" alt="">
-                              </div>
-                            </div>
-                            <div
-                              class="subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                            >
-                              <a
-                                class="a__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                                href="#"
-                                >کالاهای مس</a
-                              >
-                            </div>
-                            <div
-                              class="subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                            >
-                              <a
-                                class="a__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                                href="#"
-                                >سفال,سرامیک و چینی</a
-                              >
-                            </div>
-                            <div
-                              class="subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                            >
-                              <a
-                                class="a__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                                href="#"
-                                >کیف چرمی</a
-                              >
-                            </div>
-                            <div
-                              class="subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                            >
-                              <a
-                                class="a__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                                href="#"
-                                >ترمه,قلمکار و دستبافت</a
-                              >
-                            </div>
-                            <div
-                              class="subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                            >
-                              <a
-                                class="a__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                                href="#"
-                                >خاتم,منبت,حصیری</a
-                              >
-                            </div>
-                            <div
-                              class="subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                            >
-                              <a
-                                class="a__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                                href="#"
-                                >تابلو و ساعت</a
-                              >
-                            </div>
-                            <div
-                              class="subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                            >
-                              <a
-                                class="a__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                                href="#"
-                                >میناکاری</a
-                              >
-                            </div>
-                            <div
-                              class="subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                            >
-                              <a
-                                class="a__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                                href="#"
-                                >فیروزه کوبی</a
-                              >
-                            </div>
-                            <div
-                              class="subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                            >
-                              <a
-                                class="a__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                                href="#"
-                                >سوزن دوزی</a
-                              >
-                            </div>
-                            <div
-                              class="subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                            >
-                              <a
-                                class="a__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                                href="#"
-                                >محصولات استخوانی</a
-                              >
-                            </div>
-                            <div
-                              class="subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                            >
-                              <a
-                                class="a__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                                href="#"
-                                >جعبه و دست سازه های هنری</a
-                              >
-                            </div>
-                          </div>
-                          <div class="div__classify__div__submenu__item__right__sub__submenu__div__nav__menu">
-                            <div class="huge__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu">
-                              <a
-                                class="a__huge__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                                href="">آلات موسیقی</a>
-                              <div
-                                class="svg__huge__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu">
-                              <img src="./public/svg/bottommenu/fleshbechap.svg" alt="">
-                              </div>
-                            </div>
-                            <div
-                              class="subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu">
-                              <a
-                                class="a__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                                href="#"
-                                >لوازم جانبی آلات موسیقی</a
-                              >
-                            </div>
-                            <div
-                              class="subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                            >
-                              <a
-                                class="a__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                                href="#"
-                                >گیتار</a
-                              >
-                            </div>
-                            <div
-                              class="subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                            >
-                              <a
-                                class="a__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                                href="#"
-                                >کیبورد و ارگ</a
-                              >
-                            </div>
-                            <div
-                              class="subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                            >
-                              <a
-                                class="a__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                                href="#"
-                                >پیانو دیجیتال</a
-                              >
-                            </div>
-                            <div
-                              class="subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                            >
-                              <a
-                                class="a__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                                href="#"
-                                >درام, پرکاشن, دف</a
-                              >
-                            </div>
-                            <div
-                              class="subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                            >
-                              <a
-                                class="a__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                                href="#"
-                                >تجهیزات استودیویی</a
-                              >
-                            </div>
-                            <div
-                              class="subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                            >
-                              <a
-                                class="a__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                                href="#"
-                                >ویولن</a
-                              >
-                            </div>
-                            <div
-                              class="subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                            >
-                              <a
-                                class="a__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                                href="#"
-                                >ساز های ایرانی</a
-                              >
-                            </div>
-                            <div
-                              class="huge__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                            >
-                              <a
-                                class="a__huge__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                                href=""
-                                >فرش ماشینی و دستبافت </a>
-                              <div
-                                class="svg__huge__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu">
-                              <img src="./public/svg/bottommenu/fleshbechap.svg" alt="">
-                              </div>
-                            </div>
-                            <div
-                              class="subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                            >
-                              <a
-                                class="a__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                                href="#"
-                                >فرش ماشینی</a
-                              >
-                            </div>
-                            <div
-                              class="subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                            >
-                              <a
-                                class="a__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                                href="#"
-                                >فرش دستبافت</a
-                              >
-                            </div>
-                            <div
-                              class="subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu" >
-                              <a
-                                class="a__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                                href="#">تابلو</a>
-                            </div>
-                          </div>
-                          <div class="div__classify__div__submenu__item__right__sub__submenu__div__nav__menu">
-                            <div class="huge__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu">
-                              <a
-                                class="a__huge__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                                href="">لوازم تحریر</a>
-                              <div
-                                class="svg__huge__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu">
-                              <img src="./public/svg/bottommenu/fleshbechap.svg" alt="">
-                              </div>
-                            </div>
-                            <div
-                              class="subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                            >
-                              <a
-                                class="a__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                                href="#"
-                                >لوازم اداری و اقلام مصرفی</a
-                              >
-                            </div>
-                            <div
-                              class="subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                            >
-                              <a
-                                class="a__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                                href="#"
-                                >کیف, کوله پشتی و جامدادی</a
-                              >
-                            </div>
-                            <div
-                              class="subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                            >
-                              <a
-                                class="a__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                                href="#"
-                                >چراغ مطالعه</a
-                              >
-                            </div>
-                            <div
-                              class="subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                            >
-                              <a
-                                class="a__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                                href="#"
-                                >کاغذ کادو, پاکت و کارت هدیه</a
-                              >
-                            </div>
-                            <div
-                              class="subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                            >
-                              <a
-                                class="a__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                                href="#"
-                                >نوشت افزار</a
-                              >
-                            </div>
-                            <div
-                              class="subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                            >
-                              <a
-                                class="a__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                                href="#"
-                                >دفتر و کاغذ</a
-                              >
-                            </div>
-                            <div
-                              class="subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                            >
-                              <a
-                                class="a__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                                href="#"
-                                >خودکار و روان نویس</a
-                              >
-                            </div>
-                            <div
-                              class="subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                            >
-                              <a
-                                class="a__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                                href="#"
-                                >ابزار نقاشی و رنگ آمیزی</a
-                              >
-                            </div>
-                            <div
-                              class="subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                            >
-                              <a
-                                class="a__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                                href="#"
-                                >میز تحریر</a
-                              >
-                            </div>
-                            <div
-                              class="subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                            >
-                              <a
-                                class="a__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                                href="#"
-                                >آلبوم عکس</a
-                              >
-                            </div>
-                            <div
-                              class="subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                            >
-                              <a
-                                class="a__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                                href="#"
-                                >کاغذ چاپ و پرینتر</a>
-                            </div>
-                            <div
-                              class="subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu">
-                              <a
-                                class="a__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu"
-                                href="">مداد و مدادرنگی</a>
-                            </div>
-                          </div>
+    const response = await fetch("https://farinush.github.io/digikalapro3/db.json");
+    const data = await response.json();
 
-                        </div>
-                      </div>  
-                   `);
-    fullHTML = fullHTML.join("");
-    document.querySelector(
-      ".all__submenu__item__right__sub__submenu__div__nav__menu .submenu__right__sub__submenu__div__nav__menu4"
-    ).innerHTML = fullHTML;
+    const home = Array.isArray(data.home) ? data.home : [];
+    const columnsCount = 3;
+    const columns = Array.from({ length: columnsCount }, () => []);
+
+    // تقسیم‌بندی آیتم‌ها در ستون‌ها
+    home.forEach((item, index) => {
+      if (!item) return;
+
+      if (index === 0 || index === 1 || index === 2) {
+        columns[0].push(item);
+      } else if (index === 3 || index === 4 || index === 5) {
+        columns[1].push(item);
+      } else if (index === 6 || index === 7) {
+        columns[2].push(item);
+      } 
+    });
+
+    const columnsHtml = columns.map((group) => {
+      const columnHtml = group.map((category) => {
+        const titlehuge = category?.titlehuge ?? "بدون عنوان";
+
+        // حذف مقادیر null از items
+        const filteredItems = Array.isArray(category?.items)
+          ? category.items.filter(Boolean)
+          : [];
+
+        const itemsHtml = filteredItems.map((item) => {
+          const body = typeof item === "string"
+            ? item
+            : item?.body ?? "بدون نام";
+
+          return `
+            <div class="subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu h-[40px] ps-[20px]">
+              <a class="a__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu block font-[iranyekanmdeium] text-[12px] h-[40px] text-right text-[#66666b] font-[100] hover:text-[#d82f4e]" href="#">${body}</a>
+            </div>`;
+        }).join("");
+
+        return `
+          <div class="div__classify__div__submenu__item__right__sub__submenu__div__nav__menu bg-white flex-col dir-rtl flex-wrap flex justify-start pt-[15px]">
+            <div class="huge__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu h-[40px] ps-[20px] flex flex-row flex-nowrap flex-start items-center gap-y-[5px]">
+              <a class="a__huge__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu font-[iranyekanmedium] text-[13px] pb-[20px]" href="#">${titlehuge}</a>
+              <div class="svg__huge__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu relative pb-[20px]">
+                <img src="./public/svg/bottommenu/fleshbechap.svg" alt="">
+              </div>
+            </div>
+            ${itemsHtml}
+          </div>`;
+      }).join("");
+
+      return `<div class="w-[25%] flex flex-col gap-y-[10px]">${columnHtml}</div>`;
+    });
+
+    document.querySelector(".classify__div__submenu__item__right__sub__submenu__div__nav__menu .classify").innerHTML = columnsHtml.join("");
+
   } catch (error) {
     console.log("خطا در دریافت داده‌ها: ", error.message);
   }
 };
+
+
+
+
+
 export const fetchSubmenuItem5 = async () => {
   try {
     let response = await fetch("https://farinush.github.io/digikalapro3/db.json");
