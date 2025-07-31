@@ -112,7 +112,7 @@ export const fetchSubmenuItem2 = async () => {
     });
 
     // قرار دادن در DOM
-    document.querySelector(".classify__div__submenu__item__right__sub__submenu__div__nav__menu .classify2").innerHTML = columnsHtml.join("");
+    document.querySelector(".classify__div__submenu__item__right__sub__submenu__div__nav__menu2 .classify22").innerHTML = columnsHtml.join("");
 
   } catch (error) {
     console.log("خطا در دریافت داده‌ها: ", error.message);
