@@ -43,7 +43,6 @@ import { fetchKhandaniha } from "./menu/khandaniha.js";
 import { buttonMore, buttonReverse, fetchSubfooter } from "./menu/subfooter.js";
 import { fetchDigichild } from "./menu/digichildbrand.js";
 import { fetchButtonsoop, fetchSubbottonsoop } from "./menu/labelsoopermarket.js";
-import { fetchPoshtibanilabel, fetchSubposhtibani } from "./menu/poshtibani.js";
 fetchFormpage();
 formShow();
 fetchSubmenuItem();
@@ -89,7 +88,5 @@ buttonMore();
 fetchDigichild();
 fetchButtonsoop();
 fetchSubbottonsoop();
-fetchPoshtibanilabel();
-fetchSubposhtibani();
 fetchSlidercentermenu()
 fetchSlidercentermenu2()

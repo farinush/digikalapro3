@@ -1529,45 +1529,98 @@
     "name30": "همدان",
     "name31": "یزد"
   },
-  "story": {
-    "id": 21,
-    "img1": "./public/images/story/image1.png",
-    "name1": "مشاوره خرید لوازم آرایشی و بهداشتی",
-    "img2": "./public/images/story/image2.png",
-    "name2": "مشاوره خرید بردگیم و بازی",
-    "img3": "./public/images/story/image3.png",
-    "name3": "مشاوره خرید ایزار خانگی و صنعتی",
-    "img4": "./public/images/story/image4.png",
-    "name4": "مشاوره خرید لوازم خانگی",
-    "img5": "./public/images/story/image5.png",
-    "name5": "مشاوره خرید موبایل و کالای الکترونیک",
-    "img6": "./public/images/story/image6.png",
-    "name6": "مشاوره خرید موبایل و کالای الکترونیک",
-    "img7": "./public/images/story/image7.png",
-    "name7": "مشاوره خرید موبایل و کالای الکترونیک",
-    "img8": "./public/images/story/image8.png",
-    "name8": "مشاوره خرید موبایل و کالای الکترونیک",
-    "img9": "./public/images/story/image9.png",
-    "name9": "قوی ترین در پاک کنندگی ظروف",
-    "img10": "./public/images/story/image10.png",
-    "name10": "زعفران مصطفوی",
-    "img11": "./public/images/story/image11.png",
-    "name11": "اره زنجیری حرفه ای",
-    "img12": "./public/images/story/image12.png",
-    "name12": "F6 pro VS 14T",
-    "img13": "./public/images/story/image13.png",
-    "name13": "این حلقه معمولی نیست",
-    "img14": "./public/images/story/image14.png",
-    "name14": "ماشین کنترلی لامبورگینی",
-    "img15": "./public/images/story/image15.png",
-    "name15": "حلقه سلامت",
-    "img16": "./public/images/story/image16.png",
-    "name16": "ولاگ یک روز بدون گوشی",
-    "img17": "./public/images/story/image17.png",
-    "name17": "سرامیک ماشین",
-    "img18": "./public/images/story/image18.png",
-    "name18": "آبمیوه گیری آسانسوری"
-  },
+  "story": [
+    {
+      "id": 1,
+      "img": "./public/images/story/image1.png",
+      "name": "مشاوره خرید لوازم آرایشی و بهداشتی"
+    },
+    {
+      "id": 2,
+      "img": "./public/images/story/image2.png",
+      "name": "مشاوره خرید بردگیم و بازی"
+    },
+    {
+      "id": 3,
+      "img": "./public/images/story/image3.png",
+      "name": "مشاوره خرید ایزار خانگی و صنعتی"
+    },
+    {
+      "id": 4,
+      "img": "./public/images/story/image4.png",
+      "name": "مشاوره خرید لوازم خانگی"
+    },
+    {
+      "id": 5,
+      "img": "./public/images/story/image5.png",
+      "name": "مشاوره خرید موبایل و کالای الکترونیک"
+    },
+    {
+      "id": 6,
+      "img": "./public/images/story/image6.png",
+      "name": "مشاوره خرید موبایل و کالای الکترونیک"
+    },
+    {
+      "id": 7,
+      "img": "./public/images/story/image7.png",
+      "name": "مشاوره خرید موبایل و کالای الکترونیک"
+    },
+    {
+      "id": 8,
+      "img": "./public/images/story/image8.png",
+      "name": "مشاوره خرید موبایل و کالای الکترونیک"
+    },
+    {
+      "id": 9,
+      "img": "./public/images/story/image9.png",
+      "name": "قوی ترین در پاک کنندگی ظروف"
+    },
+    {
+      "id": 10,
+      "img": "./public/images/story/image10.png",
+      "name": "زعفران مصطفوی"
+    },
+    {
+      "id": 11,
+      "img": "./public/images/story/image11.png",
+      "name": "اره زنجیری حرفه ای"
+    },
+    {
+      "id": 12,
+      "img": "./public/images/story/image12.png",
+      "name": "F6 pro VS 14T"
+    },
+    {
+      "id": 13,
+      "img": "./public/images/story/image13.png",
+      "name": "این حلقه معمولی نیست"
+    },
+    {
+      "id": 14,
+      "img": "./public/images/story/image14.png",
+      "name": "ماشین کنترلی لامبورگینی"
+    },
+    {
+      "id": 15,
+      "img": "./public/images/story/image15.png",
+      "name": "حلقه سلامت"
+    },
+    {
+      "id": 16,
+      "img": "./public/images/story/image16.png",
+      "name": "ولاگ یک روز بدون گوشی"
+    },
+    {
+      "id": 17,
+      "img": "./public/images/story/image17.png",
+      "name": "سرامیک ماشین"
+    },
+    {
+      "id": 18,
+      "img": "./public/images/story/image18.png",
+      "name": "آبمیوه گیری آسانسوری"
+    }
+  ],
   "slider": [
     { "id": 1, "img": "./public/images/slider/image1.jpg" },
     { "id": 2, "img": "./public/images/slider/image2.jpg" },
@@ -2646,21 +2699,5 @@
     "saatpng": "./public/images/sooperbutton/saat.png.png",
     "basketslow": "./public/images/sooperbutton/fresh-shop-basket.png",
     "basketspeed": "./public/images/sooperbutton/jet-shop-basket.png"
-  },
-  "poshtibani": {
-    "imglabel": "./public/svg/poshtibani/poshtibani.svg",
-    "subtitle1": "پشتیبانی آنلاین",
-    "hello": "سلام",
-    "hand": "&#128075",
-    "svgfleshbechap": "./public/svg/poshtibani/fleshbechap.svg",
-    "title1": "اینجا می توانید تعدادی از پرسش های متداول را ببینید یا در صورت تمایل با ما آنلاین گفتگو کنید!",
-    "ptitle1": "در وب سایت روی گزینه ثبت نام کلیک کنید. میتوانید با استفاده از شماره موبایل ثبت نام خود را انجام دهید.",
-    "title2": "چگونه می توانم یک پروفایل ایجاد کنم؟",
-    "ptitle2": "بعد از ورود به پروفایل ، کالای مدنظر خود را به سبد خرید اضافه کنید ، پس از انتخاب آدرس میتوانید نوع پرداخت خود را انتخاب کنید.د.",
-    "title3": " چطور در دیجی کالا سفارش خود را ثبت کنم؟",
-    "ptitle3": "بعد از وارد نمودن کد فعالسازی ، ثبت نام انجام می شود. سپس روی گزینه تکمیل اطلاعات کلیک و اطلاعات خود را تکمیل نمایید.",
-    "title4": "کالایی را که در طرح پیشنهاد شگفت انگیز می باشد می توان با تعداد بیشتر از یک عدد خریداری کرد؟",
-    "title5": "جواب سوالتون رو پیدا نکردید؟",
-    "title6": "گفتگو با پشتیبان آنلاین"
   }
 }
