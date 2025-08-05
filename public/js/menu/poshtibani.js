@@ -1,4 +1,4 @@
-async function poshtibaniView() {
+export async function poshtibaniView() {
   function setupEventListeners() {
       const inputView = document.querySelector(".inputviewposhtibani");
       const bottomPoshtibani = document.querySelector(".subposhtibani");
@@ -20,4 +20,4 @@ async function poshtibaniView() {
       }
   }, 100); 
 }
-poshtibaniView()
+

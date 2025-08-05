@@ -491,13 +491,13 @@
         { "id": 16, "body": "مینی واش" }
       ]
     },
-     {
+    {
       "id": 5,
       "titlehuge": "یخچال فریزر",
       "items": [
         { "id": 17, "body": "یخچال فریزر سایدبای ساید" },
         { "id": 18, "body": "یخچال فریزر دوقلو" },
-        { "id": 19, "body": "یخچال فریزر هتلی"},
+        { "id": 19, "body": "یخچال فریزر هتلی" },
         { "id": 20, "body": "یخچال فریزر کمبی" }
       ]
     },
@@ -507,7 +507,7 @@
       "items": [
         { "id": 21, "body": "تلویزیون 4k" },
         { "id": 22, "body": "تلویزیون گیمینگ" },
-        { "id": 23, "body": "تلویزیون OLED"},
+        { "id": 23, "body": "تلویزیون OLED" },
         { "id": 24, "body": "تلویزیون QLED" },
         { "id": 25, "body": "تلویزیون 144 هرتز" },
         { "id": 26, "body": "تلویزیون 120 هرتز" },
@@ -520,7 +520,7 @@
       "items": [
         { "id": 28, "body": "تلویزیون 86 اینچ" },
         { "id": 29, "body": "تلویزیون 85 اینچ" },
-        { "id": 30, "body": "تلویزیون 75 اینچ"},
+        { "id": 30, "body": "تلویزیون 75 اینچ" },
         { "id": 31, "body": "تلویزیون 70 اینچ" },
         { "id": 32, "body": "تلویزیون 65 اینچ" },
         { "id": 33, "body": "تلویزیون 60 اینچ" },
@@ -538,7 +538,7 @@
       "items": [
         { "id": 40, "body": "سرخکن بدون روغن(air fryer)" },
         { "id": 41, "body": "ماکروویو,ماکروفر" },
-        { "id": 42, "body": "اجاق گاز"},
+        { "id": 42, "body": "اجاق گاز" },
         { "id": 43, "body": "پلوپز" },
         { "id": 44, "body": "ساندویچ ساز و وافل ساز" },
         { "id": 45, "body": "آون توستر" },
@@ -547,22 +547,22 @@
         { "id": 48, "body": "مولتی کوکرو تخم مرغ پز" }
       ]
     },
-      {
+    {
       "id": 9,
       "titlehuge": "اتو",
       "items": [
         { "id": 49, "body": "اتوبخار ایستاده" },
         { "id": 50, "body": "اتوبخار" },
-        { "id": 51, "body": "بخارگر"}
+        { "id": 51, "body": "بخارگر" }
       ]
     },
-      {
+    {
       "id": 10,
       "titlehuge": "نوشیدنی ساز",
       "items": [
         { "id": 52, "body": "قهوه ساز" },
         { "id": 53, "body": "اسپرسوساز" },
-        { "id": 54, "body": "چای ساز"},
+        { "id": 54, "body": "چای ساز" },
         { "id": 55, "body": "کتری برقی" },
         { "id": 56, "body": "سماور برقی" },
         { "id": 57, "body": "آبمیوه گیری" },
@@ -577,7 +577,7 @@
       "items": [
         { "id": 61, "body": "گوشت کوب برقی" },
         { "id": 62, "body": "غذاساز" },
-        { "id": 63, "body": "همزن"},
+        { "id": 63, "body": "همزن" },
         { "id": 64, "body": "مخلوط کن" },
         { "id": 65, "body": "چرخ گوشت" },
         { "id": 66, "body": "خردکن" },
@@ -585,19 +585,21 @@
       ]
     },
     { "id": 12, "titlehuge": "بخارشو", "items": [null] },
-    { "id": 13, 
-    "titlehuge": "تصویه آب",
-    "items": [
-     { "id": 68, "body": "فیلتر تصویه آب" }
-    ] },
-    { "id": 14, 
-    "titlehuge": "لوازم توکار", 
-    "items": [
+    {
+      "id": 13,
+      "titlehuge": "تصویه آب",
+      "items": [{ "id": 68, "body": "فیلتر تصویه آب" }]
+    },
+    {
+      "id": 14,
+      "titlehuge": "لوازم توکار",
+      "items": [
         { "id": 69, "body": "فر" },
         { "id": 70, "body": "هود" },
         { "id": 71, "body": "گاز صفحه ای" },
         { "id": 72, "body": "سینک ظرفشویی" }
-    ] }
+      ]
+    }
   ],
   "submenustyleclassify": {
     "id": 8,
@@ -2600,74 +2602,49 @@
       "p": "پایان فصل سوم بازی مرکب از آینده ی این مجموعه چه میگوید؟"
     }
   ],
-  "subfooter": {
-    "svgdigikala": "./public/svg/subfooter/svgdigikala.svg",
-    "button1": "بازگشت به بالا",
-    "svgfleshbebala": "./public/svg/subfooter/svgfleshbebala.svg",
-    "svgfleshbechap": "./public/svg/khandaniha/svgfleshbechap.svg",
-    "span1": "تلفن پشتیبانی 021-61930000",
-    "span2": "021-910002100",
-    "span3": "7روز هفته,24ساعته پاسخگوی شما هستیم",
-    "svgbox": "./public/svg/subfooter/boxsvg.svg",
-    "titlebox": "امکان تحویل اکسپرس",
-    "svghand": "./public/svg/subfooter/handsvg.svg",
-    "titlehand": "امکان پرداخت در محل",
-    "svgdaily": "./public/svg/subfooter/daily.svg",
-    "titledaily": "7روز هفته,24ساعته",
-    "svgreverse": "./public/svg/subfooter/reverse.svg",
-    "titlereverse": "هفت روز ضمانت بازگشت کالا",
-    "svgoriginal": "./public/svg/subfooter/original.svg",
-    "titleoriginal": "ضمانت اصل بودن کالا",
-    "huge1": "با دیجی کالا",
-    "simple1": "اتاق خبر دیجی کالا",
-    "simple2": "فروش در دیجی کالا",
-    "simple3": "فرصت های شغلی",
-    "simple4": "گزارش تخلف در دیجی کالا",
-    "simple5": "تماس با دیجی کالا",
-    "simple6": "درباره ی دیجی کالا",
-    "huge2": "خدمات مشتریان",
-    "simple7": "پاسخ به پرسش های مشتریان",
-    "simple8": "رویه های بازگرداندن کالا",
-    "simple9": "شرایط استفاده",
-    "simple10": "حریم خصوصی",
-    "simple11": "گزارش باگ",
-    "huge3": "راهنمای خرید از دیجی کالا",
-    "simple12": "نحوه ی ثبت سفارش",
-    "simple13": "رویه ارسال سفارش",
-    "simple14": "شیوه های پرداخت",
-    "spanhamrahi": "باماهمراه باشید!",
-    "huge4": "شرکای تجاری",
-    "svginstagram": "./public/svg/subfooter/instagram.svg",
-    "svgtwitter": "./public/svg/subfooter/twitter.svg",
-    "svglinkdin": "./public/svg/subfooter/linkedin.svg",
-    "svgaparat": "./public/svg/subfooter/aparat.svg",
-    "spantakhfif": "باثبت ایمیل, از جدیدترین تخفیف ها باخبر شوید",
-    "placeholdertakhfif": "ایمیل شما",
-    "labeltakhfif": "ثبت",
-    "axdigikala": "./public/images/subfooter/axdigikala.png",
-    "spanbox5": "دانلود اپلیکیشن دیجی کالا",
-    "imgbazar": "./public/images/subfooter/coffe-bazzar.png",
-    "imgmyket": "./public/images/subfooter/myket.png",
-    "imgsibapp": "./public/images/subfooter/sib-app.png",
-    "imgmore": "./public/images/subfooter/More.png",
-    "titlebox6": "فروشگاه اینترنتی دیجی کالا, بررسی, انتخاب و خرید آنلاین",
-    "pbox6": "یک خرید اینترنتی مطمئن، نیازمند فروشگاهی است که بتواند کالاهایی متنوع، باکیفیت و دارای قیمت مناسب را در مدت زمان ی کوتاه به دست مشتریان خود برساند و ضمانت بازگشت کالا هم داشته باشد؛ ویژگی‌هایی که فروشگاه اینترنتی دیجی‌کالا سال‌هاست بر روی آن‌ها کار کرده و توانسته از این طریق مشتریان ثابت خود را داشته باشد.",
-    "pbox62": "یکی از مهم‌ترین دغدغه‌های کاربران دیجی‌کالا یا هر فروشگاه‌ اینترنتی دیگری، این است که کالای خریداری شده چه زمانی به دستشان می‌رسد. ",
-    "pbox63": "دیجی‌کالا شیوه‌های مختلفی از ارسال را متناسب با فروشنده کالا،‌ مقصد کالا و همچنین نوع کالا در اختیار کاربران خود قرار می‌دهد. هر یک از روش های ارسال دیجی کالا شرایط و ویژگی‌های خاص خود را دارند که ممکن است گاهی برای کاربران جدید، مبهم و پیچیده به نظر برسند. برای آگاهی بیشتر مشتریان از خدمات دیجی‌کالا، این فروشگاه اینترنتی در بخشی از وب‌سایت خود راهنمای کاملی از شیوه‌‌های ارسال را به صورت ساده و به دور از پیچیدگی، قرار داده است که شامل 8 نوع ارسال کالا به روش‌های زیر است: ارسال امروز، دریافت حضوری، دریافت از گنجه، ارسال توسط فروشنده، ارسال عادی، ارسال کالاهای بزرگ، سنگین و فوق سنگین، ارسال سریع سوپرمارکتی، ارسال با پست",
-    "buttonmore": "مشاهده بیشتر",
-    "svgbuttonmore": "./public/svg/subfooter/svgfleshbechap.svg",
-    "kala1": "./public/images/subfooter/kala1.png",
-    "kala2": "./public/images/subfooter/kala2.png",
-    "kala3": "./public/images/subfooter/84.png",
-    "pbox7": "برای استفاده از مطالب دیجی‌کالا، داشتن «هدف غیرتجاری» و ذکر «منبع» کافیست. تمام حقوق اين وب‌سايت نیز برای شرکت نوآوران فن آوازه (فروشگاه آنلاین دیجی‌کالا) است.",
-    "imgdigi1": "./public/svg/digichildbrand/digi1.svg",
-    "imgdigi2": "./public/svg/digichildbrand/digi2.svg",
-    "imgdigi3": "./public/svg/digichildbrand/digi3.svg",
-    "imgdigi4": "./public/svg/digichildbrand/digi4.svg",
-    "imgdigi5": "./public/svg/digichildbrand/digi5.svg",
-    "imgdigi6": "./public/svg/digichildbrand/digi6.svg",
-    "imgdigi8": "./public/svg/digichildbrand/digi8.svg"
-  },
+  "subfooterbox4": [
+    {
+      "id": 1,
+      "title": "با دیجی کالا",
+      "items": [
+        { "id": 1, "body": "اتاق خبر دیجی کالا" },
+        { "id": 2, "body": "فروش در دیجی کالا" },
+        { "id": 3, "body": "فرصت های شغلی" },
+        { "id": 4, "body": "گزارش تخلف در دیجی کالا" },
+        { "id": 5, "body": "تماس با دیجی کالا" },
+        { "id": 6, "body": "درباره ی دیجی کالا" }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "خدمات مشتریان",
+      "items": [
+        { "id": 7, "body": "پاسخ به پرسش های مشتریان" },
+        { "id": 8, "body": "رویه های بازگرداندن کالا" },
+        { "id": 9, "body": "شرایط استفاده" },
+        { "id": 10, "body": "حریم خصوصی" },
+        { "id": 11, "body": "گزارش باگ" }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "راهنمای خرید از دیجی کالا",
+      "items": [
+        { "id": 12, "simple12": "نحوه ی ثبت سفارش" },
+        { "id": 13, "simple13": "رویه ارسال سفارش" },
+        { "id": 14, "simple14": "شیوه های پرداخت" }
+      ]
+    }
+  ],
+  "subfooterbox4_2": [
+    { "id": 1, "body": "./public/svg/digichildbrand/digi1.svg" },
+    { "id": 2, "body": "./public/svg/digichildbrand/digi2.svg" },
+    { "id": 3, "body": "./public/svg/digichildbrand/digi3.svg" },
+    { "id": 4, "body": "./public/svg/digichildbrand/digi4.svg" },
+    { "id": 5, "body": "./public/svg/digichildbrand/digi5.svg" },
+    { "id": 6, "body": "./public/svg/digichildbrand/digi6.svg" },
+    { "id": 7, "body": "./public/svg/digichildbrand/digi8.svg" }
+  ],
   "digichild": {
     "img1": "./public/svg/digichildbrand/digi1.svg",
     "img2": "./public/svg/digichildbrand/digi2.svg",
@@ -2684,20 +2661,5 @@
     "img13": "./public/svg/digichildbrand/digi13.svg",
     "img14": "./public/svg/digichildbrand/digi14.svg",
     "img15": "./public/svg/digichildbrand/digi15.svg"
-  },
-  "buttonsoopermarket": {
-    "titlelabel": "سوپرمارکت",
-    "svglabel": "./public/images/sooperbutton/image1.png",
-    "h5text": "یکی از سوپرمارکت های زیر را انتخاب کنید",
-    "h6text": "فقط در شهر های تهران و کرج",
-    "svgfleshbechap": "./public/svg/soopermarketbutton/felshbechap.svg",
-    "titlegreen": "پرتخفیف و متنوع",
-    "titleorange": "ارسال سریع",
-    "title2green": "ارسال امروز",
-    "title2orange": "45 دقیقه ای",
-    "carpng": "./public/images/sooperbutton/car.png.png",
-    "saatpng": "./public/images/sooperbutton/saat.png.png",
-    "basketslow": "./public/images/sooperbutton/fresh-shop-basket.png",
-    "basketspeed": "./public/images/sooperbutton/jet-shop-basket.png"
   }
 }

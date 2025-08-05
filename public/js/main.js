@@ -1,4 +1,8 @@
-import { formShow, fetchSlidercentermenu, fetchSlidercentermenu2 } from "./menu/centermenu.js";
+import {
+  formShow,
+  fetchSlidercentermenu,
+  fetchSlidercentermenu2,
+} from "./menu/centermenu.js";
 import { fetchFormpage } from "./menu/form.js";
 import {
   fetchShahr,
@@ -30,19 +34,19 @@ import { fetchFourpics } from "./menu/fourpics.js";
 import { fetchSooperamazing } from "./menu/soopermarketamazing.js";
 import { fetchClassifyshopp } from "./menu/classifyshopp.js";
 import { fetchActivebeyken } from "./menu/activebeyken.js";
-import {
-  fetchFavaritebrands,
-} from "./menu/favaritebrands.js";
+import { fetchFavaritebrands } from "./menu/favaritebrands.js";
 import { fetchUniqeestil } from "./menu/uniqeestil.js";
 import { fetchMobilehead } from "./menu/mobileheadphone.js";
 import { fetchHardsecond } from "./menu/hard.js";
 import { fetchSaatlaptop } from "./menu/saatlaptop.js";
 import { fetchMontakhab } from "./menu/montakhab.js";
-import {fetchHotsecond } from "./menu/hot.js";
+import { fetchHotsecond } from "./menu/hot.js";
 import { fetchKhandaniha } from "./menu/khandaniha.js";
-import { buttonMore, buttonReverse, fetchSubfooter } from "./menu/subfooter.js";
+import { buttonMore, buttonReverse, fetchSubfooter, fetchSubfooter2 } from "./menu/subfooter.js";
 import { fetchDigichild } from "./menu/digichildbrand.js";
-import { fetchButtonsoop, fetchSubbottonsoop } from "./menu/labelsoopermarket.js";
+import {buttonSoopwidth , buttonsoopMenu} from "./menu/labelsoopermarket.js"
+
+import { poshtibaniView } from "./menu/poshtibani.js";
 fetchFormpage();
 formShow();
 fetchSubmenuItem();
@@ -86,7 +90,10 @@ fetchSubfooter();
 buttonReverse();
 buttonMore();
 fetchDigichild();
-fetchButtonsoop();
-fetchSubbottonsoop();
-fetchSlidercentermenu()
-fetchSlidercentermenu2()
+poshtibaniView();
+buttonsoopMenu()
+buttonSoopwidth()
+fetchSlidercentermenu();
+fetchSlidercentermenu2();
+
+fetchSubfooter2()

@@ -3934,6 +3934,9 @@ details.collapse summary::-webkit-details-marker {
     top: calc(50% - 460px / 2) !important;
     right: 100px !important;
   }
+  .hidden{
+  display: none;
+}
 }
 
 @media (min-width: 768px) {
