@@ -2630,9 +2630,9 @@
       "id": 3,
       "title": "راهنمای خرید از دیجی کالا",
       "items": [
-        { "id": 12, "simple12": "نحوه ی ثبت سفارش" },
-        { "id": 13, "simple13": "رویه ارسال سفارش" },
-        { "id": 14, "simple14": "شیوه های پرداخت" }
+        { "id": 12, "body": "نحوه ی ثبت سفارش" },
+        { "id": 13, "body": "رویه ارسال سفارش" },
+        { "id": 14, "body": "شیوه های پرداخت" }
       ]
     }
   ],
@@ -2645,21 +2645,21 @@
     { "id": 6, "body": "./public/svg/digichildbrand/digi6.svg" },
     { "id": 7, "body": "./public/svg/digichildbrand/digi8.svg" }
   ],
-  "digichild": {
-    "img1": "./public/svg/digichildbrand/digi1.svg",
-    "img2": "./public/svg/digichildbrand/digi2.svg",
-    "img3": "./public/svg/digichildbrand/digi3.svg",
-    "img4": "./public/svg/digichildbrand/digi4.svg",
-    "img5": "./public/svg/digichildbrand/digi5.svg",
-    "img6": "./public/svg/digichildbrand/digi6.svg",
-    "img7": "./public/svg/digichildbrand/digi7.svg",
-    "img8": "./public/svg/digichildbrand/digi8.svg",
-    "img9": "./public/svg/digichildbrand/digi9.svg",
-    "img10": "./public/svg/digichildbrand/digi10.svg",
-    "img11": "./public/svg/digichildbrand/digi11.svg",
-    "img12": "./public/svg/digichildbrand/digi12.svg",
-    "img13": "./public/svg/digichildbrand/digi13.svg",
-    "img14": "./public/svg/digichildbrand/digi14.svg",
-    "img15": "./public/svg/digichildbrand/digi15.svg"
-  }
+  "digichild": [
+    { "id": 1, "img": "./public/svg/digichildbrand/digi1.svg" },
+    { "id": 2, "img": "./public/svg/digichildbrand/digi2.svg" },
+    { "id": 3, "img": "./public/svg/digichildbrand/digi3.svg" },
+    { "id": 4, "img": "./public/svg/digichildbrand/digi4.svg" },
+    { "id": 5, "img": "./public/svg/digichildbrand/digi5.svg" },
+    { "id": 6, "img": "./public/svg/digichildbrand/digi6.svg" },
+    { "id": 7, "img": "./public/svg/digichildbrand/digi7.svg" },
+    { "id": 8, "img": "./public/svg/digichildbrand/digi8.svg" },
+    { "id": 9, "img": "./public/svg/digichildbrand/digi9.svg" },
+    { "id": 10, "img": "./public/svg/digichildbrand/digi10.svg" },
+    { "id": 11, "img": "./public/svg/digichildbrand/digi11.svg" },
+    { "id": 12, "img": "./public/svg/digichildbrand/digi12.svg" },
+    { "id": 13, "img": "./public/svg/digichildbrand/digi13.svg" },
+    { "id": 14, "img": "./public/svg/digichildbrand/digi14.svg" },
+    { "id": 15, "img": "./public/svg/digichildbrand/digi15.svg" }
+  ]
 }

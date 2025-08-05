@@ -7,7 +7,7 @@ export const fetchSubfooter = async () => {
     let subfootbox4 = res.subfooterbox4
       .map((item) => {
         // ساختن لینک‌های داخلی هر آیتم
-        let links = item.subfooterbox4
+        let links = item.items
           .map((link) => {
             return `<a href="#" class="simple-div1-box4 text-[#a1a2ab] text-[12px] font-[iranyekanmedium] leading-[10px] text-right block w-[100%] h-[27px]">${link.body}</a>`;
           })
@@ -62,7 +62,7 @@ export const fetchSubfooter2 = async () => {
     // بخش اول: داده‌های تکرارشونده (subfooterbox4)
     let subfootbox4_2 = res.subfooterbox4
       .map((item) => {
-        let links = item.subfooterbox4
+        let links = item.items
           .map((link) => {
             return `<p>${link.body}</p>`;
           })

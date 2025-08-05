@@ -42,7 +42,7 @@ import { fetchSaatlaptop } from "./menu/saatlaptop.js";
 import { fetchMontakhab } from "./menu/montakhab.js";
 import { fetchHotsecond } from "./menu/hot.js";
 import { fetchKhandaniha } from "./menu/khandaniha.js";
-import { buttonMore, buttonReverse, fetchSubfooter, fetchSubfooter2 } from "./menu/subfooter.js";
+import { buttonMore, fetchSubfooter, fetchSubfooter2 } from "./menu/subfooter.js";
 import { fetchDigichild } from "./menu/digichildbrand.js";
 import {buttonSoopwidth , buttonsoopMenu} from "./menu/labelsoopermarket.js"
 
@@ -87,7 +87,7 @@ fetchMontakhab();
 fetchHotsecond();
 fetchKhandaniha();
 fetchSubfooter();
-buttonReverse();
+
 buttonMore();
 fetchDigichild();
 poshtibaniView();
