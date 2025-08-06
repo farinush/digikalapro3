@@ -427,28 +427,29 @@
               </div>
             </nav>
           </div>
-          <label
-            for="up"
-            class="labelforshow w-[17%] h-[inherit] relative font-[iranyekanmedium] text-[13px] text-[#8b868c] gap-y-[5px] cursor-pointer"
-          ></label>
-          <input
-            type="radio"
-            id="up"
-            name="click"
-            class="inputforshow hidden"
-          />
-          <input
-            type="radio"
-            id="down"
-            name="click"
-            class="inputforclose hidden"
-          />
-          <div
-            class="subbottomcity w-[100%] h-[100vh] bg-[#0c050580] absolute left-0 top-0 hidden"
-          >
-            <div
-              class="sub-subbottomcity w-[459px] h-[650px] bg-white rounded-[8px] absolute flex flex-col flex-wrap gap-x-[3px] custom-position"
-            ></div>
+          <label for="up" class="labelforshow w-[17%] h-[inherit] relative font-[iranyekanmedium] text-[13px] text-[#8b868c] gap-y-[5px] cursor-pointer">
+              <div class="child_labelforshow w-[100%] h-[100%] flex flex-row flex-nowrap justify-start items-center">
+          <img src="./public/svg/bottommenu/entekhabshahr.svg" alt="">
+          لطفا شهر خود را انتخاب کنید
+        </div>
+          </label>
+          <input type="radio" id="up" name="click" class="inputforshow hidden"/>
+          <input type="radio" id="down" name="click" class="inputforclose hidden"/>
+          <div class="subbottomcity w-[100%] h-[100vh] bg-[#0c050580] absolute left-0 top-0 hidden">
+            <div class="sub-subbottomcity w-[459px] h-[650px] bg-white rounded-[8px] absolute flex flex-col flex-wrap gap-x-[3px] custom-position">
+               <div class="text-sub-subbottomcity flex h-[10%] w-[inherit] flex-col flex-wrap gap-x-[5px] font-[yekan] mt-[25px] ps-[20px] text-[13px] text-[#2b2b2b] font-600">
+                  انتخاب شهر
+               </div>
+               <hr class="w-[80%] h-[1px] block mx-auto border-[1px] border-solid border-[#3d3a3a]/[0.5]"/>
+                <div class="live-city w-[inherit] h-[85%] overflow-x-hidden overflow-y-auto">
+                  <div class="live-location-sub-subbottomci font-[yekan] text-[13px] p-[25px] text-[#25bbce] font-600 flex flex-row flex-wrap justify-start items-center gap-y-[5px]">
+            <img src="./public/svg/bottommenu/makanyabi.svg" alt="">
+            مکان یابی خودکار
+                  </div>
+                  <div class="form-sub-subbottomcity w-[inherit]"></div>
+                </div>
+                 <label for="down" class="block w-[35px] h-[35px] text-[#2b2b2b] text-center leading-[35px] font-bold cursor-pointer absolute left-0 top-0">&times;</label>
+            </div>
           </div>
         </div>
       </div>

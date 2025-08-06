@@ -1,6 +1,8 @@
 export const fetchSubmenuItem = async () => {
   try {
-    const response = await fetch("https://farinush.github.io/digikalapro3/db.json");
+    const response = await fetch(
+      "https://farinush.github.io/digikalapro3/db.json"
+    );
     const data = await response.json();
 
     const mobile = data.mobile;
@@ -24,18 +26,21 @@ export const fetchSubmenuItem = async () => {
 
     // ساخت HTML برای هر ستون
     const columnsHtml = columns.map((group) => {
-      const columnHtml = group.map((category) => {
-        const itemsHtml = Array.isArray(category.items)
-          ? category.items.map((item) => {
-              const body = typeof item === "string" ? item : item.body;
-              return `
+      const columnHtml = group
+        .map((category) => {
+          const itemsHtml = Array.isArray(category.items)
+            ? category.items
+                .map((item) => {
+                  const body = typeof item === "string" ? item : item.body;
+                  return `
                 <div class="subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu h-[40px] ps-[20px]">
                   <a class="a__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu block font-[iranyekanmdeium] text-[12px] h-[40px] text-right text-[#66666b] font-[100] hover:text-[#d82f4e]" href="#">${body}</a>
                 </div>`;
-            }).join("")
-          : "";
+                })
+                .join("")
+            : "";
 
-        return `
+          return `
           <div class="div__classify__div__submenu__item__right__sub__submenu__div__nav__menu bg-white flex-col dir-rtl flex-wrap flex justify-start pt-[15px]">
             <div class="huge__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu h-[40px] ps-[20px] flex flex-row flex-nowrap flex-start items-center gap-y-[5px]">
               <a class="a__huge__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu font-[iranyekanmedium] text-[13px] pb-[20px]" href="#">${category.titlehuge}</a>
@@ -45,14 +50,16 @@ export const fetchSubmenuItem = async () => {
             </div>
             ${itemsHtml}
           </div>`;
-      }).join("");
+        })
+        .join("");
 
       return `<div class="w-[25%] flex flex-col gap-y-[10px]">${columnHtml}</div>`;
     });
 
     // قرار دادن در DOM
-    document.querySelector(".classify__div__submenu__item__right__sub__submenu__div__nav__menu .classify2").innerHTML = columnsHtml.join("");
-
+    document.querySelector(
+      ".classify__div__submenu__item__right__sub__submenu__div__nav__menu .classify2"
+    ).innerHTML = columnsHtml.join("");
   } catch (error) {
     console.log("خطا در دریافت داده‌ها: ", error.message);
   }
@@ -60,7 +67,9 @@ export const fetchSubmenuItem = async () => {
 
 export const fetchSubmenuItem2 = async () => {
   try {
-    const response = await fetch("https://farinush.github.io/digikalapro3/db.json");
+    const response = await fetch(
+      "https://farinush.github.io/digikalapro3/db.json"
+    );
     const data = await response.json();
 
     const ketab = Array.isArray(data.ketab) ? data.ketab : [];
@@ -83,26 +92,28 @@ export const fetchSubmenuItem2 = async () => {
     });
 
     const columnsHtml = columns.map((group) => {
-      const columnHtml = group.map((category) => {
-        const titlehuge = category?.titlehuge ?? "بدون عنوان";
+      const columnHtml = group
+        .map((category) => {
+          const titlehuge = category?.titlehuge ?? "بدون عنوان";
 
-        // حذف مقادیر null از items
-        const filteredItems = Array.isArray(category?.items)
-          ? category.items.filter(Boolean)
-          : [];
+          // حذف مقادیر null از items
+          const filteredItems = Array.isArray(category?.items)
+            ? category.items.filter(Boolean)
+            : [];
 
-        const itemsHtml = filteredItems.map((item) => {
-          const body = typeof item === "string"
-            ? item
-            : item?.body ?? "بدون نام";
+          const itemsHtml = filteredItems
+            .map((item) => {
+              const body =
+                typeof item === "string" ? item : item?.body ?? "بدون نام";
 
-          return `
+              return `
             <div class="subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu h-[40px] ps-[20px]">
               <a class="a__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu block font-[iranyekanmdeium] text-[12px] h-[40px] text-right text-[#66666b] font-[100] hover:text-[#d82f4e]" href="#">${body}</a>
             </div>`;
-        }).join("");
+            })
+            .join("");
 
-        return `
+          return `
           <div class="div__classify__div__submenu__item__right__sub__submenu__div__nav__menu bg-white flex-col dir-rtl flex-wrap flex justify-start pt-[15px]">
             <div class="huge__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu h-[40px] ps-[20px] flex flex-row flex-nowrap flex-start items-center gap-y-[5px]">
               <a class="a__huge__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu font-[iranyekanmedium] text-[13px] pb-[20px]" href="#">${titlehuge}</a>
@@ -112,13 +123,15 @@ export const fetchSubmenuItem2 = async () => {
             </div>
             ${itemsHtml}
           </div>`;
-      }).join("");
+        })
+        .join("");
 
       return `<div class="w-[25%] flex flex-col gap-y-[10px]">${columnHtml}</div>`;
     });
 
-    document.querySelector(".classify__div__submenu__item__right__sub__submenu__div__nav__menu .classify").innerHTML = columnsHtml.join("");
-
+    document.querySelector(
+      ".classify__div__submenu__item__right__sub__submenu__div__nav__menu .classify"
+    ).innerHTML = columnsHtml.join("");
   } catch (error) {
     console.log("خطا در دریافت داده‌ها: ", error.message);
   }
@@ -126,7 +139,9 @@ export const fetchSubmenuItem2 = async () => {
 
 export const fetchSubmenuItem3 = async () => {
   try {
-    const response = await fetch("https://farinush.github.io/digikalapro3/db.json");
+    const response = await fetch(
+      "https://farinush.github.io/digikalapro3/db.json"
+    );
     const data = await response.json();
 
     const digital = Array.isArray(data.digital) ? data.digital : [];
@@ -149,26 +164,28 @@ export const fetchSubmenuItem3 = async () => {
     });
 
     const columnsHtml = columns.map((group) => {
-      const columnHtml = group.map((category) => {
-        const titlehuge = category?.titlehuge ?? "بدون عنوان";
+      const columnHtml = group
+        .map((category) => {
+          const titlehuge = category?.titlehuge ?? "بدون عنوان";
 
-        // حذف مقادیر null از items
-        const filteredItems = Array.isArray(category?.items)
-          ? category.items.filter(Boolean)
-          : [];
+          // حذف مقادیر null از items
+          const filteredItems = Array.isArray(category?.items)
+            ? category.items.filter(Boolean)
+            : [];
 
-        const itemsHtml = filteredItems.map((item) => {
-          const body = typeof item === "string"
-            ? item
-            : item?.body ?? "بدون نام";
+          const itemsHtml = filteredItems
+            .map((item) => {
+              const body =
+                typeof item === "string" ? item : item?.body ?? "بدون نام";
 
-          return `
+              return `
             <div class="subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu h-[40px] ps-[20px]">
               <a class="a__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu block font-[iranyekanmdeium] text-[12px] h-[40px] text-right text-[#66666b] font-[100] hover:text-[#d82f4e]" href="#">${body}</a>
             </div>`;
-        }).join("");
+            })
+            .join("");
 
-        return `
+          return `
           <div class="div__classify__div__submenu__item__right__sub__submenu__div__nav__menu bg-white flex-col dir-rtl flex-wrap flex justify-start pt-[15px]">
             <div class="huge__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu h-[40px] ps-[20px] flex flex-row flex-nowrap flex-start items-center gap-y-[5px]">
               <a class="a__huge__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu font-[iranyekanmedium] text-[13px] pb-[20px]" href="#">${titlehuge}</a>
@@ -178,13 +195,15 @@ export const fetchSubmenuItem3 = async () => {
             </div>
             ${itemsHtml}
           </div>`;
-      }).join("");
+        })
+        .join("");
 
       return `<div class="w-[25%] flex flex-col gap-y-[10px]">${columnHtml}</div>`;
     });
 
-    document.querySelector(".classify__div__submenu__item__right__sub__submenu__div__nav__menu .classify3").innerHTML = columnsHtml.join("");
-
+    document.querySelector(
+      ".classify__div__submenu__item__right__sub__submenu__div__nav__menu .classify3"
+    ).innerHTML = columnsHtml.join("");
   } catch (error) {
     console.log("خطا در دریافت داده‌ها: ", error.message);
   }
@@ -192,7 +211,9 @@ export const fetchSubmenuItem3 = async () => {
 
 export const fetchSubmenuItem4 = async () => {
   try {
-    const response = await fetch("https://farinush.github.io/digikalapro3/db.json");
+    const response = await fetch(
+      "https://farinush.github.io/digikalapro3/db.json"
+    );
     const data = await response.json();
 
     const home = Array.isArray(data.home) ? data.home : [];
@@ -209,30 +230,32 @@ export const fetchSubmenuItem4 = async () => {
         columns[1].push(item);
       } else if (index === 6 || index === 7) {
         columns[2].push(item);
-      } 
+      }
     });
 
     const columnsHtml = columns.map((group) => {
-      const columnHtml = group.map((category) => {
-        const titlehuge = category?.titlehuge ?? "بدون عنوان";
+      const columnHtml = group
+        .map((category) => {
+          const titlehuge = category?.titlehuge ?? "بدون عنوان";
 
-        // حذف مقادیر null از items
-        const filteredItems = Array.isArray(category?.items)
-          ? category.items.filter(Boolean)
-          : [];
+          // حذف مقادیر null از items
+          const filteredItems = Array.isArray(category?.items)
+            ? category.items.filter(Boolean)
+            : [];
 
-        const itemsHtml = filteredItems.map((item) => {
-          const body = typeof item === "string"
-            ? item
-            : item?.body ?? "بدون نام";
+          const itemsHtml = filteredItems
+            .map((item) => {
+              const body =
+                typeof item === "string" ? item : item?.body ?? "بدون نام";
 
-          return `
+              return `
             <div class="subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu h-[40px] ps-[20px]">
               <a class="a__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu block font-[iranyekanmdeium] text-[12px] h-[40px] text-right text-[#66666b] font-[100] hover:text-[#d82f4e]" href="#">${body}</a>
             </div>`;
-        }).join("");
+            })
+            .join("");
 
-        return `
+          return `
           <div class="div__classify__div__submenu__item__right__sub__submenu__div__nav__menu bg-white flex-col dir-rtl flex-wrap flex justify-start pt-[15px]">
             <div class="huge__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu h-[40px] ps-[20px] flex flex-row flex-nowrap flex-start items-center gap-y-[5px]">
               <a class="a__huge__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu font-[iranyekanmedium] text-[13px] pb-[20px]" href="#">${titlehuge}</a>
@@ -242,23 +265,25 @@ export const fetchSubmenuItem4 = async () => {
             </div>
             ${itemsHtml}
           </div>`;
-      }).join("");
+        })
+        .join("");
 
       return `<div class="w-[25%] flex flex-col gap-y-[10px]">${columnHtml}</div>`;
     });
 
-    document.querySelector(".classify__div__submenu__item__right__sub__submenu__div__nav__menu .classify4").innerHTML = columnsHtml.join("");
-
+    document.querySelector(
+      ".classify__div__submenu__item__right__sub__submenu__div__nav__menu .classify4"
+    ).innerHTML = columnsHtml.join("");
   } catch (error) {
     console.log("خطا در دریافت داده‌ها: ", error.message);
   }
 };
 
-
-
 export const fetchSubmenuItem5 = async () => {
   try {
-    const response = await fetch("https://farinush.github.io/digikalapro3/db.json");
+    const response = await fetch(
+      "https://farinush.github.io/digikalapro3/db.json"
+    );
     const data = await response.json();
 
     const barghi = Array.isArray(data.barghi) ? data.barghi : [];
@@ -277,30 +302,32 @@ export const fetchSubmenuItem5 = async () => {
         columns[2].push(item);
       } else if (index === 10 || index === 11 || index === 12 || index === 13) {
         columns[3].push(item);
-      } 
+      }
     });
 
     const columnsHtml = columns.map((group) => {
-      const columnHtml = group.map((category) => {
-        const titlehuge = category?.titlehuge ?? "بدون عنوان";
+      const columnHtml = group
+        .map((category) => {
+          const titlehuge = category?.titlehuge ?? "بدون عنوان";
 
-        // حذف مقادیر null از items
-        const filteredItems = Array.isArray(category?.items)
-          ? category.items.filter(Boolean)
-          : [];
+          // حذف مقادیر null از items
+          const filteredItems = Array.isArray(category?.items)
+            ? category.items.filter(Boolean)
+            : [];
 
-        const itemsHtml = filteredItems.map((item) => {
-          const body = typeof item === "string"
-            ? item
-            : item?.body ?? "بدون نام";
+          const itemsHtml = filteredItems
+            .map((item) => {
+              const body =
+                typeof item === "string" ? item : item?.body ?? "بدون نام";
 
-          return `
+              return `
             <div class="subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu h-[40px] ps-[20px]">
               <a class="a__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu block font-[iranyekanmdeium] text-[12px] h-[40px] text-right text-[#66666b] font-[100] hover:text-[#d82f4e]" href="#">${body}</a>
             </div>`;
-        }).join("");
+            })
+            .join("");
 
-        return `
+          return `
           <div class="div__classify__div__submenu__item__right__sub__submenu__div__nav__menu bg-white flex-col dir-rtl flex-wrap flex justify-start pt-[15px]">
             <div class="huge__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu h-[40px] ps-[20px] flex flex-row flex-nowrap flex-start items-center gap-y-[5px]">
               <a class="a__huge__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu font-[iranyekanmedium] text-[13px] pb-[20px]" href="#">${titlehuge}</a>
@@ -310,27 +337,25 @@ export const fetchSubmenuItem5 = async () => {
             </div>
             ${itemsHtml}
           </div>`;
-      }).join("");
+        })
+        .join("");
 
       return `<div class="w-[25%] flex flex-col gap-y-[10px]">${columnHtml}</div>`;
     });
 
-    document.querySelector(".classify__div__submenu__item__right__sub__submenu__div__nav__menu .classify5").innerHTML = columnsHtml.join("");
-
+    document.querySelector(
+      ".classify__div__submenu__item__right__sub__submenu__div__nav__menu .classify5"
+    ).innerHTML = columnsHtml.join("");
   } catch (error) {
     console.log("خطا در دریافت داده‌ها: ", error.message);
   }
 };
 
-
-
-
-
-
-
 export const fetchSubmenuItem6 = async () => {
   try {
-    let response = await fetch("https://farinush.github.io/digikalapro3/db.json");
+    let response = await fetch(
+      "https://farinush.github.io/digikalapro3/db.json"
+    );
     if (!response.ok) {
       throw new Error(`خطا در دریافت داده‌ها: ${response.status}`);
     }
@@ -721,7 +746,9 @@ export const fetchSubmenuItem6 = async () => {
 };
 export const fetchSubmenuItem7 = async () => {
   try {
-    let response = await fetch("https://farinush.github.io/digikalapro3/db.json");
+    let response = await fetch(
+      "https://farinush.github.io/digikalapro3/db.json"
+    );
     if (!response.ok) {
       throw new Error(`خطا در دریافت داده‌ها: ${response.status}`);
     }
@@ -1112,7 +1139,9 @@ export const fetchSubmenuItem7 = async () => {
 };
 export const fetchSubmenuItem8 = async () => {
   try {
-    let response = await fetch("https://farinush.github.io/digikalapro3/db.json");
+    let response = await fetch(
+      "https://farinush.github.io/digikalapro3/db.json"
+    );
     if (!response.ok) {
       throw new Error(`خطا در دریافت داده‌ها: ${response.status}`);
     }
@@ -1503,7 +1532,9 @@ export const fetchSubmenuItem8 = async () => {
 };
 export const fetchSubmenuItem9 = async () => {
   try {
-    let response = await fetch("https://farinush.github.io/digikalapro3/db.json");
+    let response = await fetch(
+      "https://farinush.github.io/digikalapro3/db.json"
+    );
     if (!response.ok) {
       throw new Error(`خطا در دریافت داده‌ها: ${response.status}`);
     }
@@ -1891,7 +1922,9 @@ export const fetchSubmenuItem9 = async () => {
 };
 export const fetchSubmenuItem10 = async () => {
   try {
-    let response = await fetch("https://farinush.github.io/digikalapro3/db.json");
+    let response = await fetch(
+      "https://farinush.github.io/digikalapro3/db.json"
+    );
     if (!response.ok) {
       throw new Error(`خطا در دریافت داده‌ها: ${response.status}`);
     }
@@ -2280,7 +2313,9 @@ export const fetchSubmenuItem10 = async () => {
 };
 export const fetchSubmenuItem11 = async () => {
   try {
-    let response = await fetch("https://farinush.github.io/digikalapro3/db.json");
+    let response = await fetch(
+      "https://farinush.github.io/digikalapro3/db.json"
+    );
     if (!response.ok) {
       throw new Error(`خطا در دریافت داده‌ها: ${response.status}`);
     }
@@ -2669,7 +2704,9 @@ export const fetchSubmenuItem11 = async () => {
 };
 export const fetchSubmenuItem12 = async () => {
   try {
-    let response = await fetch("https://farinush.github.io/digikalapro3/db.json");
+    let response = await fetch(
+      "https://farinush.github.io/digikalapro3/db.json"
+    );
     if (!response.ok) {
       throw new Error(`خطا در دریافت داده‌ها: ${response.status}`);
     }
@@ -3060,7 +3097,9 @@ export const fetchSubmenuItem12 = async () => {
 };
 export const fetchSubmenuItem13 = async () => {
   try {
-    let response = await fetch("https://farinush.github.io/digikalapro3/db.json");
+    let response = await fetch(
+      "https://farinush.github.io/digikalapro3/db.json"
+    );
     if (!response.ok) {
       throw new Error(`خطا در دریافت داده‌ها: ${response.status}`);
     }
@@ -3837,7 +3876,9 @@ export const fetchSubmenuItem14 = async () => {
 };
 export const fetchSubmenuItem15 = async () => {
   try {
-    let response = await fetch("https://farinush.github.io/digikalapro3/db.json");
+    let response = await fetch(
+      "https://farinush.github.io/digikalapro3/db.json"
+    );
     if (!response.ok) {
       throw new Error(`خطا در دریافت داده‌ها: ${response.status}`);
     }
@@ -4217,7 +4258,9 @@ export const fetchSubmenuItem15 = async () => {
 };
 export const fetchSubmenuItem16 = async () => {
   try {
-    let response = await fetch("https://farinush.github.io/digikalapro3/db.json");
+    let response = await fetch(
+      "https://farinush.github.io/digikalapro3/db.json"
+    );
     if (!response.ok) {
       throw new Error(`خطا در دریافت داده‌ها: ${response.status}`);
     }
@@ -4764,65 +4807,23 @@ async function locationMenu() {
   });
 }
 locationMenu();
-  
-export const fetchShahr = async () => {
-  let entekhabshahr = "";
-  try {
-    let data = await fetch("https://farinush.github.io/digikalapro3/db.json");
-    let res = await data.json();
-    if (res && res.svg && res.title) {
-      entekhabshahr = `
-        <div class="child_labelforshow w-[100%] h-[100%] flex flex-row flex-nowrap justify-start items-center">
-          <img src="${res.svg}" alt="">
-          ${res.title}
-        </div>
-      `;
-      document.querySelector(".labelforshow").innerHTML = entekhabshahr;
-    } else {
-      console.error("Data is not in the expected format", res);
-    }
-  } catch (error) {
-    console.log(error.message);
-  }
-};
+
 export const fetchSubbottomcity = async () => {
-  let subbottomcity = "";
   try {
     let data = await fetch("https://farinush.github.io/digikalapro3/db.json");
     let res = await data.json();
-    if (res && res.titlename) {
-      const cityNames = Object.keys(res).filter(key => key.startsWith('name')).map(key => res[key]);
-      subbottomcity = `
-        <div class="text-sub-subbottomcity flex h-[10%] w-[inherit] flex-col flex-wrap gap-x-[5px] font-[yekan] mt-[25px] ps-[20px] text-[13px] text-[#2b2b2b] font-600">
-          ${res.titlename}
-        </div>
-        <hr class="w-[80%] h-[1px] block mx-auto border-[1px] border-solid border-[#3d3a3a]/[0.5]"/>
-        <div class="live-city w-[inherit] h-[85%] overflow-x-hidden overflow-y-auto">
-          <div class="live-location-sub-subbottomci font-[yekan] text-[13px] p-[25px] text-[#25bbce] font-600 flex flex-row flex-wrap justify-start items-center gap-y-[5px]">
-            <img src="${res.svg1}" alt="">
-            ${res.titlename2}
-          </div>
-          <div class="form-sub-subbottomcity w-[inherit]">
-            ${cityNames.map((city, index) => {
-              return `
-                <a class="a-form-sub-subbottomcity" href="#">
+    let cityalldata = res.cityalldata.map((item) => {
+      return `
+                 <a class="a-form-sub-subbottomcity" href="#" key=${item.id}>
                   <div class="div-a-form-sub-subbottomcity">
-                    ${city}
-                    <img src="${res.svgfleshbechap}" alt="">
+                    ${item.name}
+                    <img src="./public/svg/bottommenu/fleshbechap.svg" alt="">
                   </div>
                 </a>
-                <hr class="hr-a-form-sub-subbottomcity" />
-              `;
-            }).join('')}
-          </div>
-        </div>
-        <label for="down" class="block w-[35px] h-[35px] text-[#2b2b2b] text-center leading-[35px] font-bold cursor-pointer absolute left-0 top-0">&times;</label>
-      `;
-      
-      document.querySelector(".sub-subbottomcity").innerHTML = subbottomcity;
-    } else {
-      console.error("Invalid data structure:", res);
-    }
+                <hr class="hr-a-form-sub-subbottomcity" />`;
+    });
+
+    document.querySelector(".form-sub-subbottomcity").innerHTML = cityalldata;
   } catch (error) {
     console.log(error.message);
   }

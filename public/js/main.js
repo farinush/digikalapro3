@@ -3,9 +3,8 @@ import {
   fetchSlidercentermenu,
   fetchSlidercentermenu2,
 } from "./menu/centermenu.js";
-import { fetchFormpage } from "./menu/form.js";
+
 import {
-  fetchShahr,
   fetchSubbottomcity,
   fetchSubmenuItem,
   fetchSubmenuItem10,
@@ -47,7 +46,7 @@ import { fetchDigichild } from "./menu/digichildbrand.js";
 import {buttonSoopwidth , buttonsoopMenu} from "./menu/labelsoopermarket.js"
 
 import { poshtibaniView } from "./menu/poshtibani.js";
-fetchFormpage();
+
 formShow();
 fetchSubmenuItem();
 fetchSubmenuItem2();
@@ -67,8 +66,8 @@ fetchSubmenuItem15();
 fetchSubmenuItem16();
 handleMenuHover();
 fetchv();
-fetchFormpage();
-fetchShahr();
+
+
 fetchSubbottomcity();
 fetchStory();
 fetchSlider();
