@@ -6,7 +6,7 @@ export const fetchSlider = async () => {
       return `
               <div class="swiper-slide !hidden lg:!block object-contain mx-auto"><img src="${item.img}" alt="" class="hidden lg:block w-[100%] h-[180px] lg:h-[440px]"/></div> 
         `;
-    });
+        }).join('');
 
     document.querySelector(".slider .mySlider").innerHTML = `
         <div class="swiper-wrapper">
