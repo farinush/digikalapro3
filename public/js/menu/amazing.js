@@ -8,10 +8,10 @@ export const fetchAmazing = async () => {
     let firstSlide = `
       <div class="swiper-slide amazingactive bg-[#db314e] text-center text-[18px] flex justify-center items-center">
         <div class="swiper-slide-item flex flex-col flex-wrap gap-x-[8px] items-center justify-center">
-          <img class="image_item1" src="./public/svg/amazing/comment.svg" alt=""/>
-          <img class="image_item2" src="./public/images/amazing/box.png" alt=""/>
+          <img class="image_item1" src="/svg/amazing/comment.svg" alt=""/>
+          <img class="image_item2" src="/images/amazing/box.png" alt=""/>
           <a class="item_link flex justify-center items-center" href="#">مشاهده همه
-            <img src="./public/svg/amazing/svgfleshbechap.svg" alt="">
+            <img src="/svg/amazing/svgfleshbechap.svg" alt="">
           </a>
         </div>
       </div>
@@ -29,7 +29,7 @@ export const fetchAmazing = async () => {
               <div class="w-[144px] h-[24px] flex flex-row-reverse justify-around">
                 <h5 class="price w-[80%] h-[24px] font-[yekan] text-[13px] flex justify-end">
                   ${item.price}
-                  <img src="./public/svg/amazing/toman.svg" alt=""/>
+                  <img src="/svg/amazing/toman.svg" alt=""/>
                 </h5>
                 <h6 class="w-[30%] h-[17px] font-[yekan] text-[12px] bg-[#d32f2e] px-[10px] rounded-[15px] text-[whitesmoke] leading-[18px] font-[600]">${item.percentage}</h6>
               </div>
@@ -46,7 +46,7 @@ export const fetchAmazing = async () => {
         <a class="a_slid13 w-[inherit] h-[inherit] block" href="#">
           <div class="svg_slide13 w-[inherit] h-[50%] relative">
             <div class="child_svg_slide13">
-              <img src="./public/svg/amazing/senoghte.svg" alt="" class="senoghte">
+              <img src="/svg/amazing/senoghte.svg" alt="" class="senoghte">
             </div>
           </div>
           <p class="p_slide13 w-[inherit] h-[50%] font-[iranyekanmedium] text-[14px] text-[#2b2b2b] opacity-[0.8]">مشاهده همه</p>

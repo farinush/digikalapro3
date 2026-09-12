@@ -26,7 +26,7 @@ export const fetchMobilehead = async () => {
           </div>
           <div class="a_child_sub_mobile-headphone inline-block w-[100px] h-[26px] font-[iranyekanmedium] text-[13px] text-center m-auto relative mt-[10px]">
             <a href="#" class="text-[#5faab5]">مشاهده
-              <img src="./public/svg/mobile-headphone/svgfleshbechap.svg" alt="" class="absolute top-[-3px] left-[3px]"/>
+              <img src="/svg/mobile-headphone/svgfleshbechap.svg" alt="" class="absolute top-[-3px] left-[3px]"/>
             </a>
           </div>
         </div>

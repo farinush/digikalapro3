@@ -45,7 +45,7 @@ export const fetchSubmenuItem = async () => {
             <div class="huge__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu h-[40px] ps-[20px] flex flex-row flex-nowrap flex-start items-center gap-y-[5px]">
               <a class="a__huge__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu font-[iranyekanmedium] text-[13px] pb-[20px]" href="#">${category.titlehuge}</a>
               <div class="svg__huge__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu relative pb-[20px]">
-                <img src="./public/svg/bottommenu/fleshbechap.svg" alt="">
+                <img src="/svg/bottommenu/fleshbechap.svg" alt="">
               </div>
             </div>
             ${itemsHtml}
@@ -118,7 +118,7 @@ export const fetchSubmenuItem2 = async () => {
             <div class="huge__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu h-[40px] ps-[20px] flex flex-row flex-nowrap flex-start items-center gap-y-[5px]">
               <a class="a__huge__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu font-[iranyekanmedium] text-[13px] pb-[20px]" href="#">${titlehuge}</a>
               <div class="svg__huge__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu relative pb-[20px]">
-                <img src="./public/svg/bottommenu/fleshbechap.svg" alt="">
+                <img src="/svg/bottommenu/fleshbechap.svg" alt="">
               </div>
             </div>
             ${itemsHtml}
@@ -190,7 +190,7 @@ export const fetchSubmenuItem3 = async () => {
             <div class="huge__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu h-[40px] ps-[20px] flex flex-row flex-nowrap flex-start items-center gap-y-[5px]">
               <a class="a__huge__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu font-[iranyekanmedium] text-[13px] pb-[20px]" href="#">${titlehuge}</a>
               <div class="svg__huge__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu relative pb-[20px]">
-                <img src="./public/svg/bottommenu/fleshbechap.svg" alt="">
+                <img src="/svg/bottommenu/fleshbechap.svg" alt="">
               </div>
             </div>
             ${itemsHtml}
@@ -260,7 +260,7 @@ export const fetchSubmenuItem4 = async () => {
             <div class="huge__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu h-[40px] ps-[20px] flex flex-row flex-nowrap flex-start items-center gap-y-[5px]">
               <a class="a__huge__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu font-[iranyekanmedium] text-[13px] pb-[20px]" href="#">${titlehuge}</a>
               <div class="svg__huge__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu relative pb-[20px]">
-                <img src="./public/svg/bottommenu/fleshbechap.svg" alt="">
+                <img src="/svg/bottommenu/fleshbechap.svg" alt="">
               </div>
             </div>
             ${itemsHtml}

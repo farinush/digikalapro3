@@ -29,10 +29,10 @@ export const fetchSubfooter = async () => {
           <span>باماهمراه باشید</span>
         </div>
         <div class="svg-div1-box4 flex flex-row flex-wrap justify-center items-center gap-y-[7px] text-center">
-          <img src="./public/svg/subfooter/instagram.svg" alt=""/>
-          <img src="./public/svg/subfooter/twitter.svg" alt=""/>
-          <img src="./public/svg/subfooter/linkedin.svg" alt=""/>
-          <img src="./public/svg/subfooter/aparat.svg" alt=""/>
+          <img src="/svg/subfooter/instagram.svg" alt=""/>
+          <img src="/svg/subfooter/twitter.svg" alt=""/>
+          <img src="/svg/subfooter/linkedin.svg" alt=""/>
+          <img src="/svg/subfooter/aparat.svg" alt=""/>
         </div>
         <div class="span-div1-box4 font-[iranyekanmedium] text-[14px] text-[#2b2b2b]">
           <span>باثبت ایمیل, از جدیدترین تخفیف ها باخبر شوید</span>
