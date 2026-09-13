@@ -30,13 +30,12 @@ export const fetchSlidercentermenu = async () => {
     const sliderEl = document.querySelector(".items-slider1 .myslider");
     sliderEl.innerHTML = `
         <div class="swiper-wrapper">
-          ${centermenuslider1.join('')}
+          ${centermenuslider1.join("")}
         </div>
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
         <div class="swiper-pagination"></div>`;
     new Swiper(sliderEl, {
-      loop: true,
       slidesPerView: 3.5,
       spaceBetween: 15,
       navigation: {
@@ -59,13 +58,12 @@ export const fetchSlidercentermenu2 = async () => {
     const sliderEl = document.querySelector(".items-slider2 .myslider");
     sliderEl.innerHTML = `
         <div class="swiper-wrapper">
-          ${centermenuslider2.join('')}
+          ${centermenuslider2.join("")}
         </div>
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
         <div class="swiper-pagination"></div>`;
     new Swiper(sliderEl, {
-      loop: true,
       slidesPerView: 3.5,
       spaceBetween: 15,
       navigation: {
@@ -77,7 +75,6 @@ export const fetchSlidercentermenu2 = async () => {
     console.log("Error:", error.message);
   }
 };
-
 
 window.addEventListener("storage", function (event) {
   if (event.key === "cart") {
