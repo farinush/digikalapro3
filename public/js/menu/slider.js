@@ -2,11 +2,15 @@ export const fetchSlider = async () => {
   try {
     const data = await fetch("https://farinush.github.io/digikalapro3/db.json");
     const res = await data.json();
-    let sliderswiper = res.slider.map((item) => {
-      return `
-              <div class="swiper-slide !hidden lg:!block object-contain mx-auto"><img src="${item.img}" alt="" class="hidden lg:block w-[100%] h-[180px] lg:h-[440px]"/></div> 
+    let sliderswiper = res.slider
+      .map((item) => {
+        return `
+              <div class="swiper-slide block object-contain mx-auto">
+              <img src="${item.img}" alt="" class="block w-full h-[200px] lg:h-[440px] object-cover"/>
+              </div> 
         `;
-        }).join('');
+      })
+      .join("");
 
     document.querySelector(".slider .mySlider").innerHTML = `
         <div class="swiper-wrapper">
@@ -16,6 +20,7 @@ export const fetchSlider = async () => {
         <div class="swiper-button-prev"></div>
         <div class="swiper-pagination"></div>`;
     const swiper = new Swiper(".mySlider", {
+      slidesPerView: 1,
       spaceBetween: 0,
       centeredSlides: true,
       autoplay: {

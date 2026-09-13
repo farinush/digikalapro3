@@ -30,7 +30,7 @@ export const fetchSaatlaptop = async () => {
             </a>
           </div>
         </div>
-        <hr class="hr_sub_saat-laptop w-[1px] h-[440px] lg:bg-[lightgray] opacity-[0.3]" />
+        <hr class="hr_sub_saat-laptop w-[1px] lg:h-[440px] lg:bg-[lightgray] opacity-[0.3]" />
       `;
     });
 
