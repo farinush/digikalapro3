@@ -1,4 +1,9 @@
+import { cpSync } from "node:fs";
+import { resolve } from "node:path";
 import { defineConfig } from "vite";
+
+const publicDirectory = resolve(__dirname, "public");
+const distPublicDirectory = resolve(__dirname, "dist/public");
 
 export default defineConfig({
   base: "./",
@@ -13,6 +18,12 @@ export default defineConfig({
           }
           next();
         });
+      },
+    },
+    {
+      name: "preserve-public-prefix-for-production",
+      closeBundle() {
+        cpSync(publicDirectory, distPublicDirectory, { recursive: true });
       },
     },
   ],
