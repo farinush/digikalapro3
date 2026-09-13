@@ -36,8 +36,8 @@ export const fetchHotsecond = async () => {
       slidesPerView: 4,
       spaceBetween: 1,
       navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".myhotkala .swiper-button-next",
+        prevEl: ".myhotkala .swiper-button-prev",
       },
     });
 
@@ -119,7 +119,7 @@ function updateCartPage() {
                         <img src="${item.img}" alt="product image" class="w-[30%] h-[114px]" />
                         <p class="w-[40%] font-[iranyekanmedium] text-[#2b2b2b] text-ellipsis text-wrap text-[12px]">${item.name}</p>
                         <a class="deletebutton block w-[20%] h-[20px]" href="#">
-                            <img src="/svg/trashplus.svg" alt=""/>
+                            <img src="./public/svg/trashplus.svg" alt=""/>
                         </a>
                     </div>
                 `;

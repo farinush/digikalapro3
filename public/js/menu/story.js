@@ -29,8 +29,8 @@ export const fetchStory = async () => {
       slidesPerView: 11.5,
       spaceBetween: 0,
       navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".mySwiper .swiper-button-next",
+        prevEl: ".mySwiper .swiper-button-prev",
       },
     });
 
@@ -38,6 +38,3 @@ export const fetchStory = async () => {
     console.log("خطا در دریافت داده‌ها: ", error.message);
   }
 };
-
-// اجرای تابع بعد از بارگذاری صفحه
-window.addEventListener('DOMContentLoaded', fetchStory);

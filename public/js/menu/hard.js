@@ -35,8 +35,8 @@
         slidesPerView: 4,
         spaceBetween: 1,
         navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
+          nextEl: ".myhard .swiper-button-next",
+          prevEl: ".myhard .swiper-button-prev",
         },
       });
     } catch (error) {

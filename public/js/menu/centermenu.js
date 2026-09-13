@@ -27,24 +27,22 @@ export const fetchSlidercentermenu = async () => {
     let centermenuslider1 = res.centermenuslider1.map((item) => {
       return `<div class="swiper-slide flex py-3 text-center w-fit rounded-[15px] border-[1px] border-solid border-black font-[iranyekanmedium]" key=${item.id}>${item.body}</div>`;
     });
-    document.querySelector(".items-slider1 .myslider").innerHTML = `
+    const sliderEl = document.querySelector(".items-slider1 .myslider");
+    sliderEl.innerHTML = `
         <div class="swiper-wrapper">
           ${centermenuslider1.join('')}
         </div>
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
         <div class="swiper-pagination"></div>`;
-    const sliders = document.querySelectorAll(".myslider");
-    sliders.forEach((swiperElement) => {
-      new Swiper(swiperElement, {
-        loop: true,
-        slidesPerView: 3.5, // نمایش 3.5 اسلاید به‌طور هم‌زمان
-        spaceBetween: 15,
-        navigation: {
-          nextEl: swiperElement.querySelector(".swiper-button-next"),
-          prevEl: swiperElement.querySelector(".swiper-button-prev"),
-        },
-      });
+    new Swiper(sliderEl, {
+      loop: true,
+      slidesPerView: 3.5,
+      spaceBetween: 15,
+      navigation: {
+        nextEl: sliderEl.querySelector(".swiper-button-next"),
+        prevEl: sliderEl.querySelector(".swiper-button-prev"),
+      },
     });
   } catch (error) {
     console.log("Error:", error.message);
@@ -58,24 +56,22 @@ export const fetchSlidercentermenu2 = async () => {
     let centermenuslider2 = res.centermenuslider2.map((item) => {
       return `<div class="swiper-slide flex py-3 text-center w-fit rounded-[15px] border-[1px] border-solid border-grey font-[iranyekanmedium]" key=${item.id}>${item.body}</div>`;
     });
-    document.querySelector(".items-slider2 .myslider").innerHTML = `
+    const sliderEl = document.querySelector(".items-slider2 .myslider");
+    sliderEl.innerHTML = `
         <div class="swiper-wrapper">
           ${centermenuslider2.join('')}
         </div>
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
         <div class="swiper-pagination"></div>`;
-    const sliders = document.querySelectorAll(".myslider");
-    sliders.forEach((swiperElement) => {
-      new Swiper(swiperElement, {
-        loop: true,
-        slidesPerView: 3.5, // نمایش 3.5 اسلاید به‌طور هم‌زمان
-        spaceBetween: 15,
-        navigation: {
-          nextEl: swiperElement.querySelector(".swiper-button-next"),
-          prevEl: swiperElement.querySelector(".swiper-button-prev"),
-        },
-      });
+    new Swiper(sliderEl, {
+      loop: true,
+      slidesPerView: 3.5,
+      spaceBetween: 15,
+      navigation: {
+        nextEl: sliderEl.querySelector(".swiper-button-next"),
+        prevEl: sliderEl.querySelector(".swiper-button-prev"),
+      },
     });
   } catch (error) {
     console.log("Error:", error.message);

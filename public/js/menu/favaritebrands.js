@@ -24,8 +24,8 @@ export const fetchFavaritebrands = async () => {
       slidesPerView: 9.5,
       spaceBetween: 1,
       navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".myfavaritebrands .swiper-button-next",
+        prevEl: ".myfavaritebrands .swiper-button-prev",
       },
     });
   } catch (error) {

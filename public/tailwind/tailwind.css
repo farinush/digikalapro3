@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer component {
+@layer components {
   .a__huge__subdiv__div__classify__div__submenu__item__right__sub__submenu__div__nav__menu {
             &::before {
               content: "";

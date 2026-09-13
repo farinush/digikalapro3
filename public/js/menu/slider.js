@@ -32,12 +32,11 @@ export const fetchSlider = async () => {
         clickable: true,
       },
       navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".mySlider .swiper-button-next",
+        prevEl: ".mySlider .swiper-button-prev",
       },
     });
   } catch (error) {
     console.log("Error:", error.message);
   }
 };
-window.addEventListener("DOMContentLoaded", fetchSlider);
