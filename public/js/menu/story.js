@@ -2,8 +2,8 @@ export const fetchStory = async () => {
   try {
     let data = await fetch("https://farinush.github.io/digikalapro3/db.json");
     let res = await data.json();
-    let story = res.story.map((item)=>{
-      return `
+     let story = res.story.map((item) => {
+       return `
           <div class="swiper-slide w-[100%] h-[100%] text-center text-[18px] bg-[#fff] flex justify-center items-center" key=${item.id}>
             <div class="swiper__slider__story w-[100%] h-[100%] flex flex-col flex-wrap gap-x-[25px]">
               <div class="swiper__slider__story__image w-[90px] h-[90px] mx-auto pt-[20px]">
@@ -14,15 +14,16 @@ export const fetchStory = async () => {
               </div>
             </div>
           </div>
-        `
-    })
-    document.querySelector(".mySwiper").innerHTML = `
+        `;
+     });
+
+     // نکته اصلی اینجاست: اضافه کردن .join("")
+     document.querySelector(".mySwiper").innerHTML = `
       <div class="swiper-wrapper">
-        ${story}
+        ${story.join("")} 
       </div>
       <div class="swiper-button-next"></div>
       <div class="swiper-button-prev"></div>
-      
     `;
     const swiper = new Swiper(".mySwiper", {
       slidesPerView: 11.5,

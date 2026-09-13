@@ -34,7 +34,8 @@ export const fetchMobilehead = async () => {
       `;
     });
 
-    document.querySelector(".sub_mobile-headphone").innerHTML = mobileheadphone;
+    document.querySelector(".sub_mobile-headphone").innerHTML =
+      mobileheadphone.join("");
   } catch (error) {
     console.log(error.message);
   }
